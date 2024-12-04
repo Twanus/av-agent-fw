@@ -14,33 +14,32 @@ Ontwikkel een flexibel systeem-agent framework in Python met GitHub-integratie. 
 - Reflecties in Markdown
 
 ## Planning
- 
+
 ### **Week 1: Analyse en Conceptvorming (deadline: 4 december)**
 
 #### **Theoretische analyse**
 
 ##### **Doelen van systeem-agents**
 
-1.	**Automatisering**: Het verminderen van handmatige interventie bij routinetaken zoals back-ups, systeemupdates en monitoring, wat leidt tot verhoogde efficiëntie en minder menselijke fouten.
+1. **Automatisering**: Het verminderen van handmatige interventie bij routinetaken zoals back-ups, systeemupdates en monitoring, wat leidt tot verhoogde efficiëntie en minder menselijke fouten.
 
-2.	**Consistentie**: Het waarborgen van uniforme uitvoering van taken volgens vooraf gedefinieerde regels en procedures.
+2. **Consistentie**: Het waarborgen van uniforme uitvoering van taken volgens vooraf gedefinieerde regels en procedures.
 
-3.	**Realtime Monitoring**: Het continu monitoren van systeemprestaties en het proactief reageren op incidenten om downtime te minimaliseren.
+3. **Realtime Monitoring**: Het continu monitoren van systeemprestaties en het proactief reageren op incidenten om downtime te minimaliseren.
 
-4.	**Schaalbaarheid**: Het faciliteren van eenvoudige opschaling binnen complexe IT-omgevingen zonder verlies van performance.
+4. **Schaalbaarheid**: Het faciliteren van eenvoudige opschaling binnen complexe IT-omgevingen zonder verlies van performance.
 
-5.	**Beveiliging**: Het implementeren van beveiligingsmaatregelen zoals regelmatige updates en het monitoren van verdachte activiteiten.
+5. **Beveiliging**: Het implementeren van beveiligingsmaatregelen zoals regelmatige updates en het monitoren van verdachte activiteiten.
 
 ##### **Agents vs Services vs Daemons**
 
-| Kenmerk | Agents | Services | Daemons |
-| ------- | ------ | -------- | ------- |
+| Kenmerk   | Agents                                                                                      | Services                                                                                          | Daemons                                                                      |
+| --------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | Definitie | Kleine programma’s die specifieke taken uitvoeren en vaak met andere systemen communiceren. | Processen die een systeemfunctie bieden en kunnen worden beheerd (starten, stoppen, controleren). | Achtergrondprocessen die continu draaien en systeemfunctionaliteiten bieden. |
-| Voorbeeld | Wazuh agent | systemd service zoals ssh.service | mysqld (MySQL-daemon) |
-| Werking | Worden vaak op afstand beheerd en richten zich op specifieke taken. | Kunnen handmatig of automatisch worden gestart en gestopt. | Draaien continu zonder directe tussenkomst, bedoeld voor langdurige taken. |
-| Gebruik | Monitoring, data-aggregatie, beveiliging. | Applicatie- of systeembeheer. | Voortdurende bewaking en systeembeheer. |
-| Beheer | Communicatie met centrale systemen, soms geïntegreerd met dashboards. | Lokaal of via command-line tools zoals systemctl. | Worden beheerd via lokale configuratiebestanden of managementtools. |
-
+| Voorbeeld | Wazuh agent                                                                                 | systemd service zoals ssh.service                                                                 | mysqld (MySQL-daemon)                                                        |
+| Werking   | Worden vaak op afstand beheerd en richten zich op specifieke taken.                         | Kunnen handmatig of automatisch worden gestart en gestopt.                                        | Draaien continu zonder directe tussenkomst, bedoeld voor langdurige taken.   |
+| Gebruik   | Monitoring, data-aggregatie, beveiliging.                                                   | Applicatie- of systeembeheer.                                                                     | Voortdurende bewaking en systeembeheer.                                      |
+| Beheer    | Communicatie met centrale systemen, soms geïntegreerd met dashboards.                       | Lokaal of via command-line tools zoals systemctl.                                                 | Worden beheerd via lokale configuratiebestanden of managementtools.          |
 
 ##### **Relevantie binnen systeembeheer**
 
@@ -93,172 +92,194 @@ Het doel is een modulair en uitbreidbaar agent-framework te bouwen dat beheertak
 ###### **1. Core Agent**
 
 Functie:
-  - Communiceert met GitHub om modules en configuraties op te halen.
-  - Laadt en voert modules uit volgens geplande taken of triggers.
-  - Logging en monitoring voor auditing en foutopsporing.
-  - Voert beveiligingscontroles uit (code signing en inputvalidatie).
+
+- Communiceert met GitHub om modules en configuraties op te halen.
+- Laadt en voert modules uit volgens geplande taken of triggers.
+- Logging en monitoring voor auditing en foutopsporing.
+- Voert beveiligingscontroles uit (code signing en inputvalidatie).
 
 Technologieën:
-  - Python 3.x: Voor de ontwikkeling van de agent vanwege de brede ondersteuning en beschikbare libraries.
-  - GitHub API (PyGithub): Voor interactie met de GitHub-repository.
-  - Logging Module: Gebruik van Python’s ingebouwde logging module.
+
+- Python 3.x: Voor de ontwikkeling van de agent vanwege de brede ondersteuning en beschikbare libraries.
+- GitHub API (PyGithub): Voor interactie met de GitHub-repository.
+- Logging Module: Gebruik van Python’s ingebouwde logging module.
 
 ###### **2. Module Systeem**
 
 Functie:
-  - Plug-ins die specifieke taken uitvoeren, zoals systeemmonitoring, back-ups, installatie van software, etc.
+
+- Plug-ins die specifieke taken uitvoeren, zoals systeemmonitoring, back-ups, installatie van software, etc.
 
 Kenmerken:
-  - Standaard Interface: Elke module implementeert een voorgedefinieerde interface met bijvoorbeeld een execute() methode.
-  - Isolatie: Modules draaien in een gecontroleerde omgeving om systeemveiligheid te waarborgen.
-  - Versiebeheer: Modules worden versiebeheer via GitHub, wat updates en rollbacks mogelijk maakt.
+
+- Standaard Interface: Elke module implementeert een voorgedefinieerde interface met bijvoorbeeld een execute() methode.
+- Isolatie: Modules draaien in een gecontroleerde omgeving om systeemveiligheid te waarborgen.
+- Versiebeheer: Modules worden versiebeheer via GitHub, wat updates en rollbacks mogelijk maakt.
 
 Technologieën:
-  - Dynamic Importing: Gebruik van Python’s importlib om modules dynamisch te laden.
-  - venv: Voor het isoleren van module-afhankelijkheden.
+
+- Dynamic Importing: Gebruik van Python’s importlib om modules dynamisch te laden.
+- venv: Voor het isoleren van module-afhankelijkheden.
 
 ###### **3. GitHub Integratie**
 
-Functie: 
-  - De agent synchroniseert met een GitHub-repository om modules en configuraties op te halen.
+Functie:
+
+- De agent synchroniseert met een GitHub-repository om modules en configuraties op te halen.
 
 Implementatie:
-  - Authenticatie: Via een Personal Access Token (PAT) met minimale vereiste scopes.
-  - Bestandsstructuur:
-    ```folder
-      - config/
-      - data/
-      - modules/
-    ```
-  - Periodieke sync: Agent controleert op nieuwe updates op vooraf ingestelde intervallen.
-  
+
+- Authenticatie: Via een Personal Access Token (PAT) met minimale vereiste scopes.
+- Bestandsstructuur:
+  ```folder
+    - config/
+    - data/
+    - modules/
+  ```
+- Periodieke sync: Agent controleert op nieuwe updates op vooraf ingestelde intervallen.
+
 ###### **4. Beveiliging**
 
 Maatregelen:
-  - Versleutelde Communicatie: Alle communicatie met GitHub verloopt via HTTPS.
-  - Code Signing van Modules: Implementatie van code signing om de integriteit en authenticiteit van modules te waarborgen.
-  - Least Privilege: De agent draait met minimale systeemrechten.
-  - Input Validatie: Alle externe input wordt gevalideerd om injectie-aanvallen te voorkomen.
-  - Sandboxing: Overwegen van het gebruik van containers of virtuele omgevingen voor module-executie.
+
+- Versleutelde Communicatie: Alle communicatie met GitHub is beveiligd.
+- Code Signing van Modules: Implementatie van code signing om de integriteit en authenticiteit van modules te waarborgen.
+- Least Privilege: De agent draait met minimale systeemrechten.
+- Input Validatie: Alle externe input wordt gevalideerd om injectie-aanvallen te voorkomen.
+- Sandboxing: Overwegen van het gebruik van containers of virtuele omgevingen voor module-executie.
 
 Technologieën:
-  - cryptography: Voor het implementeren van code signing en encryptie.
-  - OS: gebruik makend van user & admin privileges.
 
+- Cryptography: Voor het implementeren van code signing en encryptie.
+- OS: gebruik makend van user & admin privileges.
 
 ###### **5. Configuratie Management**
 
 Functie: Beheer van instellingen en parameters voor zowel de agent als de modules.
 
 Implementatie:
-  - Configuratiebestanden: In YAML- of JSON-formaat binnen de config/ map.
-  - Dynamische Resync: Mogelijkheid om configuraties te herladen zonder de agent te herstarten.
-  - Prioriteit: Lokale configuraties kunnen globale instellingen overschrijven.
+
+- Configuratiebestanden: In YAML- of JSON-formaat binnen de config/ map.
+- Prioriteit: Lokale configuraties kunnen globale instellingen overschrijven.
 
 Technologieën:
-  - PyYAML of json: Voor het parsen van configuratiebestanden.
+
+- PyYAML of json: Voor het parsen van configuratiebestanden.
 
 ###### **6. Scheduling en Task Management**
 
 Functie: Beheer van wanneer en hoe vaak modules worden uitgevoerd.
 
 Implementatie:
-  - Geplande Taken: Gebruik van een scheduler om modules op specifieke tijden of intervallen uit te voeren.
-  - Ad-hoc Uitvoering: Mogelijkheid om modules direct uit te voeren bij behoefte.
-  - Concurrency: Beheer van gelijktijdige module-executies om resource-conflicten te voorkomen.
+
+- Geplande Taken: Scheduler om modules op specifieke tijden of intervallen uit te voeren.
+- Ad-hoc Uitvoering: Mogelijkheid om modules direct uit te voeren bij behoefte.
 
 Technologieën:
-  - schedule: Voor eenvoudige planning van taken.
-  - threading of asyncio: Voor gelijktijdige uitvoering indien nodig.
+
+- Scheduler: Voor eenvoudige planning van taken.
 
 ###### **7. Data Opslag**
 
 Functie: Opslag van output, logs en tijdelijke bestanden.
 
 Implementatie:
-  - Data Directory: Gebruik van de data/ map voor gestructureerde opslag.
-  - Rotating Logs: Implementatie van logrotatie om opslagruimte te beheren.
+
+- Data Directory: Gebruik van de data/ map voor gestructureerde opslag.
+- Rotating Logs: Implementatie van logrotatie om opslagruimte te beheren.
 
 Technologieën:
-  - logging: Voor het loggen van informatie.
-  - os: Voor het beheer van bestandslocaties.
+
+- Logging: Voor het loggen van informatie.
+- OS: Voor het beheer van bestandslocaties.
 
 ###### **8. Logging en Monitoring**
 
 Functie: Bijhouden van activiteiten voor auditing en foutopsporing.
 
 Implementatie:
-  - Gestandaardiseerd Logformaat: Voor consistentie en eenvoud in loganalyse.
-  - Logging Levels: Gebruik van verschillende niveaus (DEBUG, INFO, WARNING, ERROR, CRITICAL).
+
+- Gestandaardiseerd Logformaat: Voor consistentie en eenvoud in loganalyse.
+- Logging Levels: Gebruik van verschillende niveaus (DEBUG, INFO, WARNING, ERROR, CRITICAL).
 
 Technologieën:
-  - Python’s logging module: Voor flexibele en configureerbare logging.
+
+- Python’s logging module: Voor flexibele en configureerbare logging.
 
 ##### **Dependencies**
 
-  - Python 3.x: Hoofdprogrammeertaal.
-  - PyGithub: Voor GitHub API interactie.
-  - cryptography: Voor encryptie en code signing.
-  - PyYAML / json: Voor configuratiebeheer.
-  - Schedule: Voor taakplanning.
-  - Virtualenv: Voor omgeving-isolatie.
-  - Unit Testing Frameworks: Zoals unittest of pytest voor het schrijven van tests.
+- Python 3.x: Hoofdprogrammeertaal.
+- PyGithub: Voor GitHub API interactie.
+- cryptography: Voor encryptie en code signing.
+- PyYAML / json: Voor configuratiebeheer.
+- Schedule: Voor taakplanning.
+- Virtualenv: Voor omgeving-isolatie.
+- Unit Testing Frameworks: Zoals unittest of pytest voor het schrijven van tests.
 
 ### **Project Planning**
 
-#### 1.	**Project Setup**:
-- Initialiseer een GitHub-repository met de vereiste mapstructuur.
-   - Stel een Python virtual environment in.
+#### 1. **Project Setup**:
 
-#### 2.	**Core Agent Ontwikkelen**:
-  - Implementeer GitHub-authenticatie en communicatie.
-  - Bouw de module loader met dynamische importfunctionaliteit.
-  - Implementeer de scheduler voor taakplanning.
-  - Voeg logging en foutafhandeling toe.
+- Github repo aanmaken
+- ci/cd pipeline aanmaken
+- venv samenstellen
 
-#### 3.	**Beveiligingsfuncties Implementeren**:
-  - Voeg code signing toe voor modules.
-  - Implementeer inputvalidatie en sanering.
-  - Configureer de agent om met minimale rechten te draaien.
+#### 2. **Core Agent Ontwikkelen**:
 
-#### 4.	**Configuratiebeheer**:
-  - Definieer het formaat voor configuratiebestanden.
-  - Implementeer functionaliteit om configuraties te laden en te herladen.
+- GitHub-authenticatie
+- Module loader
+- Scheduler
+- Logging
 
-#### 5.	**Module Ontwikkeling**:
-  - Ontwikkel minimaal drie custom modules, bijvoorbeeld:
-    - Systeemmonitor: Verzamelt en rapporteert systeemprestaties.
-    - Back-up Module: Maakt back-ups van belangrijke bestanden of databases.
-    - Log Analyzer: Analyseert systeem- of applicatielogs voor specifieke patronen.
-  - Zorg dat elke module voldoet aan de standaard interface.
+#### 3. **Beveiligingsfuncties Implementeren**:
 
-#### 6.	**Testing**:
-  - Schrijf unittests voor de core agent en modules.
-  - Voer integratietests uit om de interactie tussen componenten te verifiëren.
-  - Test beveiligingsfuncties zoals code signing en rechtenbeheer.
+- Code signing
+- Inputvalidatie
+- Minimale rechten
 
-#### 7.	**Documentatie**:
-  - Documenteer code met duidelijke docstrings.
-  - Schrijf handleidingen voor installatie, configuratie en gebruik.
-  - Documenteer beveiligingsmaatregelen en best practices.
+#### 4. **Configuratiebeheer**:
 
-#### 8.	**Deployment in Gecontroleerde Omgeving**:
-  - Zet de agent op in een testomgeving.
-  - Voer uitgebreide tests uit om prestaties en stabiliteit te evalueren.
-  - Monitor logs en pas aan waar nodig.
+- Definieer het formaat voor configuratiebestanden.
+- Implementeer functionaliteit om configuraties te laden en te herladen.
+
+#### 5. **Module Ontwikkeling**:
+
+- Ontwikkel minimaal drie custom modules, bijvoorbeeld:
+  - Systeemmonitor
+  - Back-up
+  - Log Analyzer
+- Zorg dat elke module voldoet aan de standaard interface.
+
+#### 6. **Testing**:
+
+- Unittests
+- Integratietests
+- Beveiligingsfuncties
+
+#### 7. **Documentatie**:
+
+- Docstrings
+- Handleidingen
+- Beveiligingsmaatregelen
+
+#### 8. **Deployment in Gecontroleerde Omgeving**:
+
+- Testomgeving op vmware
+- Host-only netwerk
+- Bridged via pfSense
 
 #### **Uitdagingen en Overwegingen**
 
-  - **Veiligheid**: Beveiliging moet centraal staan bij elke stap; denk aan het beveiligen van API-tokens en het valideren van externe input.
-  - **Betrouwbaarheid**: Zorg dat de agent fouttolerant is en bij fouten niet volledig crasht.
-  - **Uitbreidbaarheid**: Ontwerp het framework zodanig dat nieuwe modules eenvoudig kunnen worden toegevoegd.
-  - **Prestaties**: Minimaliseer de impact op systeembronnen, vooral bij het uitvoeren van meerdere modules.
+- **Veiligheid**: API-tokens, input validatie
+- **Betrouwbaarheid**: Fouttolerantie, exception handling, rollback
+- **Uitbreidbaarheid**: Makkelijk nieuwe modules toevoegen.
+- **Prestaties**: Minimaliseer de impact indien mogelijk.
 
 #### **Toekomstige Uitbreidingen**
 
-  - **Web Dashboard**: Voor realtime monitoring en beheer van de agent.
-  - **Machine Learning Integratie**: Voor geavanceerde analyse in modules zoals de Log Analyzer.
-  - **Distributed Agents**: Mogelijkheid om meerdere agents centraal te beheren.
+- **Web Dashboard**: Real-time monitoring en beheer.
+- **Machine Learning Integratie**: Geavanceerde analyse van de logs.
+- **Distributed Agents**: Centraal beheer van meerdere agents.
 
 ### Week 2-4: Ontwikkeling (tussentijdse deadlines: 11 en 18 december)
 
