@@ -1,0 +1,4 @@
+github_token: ${{ secrets.GITHUB_TOKEN }}
+repository: "Antwanus/av-agent-fw"
+check_interval: 300
+enabled_modules: []
