@@ -5,7 +5,6 @@ from github import Github
 
 class Agent:
     def __init__(self):
-        # Setup basic logging
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -16,15 +15,11 @@ class Agent:
         )
         self.logger = logging.getLogger('SystemAgent')
         
-        # Initialize paths
         self.config_dir = Path('config')
         self.data_dir = Path('data')
         self.modules_dir = Path('modules')
-        
-        # Ensure directories exist
         self._create_directories()
         
-        # Load configuration
         self.config = self._load_config()
         
         self.logger.info("Agent initialized successfully")
@@ -42,7 +37,7 @@ class Agent:
             default_config = {
                 'github_token': '',
                 'repository': '',
-                'check_interval': 300,  # 5 minutes
+                'check_interval': 300,  # 5min
                 'enabled_modules': []
             }
             with open(config_file, 'w') as f:
