@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: ["main"]
   schedule:
-    - cron: "0 0 * * 0" # Elke zondag om middernacht
+    - cron: "0 0 * * 0" # Every Sunday at midnight
 
 jobs:
   security-checks:
@@ -16,41 +16,55 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v3
-      # Dependencies check
+
+      # Install dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install safety
-          
-      # Check for vulnerable dependencies
-      - name: Check for vulnerable dependencies
-        run: safety scan
+          pip install safety flake8 bandit git-secrets
 
-      - name: Log in to Safety (non-interactive)
-        run: safety auth login --token $SAFETY_API_TOKEN
+      # Authenticate Safety
+      - name: Authenticate Safety
         env:
           SAFETY_API_TOKEN: ${{ secrets.SAFETY_API_TOKEN }}
+        run: |
+          safety auth login --token $SAFETY_API_TOKEN
+
+      # Check for vulnerable dependencies
+      - name: Check for vulnerable dependencies
+        run: safety check
 
       # Code linting
       - name: Lint with Flake8
-        run: |
-          pip install flake8
-          flake8 .
+        run: flake8 .
+
       # Static Application Security Testing (SAST) with Bandit
       - name: Bandit Scan
-        run: |
-          pip install bandit
-          bandit -r .
+        run: bandit -r .
+
       # Secrets check
       - name: Secrets Check
-        run: |
-          git secrets --scan -r .
+        run: git secrets --scan -r .
 
   weekly-scan:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Weekly Bandit Scan
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Bandit
         run: |
+          python -m pip install --upgrade pip
           pip install bandit
-          bandit -r .
+
+      - name: Weekly Bandit Scan
+        run: bandit -r .
