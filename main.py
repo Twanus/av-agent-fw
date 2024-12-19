@@ -33,7 +33,9 @@ class Agent:
         """Load the main configuration file."""
         config_file = self.config_dir / "config.yaml"
         if not config_file.exists():
-            self.logger.warning("No configuration file found. Creating default config.")
+            self.logger.warning(
+                "No configuration file found. Creating default config."
+            )
             default_config = {
                 "github_token": "",
                 "repository": "",
