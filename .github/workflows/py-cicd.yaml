@@ -33,11 +33,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y git-secrets
-          # Configure git-secrets with rules
-          git secrets --register-aws
-          git secrets --add 'password.*=.*['"'"'"][0-9a-zA-Z]+['"'"'"]'
-          git secrets --add --allowed 'password.*=.*\$\{.*\}'  # Allow environment variable syntax
-          git secrets --add --allowed 'password.*=.*\${{.*}}'  # Allow GitHub Actions syntax
 
       # Authenticate & safety scan
       - name: Authenticate & scan
@@ -57,6 +52,7 @@ jobs:
       - name: Secrets Check
         run: git secrets --scan -r .
 
+      # Secret scanning
       - name: TruffleHog OSS
         uses: trufflesecurity/trufflehog@main
         with:
