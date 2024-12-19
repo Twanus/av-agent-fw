@@ -36,10 +36,9 @@ jobs:
 
       # Authenticate Safety
       - name: Authenticate Safety
-        env:
-          SAFETY_API_TOKEN: ${{ secrets.SAFETY_API_TOKEN }}
-        run: |
-          safety auth login --token $SAFETY_API_TOKEN
+        uses: pyupio/safety-action@v1
+        with:
+          api-key: ${{ secrets.SAFETY_API_KEY }}
 
       # Check for vulnerable dependencies
       - name: Check for vulnerable dependencies
