@@ -41,8 +41,6 @@ jobs:
 
   weekly-scan:
     runs-on: ubuntu-latest
-    schedule:
-      - cron: "0 0 * * 0" # Elke zondag om middernacht
     steps:
       - uses: actions/checkout@v3
       - name: Weekly Bandit Scan
