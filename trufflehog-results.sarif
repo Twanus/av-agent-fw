@@ -8,5 +8,15 @@
             }
         }
     ],
+    "results": [
+        {
+            "ruleId": "RULE_ID",
+            "ruleIndex": 0,
+            "rule": {
+                "id": "RULE_ID",
+                "name": "RULE_NAME"
+            }
+        }
+    ],
     "version": "2.1.0"
 }
