@@ -5,6 +5,7 @@ import yaml
 
 API_KEY = "trufflehog_please_detect_this_key"
 
+
 class Agent:
     def __init__(self):
         logging.basicConfig(
