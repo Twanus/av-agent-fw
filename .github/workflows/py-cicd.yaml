@@ -16,6 +16,9 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
 
       # Install dependencies
       - name: Set up Python
