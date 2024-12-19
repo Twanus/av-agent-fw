@@ -35,13 +35,10 @@ jobs:
           sudo apt-get install -y git-secrets
 
       # Authenticate Safety
-      - uses: pyupio/safety-action@v1
+      - name: Authenticate & scan
+        uses: pyupio/safety-action@v1
         with:
           api-key: ${{ secrets.SAFETY_API_TOKEN }}
-
-      # Check for vulnerable dependencies
-      - name: Check for vulnerable dependencies
-        run: safety scan
 
       # Code linting
       - name: Lint with Flake8
