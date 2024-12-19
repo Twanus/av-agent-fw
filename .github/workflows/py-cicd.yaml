@@ -28,12 +28,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install safety flake8 bandit
 
-      # Install git-secrets
-      - name: Install git-secrets
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git-secrets
-
       # Authenticate & safety scan
       - name: Authenticate & scan
         uses: pyupio/safety-action@v1
@@ -48,14 +42,12 @@ jobs:
       - name: Bandit Scan
         run: bandit -r .
 
-      # Secrets check
-      - name: Secrets Check
-        run: git secrets --scan -r .
-
       # Secret scanning
       - name: TruffleHog OSS
         uses: trufflesecurity/trufflehog@main
         with:
           path: ./
-          base: ${{ github.event.repository.default_branch }}
-          head: HEAD
+          # base: ${{ github.event.repository.default_branch }}
+          # head: HEAD
+          only_verified: false
+          fail_verified: true
