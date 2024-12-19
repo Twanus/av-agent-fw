@@ -23,7 +23,7 @@ jobs:
           pip install safety
       # Check for vulnerable dependencies
       - name: Check for vulnerable dependencies
-        run: safety check
+        run: safety scan
       # Code linting
       - name: Lint with Flake8
         run: |
