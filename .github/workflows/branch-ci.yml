@@ -53,6 +53,8 @@ jobs:
     if: success()
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Merge dev into main
         run: |
           git config --global user.name 'GitHub Actions'
