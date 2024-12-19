@@ -3,7 +3,7 @@ from pathlib import Path
 import yaml
 
 
-API_KEY = "trufflehog_please_detect_this_key"
+API_KEY = "0000000000000000000000000000000000000000000000000000000000000000"
 
 
 class Agent:
