@@ -21,9 +21,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install safety
+          
       # Check for vulnerable dependencies
       - name: Check for vulnerable dependencies
         run: safety scan
+
+      - name: Log in to Safety (non-interactive)
+        run: safety auth login --token $SAFETY_API_TOKEN
+        env:
+          SAFETY_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # Code linting
       - name: Lint with Flake8
         run: |
