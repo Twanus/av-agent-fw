@@ -15,13 +15,10 @@ jobs:
       contents: read
       security-events: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          submodules: true
+      - uses: actions/checkout@v3
 
-      - name: Setup Python
+      # Install dependencies
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
@@ -31,18 +28,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install safety flake8 bandit
 
-      - name: Safety Scan
+      # Install git-secrets
+      - name: Install git-secrets
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-secrets
+
+      # Authenticate & safety scan
+      - name: Authenticate & scan
         uses: pyupio/safety-action@v1
         with:
           api-key: ${{ secrets.SAFETY_API_TOKEN }}
 
-      - name: flake8 Lint
+      # Code linting
+      - name: Lint with Flake8
         run: flake8 .
 
-      - name: Bandit Scan (SAST)
+      # Static Application Security Testing (SAST) with Bandit
+      - name: Bandit Scan
         run: bandit -r .
 
-      - name: TruffleHog Secret Scan
-        uses: trufflesecurity/trufflehog@main
-        with:
-          extra_args: --results=verified,unknown --json
+      # Secrets check
+      - name: Secrets Check
+        run: git secrets --scan -r .
