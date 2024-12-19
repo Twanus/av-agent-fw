@@ -42,12 +42,13 @@ jobs:
       - name: Bandit Scan
         run: bandit -r .
 
-      # Secret scanning
-      - name: TruffleHog OSS
+      # Secret Scanning
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Secret Scanning
         uses: trufflesecurity/trufflehog@main
         with:
-          path: ./
-          # base: ${{ github.event.repository.default_branch }}
-          # head: HEAD
-          only_verified: false
-          fail_verified: true
+          extra_args: --results=verified,unknown
