@@ -43,8 +43,8 @@
           uses: trufflesecurity/trufflehog@main
           with:
             extra_args: --results=verified,unknown --json
-    
-    deploy:
+
+    merge-into-main:
       needs: security-checks
       runs-on: ubuntu-latest
       if: success()
