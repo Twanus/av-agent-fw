@@ -208,13 +208,13 @@ Technologieën:
 
 ##### **Dependencies**
 
-  - Python 3.x: Hoofdprogrammeertaal.
-  - PyGithub: Voor GitHub API interactie.
-  - cryptography: Voor encryptie en code signing.
-  - PyYAML / json: Voor configuratiebeheer.
-  - Schedule: Voor taakplanning.
-  - venv: Voor omgeving-isolatie.
-  - Unit Testing Frameworks: Zoals unittest of pytest voor het schrijven van tests.
+- Python 3.x: Hoofdprogrammeertaal.
+- PyGithub: Voor GitHub API interactie.
+- cryptography: Voor encryptie en code signing.
+- PyYAML / json: Voor configuratiebeheer.
+- Schedule: Voor taakplanning.
+- venv: Voor omgeving-isolatie.
+- Unit Testing Frameworks: Zoals unittest of pytest voor het schrijven van tests.
 
 ### **Project Planning**
 
