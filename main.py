@@ -23,12 +23,12 @@ class Agent:
         self.config = self._load_config()
         
         self.logger.info("Agent initialized successfully")
-    
+
     def _create_directories(self):
         """Ensure all required directories exist."""
         for directory in [self.config_dir, self.data_dir, self.modules_dir]:
             directory.mkdir(exist_ok=True)
-    
+
     def _load_config(self):
         """Load the main configuration file."""
         config_file = self.config_dir / 'config.yaml'
@@ -43,9 +43,9 @@ class Agent:
             with open(config_file, 'w') as f:
                 yaml.dump(default_config, f)
             return default_config
-        
+
         with open(config_file) as f:
             return yaml.safe_load(f)
 
 if __name__ == "__main__":
-    agent = Agent() 
+    agent = Agent()
