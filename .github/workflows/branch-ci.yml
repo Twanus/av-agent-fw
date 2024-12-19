@@ -1,0 +1,62 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install safety flake8 bandit
+
+      - name: Safety Scan
+        uses: pyupio/safety-action@v1
+        with:
+          api-key: ${{ secrets.SAFETY_API_TOKEN }}
+
+      - name: flake8 Lint
+        run: flake8 .
+
+      - name: Bandit Scan (SAST)
+        run: bandit -r .
+
+      - name: TruffleHog Secret Scan
+        uses: trufflesecurity/trufflehog@main
+        with:
+          extra_args: --results=verified,unknown --json
+          
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - uses: actions/checkout@v3
+      - name: Merge dev into main
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git checkout main
+          git pull origin main
+          git merge --no-ff dev
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
