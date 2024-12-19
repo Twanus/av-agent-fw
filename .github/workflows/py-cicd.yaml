@@ -16,6 +16,9 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
 
       # Install dependencies
       - name: Set up Python
@@ -46,16 +49,4 @@ jobs:
       - name: Secret Scanning
         uses: trufflesecurity/trufflehog@main
         with:
-          extra_args: >-
-            --results=verified,unknown
-            --only-verified
-            --fail
-            --no-update
-            --exclude-paths .truffleignore
-        continue-on-error: true
-
-      - name: Upload TruffleHog Scan Results
-        if: always()
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: trufflehog-results.sarif
+          extra_args: --results=verified,unknown --json
