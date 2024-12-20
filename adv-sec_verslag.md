@@ -126,6 +126,6 @@ jobs:
 
 Hieronder is een voorbeeld van een screenshot waarin een check faalt en de merge naar master daardoor niet doorgaat:
 
-<img src="./images/failed-check.png" alt="Gefaalde Check" width="1000" style="display: block; margin: 0 auto;" />
+<img src="./images/failed-pw.png" alt="Gefaalde Check" width="1000" style="display: block; margin: 0 auto;" />
 <br>
 <img src="./images/failed-merge.png" alt="Gefaalde merge" width="1000" style="display: block; margin: 0 auto;" />
