@@ -54,4 +54,7 @@ class Agent:
 
 
 if __name__ == "__main__":
+    user_input = "print('hello world')"
+    eval(user_input)
+
     agent = Agent()
