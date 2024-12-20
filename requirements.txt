@@ -18,8 +18,3 @@ schedule==1.2.2
 typing_extensions==4.12.2
 urllib3==2.2.3
 wrapt==1.17.0
-
-# Vulnerable packages
-django==1.11.29 # This version of Django has known vulnerabilities (e.g., CVE-2020-7471).
-flask==0.12.2   # This version of Flask has known issues and is flagged in vulnerability databases.
-jinja2==2.7     # Older versions of Jinja2 contain vulnerabilities like CVE-2016-10745.

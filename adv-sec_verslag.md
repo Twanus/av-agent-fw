@@ -126,6 +126,11 @@ jobs:
 
 Hieronder is een voorbeeld van een screenshot waarin een check faalt en de merge naar master daardoor niet doorgaat:
 
-<img src="./images/failed-pw.png" alt="Gefaalde Check" width="1000" style="display: block; margin: 0 auto;" />
+<h3 style="text-align: center; color: goldenrod;">Figuur 1: Gefaald wegens geheime sleutel</h3>
+<img src="./images/failed-pw.png" alt="Gefaald wegens geheime sleutel" width="1000" style="display: block; margin: 0 auto;" />
 <br>
+<h3 style="text-align: center; color: goldenrod;">Figuur 2: Gefaald wegens kwetsbare packages</h3>
+<img src="./images/failed-dep.png" alt="Gefaald wegens kwetsbare packages" width="1000" style="display: block; margin: 0 auto;" />
+<br>
+<h3 style="text-align: center; color: goldenrod;">Figuur 3: Gefaalde merge wegens gefaalde security-check pipeline</h3>
 <img src="./images/failed-merge.png" alt="Gefaalde merge" width="1000" style="display: block; margin: 0 auto;" />
