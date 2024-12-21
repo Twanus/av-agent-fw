@@ -1,7 +1,6 @@
 import logging
 from pathlib import Path
 import yaml
-from github import Github
 from github.GithubException import GithubException
 import os
 from dotenv import load_dotenv

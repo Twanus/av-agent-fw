@@ -1,6 +1,5 @@
 import paramiko
 import logging
-from pathlib import Path
 from modules.commander import Command
 
 
@@ -37,7 +36,7 @@ class SSHConnector:
             return None
 
     def close_connection(self, client: paramiko.SSHClient):
-        self.logger.info(f"Connection closed.")
+        self.logger.info("Connection closed.")
         client.close()
 
     def connect_and_run(self, command: Command):

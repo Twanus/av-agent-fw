@@ -8,6 +8,22 @@ class Command(ABC):
 
 
 # TESTING
+class DetectOSCommand(Command):
+    def execute(self, client):
+        stdin, stdout, stderr = client.exec_command("cat /etc/os-release")
+        output = stdout.read().decode()
+        return output.split("=")[1].strip()
+
+
+class PlainCommand(Command):
+    def __init__(self, command):
+        self.command = command
+
+    def execute(self, client):
+        stdin, stdout, stderr = client.exec_command(f"{self.command}")
+        return stdout.read().decode()
+
+
 class EchoCommand(Command):
     def __init__(self, message):
         self.message = message

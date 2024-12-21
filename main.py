@@ -1,10 +1,7 @@
 from modules.agent import Agent
-from modules.commander import EchoCommand, ListFilesCommand
+from modules.commander import PlainCommand
 
 if __name__ == "__main__":
     agent = Agent()
 
-    text = "Hello, World!"
-    agent.run_ssh_command(EchoCommand(text))
-
-    agent.run_ssh_command(ListFilesCommand("/"))
+    agent.run_ssh_command(PlainCommand("cat /etc/os-release"))
