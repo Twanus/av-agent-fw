@@ -1,4 +1,4 @@
-from agent import Agent
+from modules.agent import Agent
 from modules.commander import EchoCommand, ListFilesCommand
 
 if __name__ == "__main__":
