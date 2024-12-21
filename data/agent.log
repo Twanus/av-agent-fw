@@ -84,3 +84,39 @@ drwx------. 2 jacko jacko   29 Nov 24 15:40 .ssh
 -rw-rw-r--. 1 jacko jacko   20 Nov 25 23:30 wordlist.txt
 
 2024-12-21 15:57:16,456 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:07:10,540 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:07:11,035 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:07:11,036 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 16:07:59,783 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:08:00,234 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:08:00,234 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 16:09:04,473 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:09:04,934 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:09:04,934 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 16:09:58,383 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:09:58,842 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:09:58,842 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 16:14:38,144 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:14:38,605 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:14:38,605 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:14:38,606 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:14:43,855 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:14:43,918 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:14:43,918 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:14:44,009 - modules.ssh_connector - INFO - Command output: Hello, World!
+
+2024-12-21 16:14:44,009 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:14:44,009 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:16:29,385 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:16:29,862 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:16:29,862 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:16:29,862 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:16:30,068 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:16:30,128 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:16:30,128 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:16:30,205 - modules.ssh_connector - INFO - Command output: Hello, World!
+
+2024-12-21 16:16:30,205 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:16:30,206 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+

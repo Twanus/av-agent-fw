@@ -41,10 +41,15 @@ class SSHConnector:
         client.close()
         self.logger.info("Connection closed.")
 
-    def run(self, command):
-        hosts = self.read_hosts()
-        for host in hosts:
-            client = self.connect_to_host(host)
-            if client:
-                self.execute_command(client, command)
-                self.close_connection(client)
+    def connect_and_run(self, command):
+        """Connect to hosts and run a command using SSHConnector."""
+        hosts_file = self.config.get("hosts_file")
+        private_key_path = self.config.get("private_key_path")
+        self.logger.info(
+            f"Connecting to hosts from {hosts_file} with private key {private_key_path}"
+        )
+        try:
+            ssh_connector = SSHConnector(hosts_file, private_key_path)
+            ssh_connector.run(command)
+        except Exception as e:
+            self.logger.error(f"An error occurred: {e}")
