@@ -1,10 +1,10 @@
 from agent import Agent
+from modules.commander import EchoCommand, ListFilesCommand
 
 if __name__ == "__main__":
     agent = Agent()
 
-    # Define the command you want to run on the remote hosts
-    command = "echo 'Hello, World!'"
+    text = "Hello, World!"
+    agent.run_ssh_command(EchoCommand(text))
 
-    # Run the command on all hosts
-    agent.run_ssh_command(command)
+    agent.run_ssh_command(ListFilesCommand("/"))

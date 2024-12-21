@@ -196,3 +196,112 @@ drwx------. 2 jacko jacko   29 Nov 24 15:40 .ssh
 2024-12-21 16:33:22,620 - modules.ssh_connector - INFO - Connection closed.
 2024-12-21 16:33:22,620 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
 
+2024-12-21 16:43:09,698 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:43:10,152 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:43:10,152 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:43:10,152 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:43:10,355 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:43:10,418 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:43:10,418 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:43:10,500 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:43:10,500 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:43:59,320 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:43:59,798 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:43:59,798 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:43:59,798 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:44:00,005 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:44:00,065 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:44:00,066 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:44:00,143 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:44:00,143 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:44:16,847 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:44:17,341 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:44:17,342 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:44:17,342 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:44:17,547 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:44:17,610 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:44:17,611 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:44:17,689 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:44:17,690 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:44:17,690 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:44:17,894 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:44:17,953 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:44:17,953 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:44:18,030 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:44:18,030 - SystemAgent - INFO - Output from 192.168.1.114: DOS-demo
+test.file
+wordlist.txt
+
+2024-12-21 16:44:33,178 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:44:33,638 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:44:33,638 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:44:33,639 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:44:33,843 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:44:33,905 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:44:33,905 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:44:33,980 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:44:33,981 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:44:33,981 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:44:34,183 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:44:34,244 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:44:34,244 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:44:34,323 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:44:34,323 - SystemAgent - INFO - Output from 192.168.1.114: bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+
+2024-12-21 16:48:34,922 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:48:35,373 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:48:35,373 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:48:35,373 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:48:35,580 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:48:35,641 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:48:35,641 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:48:35,723 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:48:35,724 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:48:35,724 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:48:35,931 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:48:35,994 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:48:35,994 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:48:36,081 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:48:36,081 - SystemAgent - INFO - Output from 192.168.1.114: bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+

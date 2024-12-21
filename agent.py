@@ -6,6 +6,7 @@ from github.GithubException import GithubException
 import os
 from dotenv import load_dotenv
 from modules.ssh_connector import SSHConnector
+from modules.commander import Command
 
 load_dotenv()
 
@@ -116,7 +117,7 @@ class Agent:
             self.logger.error(f"Failed to sync modules: {str(e)}")
             raise
 
-    def run_ssh_command(self, command):
+    def run_ssh_command(self, command: Command):
         """Run a command on this agent's hosts using SSHConnector."""
         hosts = self.ssh_connector.read_hosts()
         for host in hosts:

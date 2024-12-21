@@ -1,6 +1,7 @@
 import paramiko
 import logging
 from pathlib import Path
+from modules.commander import Command
 
 
 class SSHConnector:
@@ -27,10 +28,9 @@ class SSHConnector:
             self.logger.error(f"Failed to connect to {host}: {e}")
             return None
 
-    def execute_command(self, client, command):
+    def execute_command(self, client, command: Command):
         try:
-            stdin, stdout, stderr = client.exec_command(command)
-            output = stdout.read().decode()
+            output = command.execute(client)
             return output
         except Exception as e:
             self.logger.error(f"Failed to execute command: {e}")
@@ -40,7 +40,7 @@ class SSHConnector:
         self.logger.info(f"Connection closed.")
         client.close()
 
-    def connect_and_run(self, command):
+    def connect_and_run(self, command: Command):
         """Connect to hosts and run a command using SSHConnector."""
         hosts_file = self.config.get("hosts_file")
         private_key_path = self.config.get("private_key_path")
