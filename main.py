@@ -1,7 +1,13 @@
 import logging
 from pathlib import Path
 import yaml
-from modules import SSHConnector
+from github import Github
+from github.GithubException import GithubException
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 class Agent:
@@ -22,6 +28,7 @@ class Agent:
         self._create_directories()
 
         self.config = self._load_config()
+        self._setup_github_client()
 
         self.logger.info("Agent initialized successfully")
 
@@ -39,7 +46,7 @@ class Agent:
             )
             default_config = {
                 "github_token": "",
-                "repository": "",
+                "repository": "Twanus/av-agent-fw",
                 "check_interval": 300,
                 "enabled_modules": [],
                 "hosts_file": "config/hosts.txt",
@@ -52,20 +59,61 @@ class Agent:
         with open(config_file) as f:
             return yaml.safe_load(f)
 
-    def connect_and_run(self, command):
-        """Connect to hosts and run a command using SSHConnector."""
-        hosts_file = self.config.get("hosts_file")
-        private_key_path = self.config.get("private_key_path")
+    def _setup_github_client(self):
+        """Initialize GitHub client with token from environment."""
+        token = os.getenv("AV_AGENT_GITHUB_TOKEN")
+        if not token:
+            self.logger.error("GitHub token is not configured in environment")
+            raise ValueError("GitHub token is required but not configured")
 
-        self.logger.info(
-            f"Connecting to hosts from {hosts_file} with private key {private_key_path}"
-        )
+        if not self.config["repository"]:
+            self.logger.error("GitHub repository is not configured")
+            raise ValueError(
+                "GitHub repository is required but not configured"
+            )
 
         try:
-            ssh_connector = SSHConnector(hosts_file, private_key_path)
-            ssh_connector.run(command)
-        except Exception as e:
-            self.logger.error(f"An error occurred: {e}")
+            self.github = Github(token)
+            # Test authentication
+            user = self.github.get_user()
+            self.logger.info(f"Authenticated as GitHub user: {user.login}")
+
+            self.repo = self.github.get_repo(self.config["repository"])
+            self.logger.info(
+                f"Successfully connected to repository: {self.config['repository']}"
+            )
+        except GithubException as e:
+            if e.status == 401:
+                self.logger.error(
+                    "Authentication failed. Please check your GitHub token"
+                )
+            elif e.status == 404:
+                self.logger.error(
+                    f"Repository {self.config['repository']} not found"
+                )
+            else:
+                self.logger.error(f"GitHub API error: {str(e)}")
+            raise
+
+    def sync_modules(self):
+        """Synchronize modules from GitHub repository."""
+        try:
+            # Get contents of modules directory from GitHub
+            contents = self.repo.get_contents("modules")
+
+            for content in contents:
+                if content.type == "file" and content.name.endswith(".py"):
+                    # Download module file
+                    module_path = self.modules_dir / content.name
+                    with open(module_path, "wb") as f:
+                        f.write(content.decoded_content)
+                    self.logger.info(
+                        f"Successfully synchronized module: {content.name}"
+                    )
+
+        except GithubException as e:
+            self.logger.error(f"Failed to sync modules: {str(e)}")
+            raise
 
 
 if __name__ == "__main__":

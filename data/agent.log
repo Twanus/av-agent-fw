@@ -1,3 +1,12 @@
+2024-12-21 10:31:47,612 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 10:33:31,606 - SystemAgent - ERROR - Failed to initialize GitHub client: 401 {"message": "Bad credentials", "documentation_url": "https://docs.github.com/rest", "status": "401"}
+2024-12-21 10:43:17,832 - SystemAgent - ERROR - Authentication failed. Please check your GitHub token
+2024-12-21 10:45:34,535 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 10:45:34,970 - SystemAgent - ERROR - Repository Antwanus/av-agent-fw not found
+2024-12-21 10:46:43,346 - SystemAgent - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 10:46:43,817 - SystemAgent - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 10:46:43,817 - SystemAgent - INFO - Agent initialized successfully
+
 2024-12-21 15:26:10,313 - SystemAgent - INFO - Agent initialized successfully
 2024-12-21 15:30:16,086 - SystemAgent - INFO - Agent initialized successfully
 2024-12-21 15:31:55,310 - SystemAgent - INFO - Agent initialized successfully
