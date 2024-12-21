@@ -10,7 +10,9 @@ class Command(ABC):
 # TESTING
 class DetectOSCommand(Command):
     def execute(self, client):
-        stdin, stdout, stderr = client.exec_command("cat /etc/os-release")
+        stdin, stdout, stderr = client.exec_command(
+            "cat /etc/os-release | grep '^ID='"
+        )
         output = stdout.read().decode()
         return output.split("=")[1].strip()
 

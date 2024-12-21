@@ -1,7 +1,7 @@
 from modules.agent import Agent
-from modules.commander import PlainCommand
+from modules.command_update import CommandUpdate
 
 if __name__ == "__main__":
     agent = Agent()
 
-    agent.run_ssh_command(PlainCommand("cat /etc/os-release"))
+    agent.run_ssh_command(CommandUpdate())

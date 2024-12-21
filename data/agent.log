@@ -489,3 +489,227 @@ ROCKY_SUPPORT_PRODUCT_VERSION="8.10"
 REDHAT_SUPPORT_PRODUCT="Rocky Linux"
 REDHAT_SUPPORT_PRODUCT_VERSION="8.10"
 
+2024-12-21 20:34:12,639 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:34:13,135 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:34:13,136 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:34:13,136 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:34:13,136 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:34:18,391 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:34:18,457 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:34:18,457 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:34:18,546 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:34:18,547 - SystemAgent - INFO - Output from 192.168.1.114: NAME="Rocky Linux"
+VERSION="8.10 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.10"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.10 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.10"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.10"
+
+2024-12-21 20:42:54,584 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:42:55,061 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:42:55,061 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:42:55,061 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:42:55,061 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:42:55,268 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:42:55,330 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:42:55,331 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:42:55,419 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:42:55,419 - SystemAgent - INFO - Output from 192.168.1.114: NAME="Rocky Linux"
+VERSION="8.10 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.10"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.10 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.10"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.10"
+
+2024-12-21 20:43:18,909 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:43:19,386 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:43:19,387 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:43:19,387 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:43:19,387 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:43:19,591 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:43:19,653 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:43:19,653 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:43:19,736 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:43:19,737 - SystemAgent - INFO - Output from 192.168.1.114: "rocky"
+2024-12-21 20:44:20,896 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:44:21,365 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:44:21,365 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:44:21,365 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:44:21,365 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:44:21,570 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:44:21,633 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:44:21,633 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:44:21,715 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:44:21,715 - SystemAgent - INFO - Output from 192.168.1.114: ID="rocky"
+
+2024-12-21 20:44:34,760 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:44:35,231 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:44:35,231 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:44:35,231 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:44:35,231 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:44:35,444 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:44:35,506 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:44:35,507 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:44:35,583 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:44:35,583 - SystemAgent - INFO - Output from 192.168.1.114: "rocky"
+2024-12-21 20:48:07,394 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:48:07,856 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:48:07,856 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:48:07,856 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:48:07,857 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:48:08,065 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:48:08,126 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:48:08,126 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:48:08,202 - modules.ssh_connector - ERROR - Failed to execute command: Unsupported OS ID: "rocky"
+2024-12-21 20:48:08,203 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:48:08,203 - SystemAgent - INFO - Output from 192.168.1.114: None
+2024-12-21 20:48:30,581 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:48:31,042 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:48:31,043 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:48:31,043 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:48:31,043 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:48:31,244 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:48:31,305 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:48:31,305 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:48:31,389 - modules.ssh_connector - ERROR - Failed to execute command: Unsupported OS ID: "rocky"
+2024-12-21 20:48:31,389 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:48:31,390 - SystemAgent - INFO - Output from 192.168.1.114: None
+2024-12-21 20:50:05,011 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:50:05,481 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:50:05,481 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:50:05,481 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:50:05,482 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:50:05,694 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:50:05,756 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:50:05,757 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:50:05,846 - modules.ssh_connector - ERROR - Failed to execute command: Unsupported OS ID: "rocky"
+2024-12-21 20:50:05,846 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:50:05,846 - SystemAgent - INFO - Output from 192.168.1.114: None
+2024-12-21 20:50:59,364 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:50:59,794 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:50:59,794 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:50:59,794 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:50:59,795 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:50:59,995 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:51:00,057 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:51:00,058 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:51:00,225 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:51:00,226 - SystemAgent - INFO - Output from 192.168.1.114: 
+2024-12-21 20:51:42,483 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:51:42,934 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:51:42,934 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:51:42,934 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:51:42,934 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:51:43,139 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:51:43,202 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:51:43,202 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:51:43,364 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:51:43,364 - SystemAgent - INFO - Output from 192.168.1.114: 
+2024-12-21 20:56:28,814 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 20:56:29,267 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 20:56:29,267 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 20:56:29,267 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 20:56:29,268 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 20:56:29,475 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 20:56:29,538 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 20:56:29,538 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 20:56:31,053 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 20:56:31,054 - SystemAgent - INFO - Output from 192.168.1.114: Last metadata expiration check: 1 day, 1:00:45 ago on Fri 20 Dec 2024 07:55:46 PM CET.
+Dependencies resolved.
+================================================================================
+ Package                     Arch    Version                   Repository  Size
+================================================================================
+Installing:
+ kernel                      x86_64  4.18.0-553.33.1.el8_10    baseos      10 M
+Upgrading:
+ bpftool                     x86_64  4.18.0-553.33.1.el8_10    baseos      11 M
+ kernel-tools                x86_64  4.18.0-553.33.1.el8_10    baseos      11 M
+ kernel-tools-libs           x86_64  4.18.0-553.33.1.el8_10    baseos      10 M
+ libipa_hbac                 x86_64  2.9.4-5.el8_10.1          baseos     128 k
+ libselinux                  x86_64  2.9-9.el8_10              baseos     165 k
+ libselinux-utils            x86_64  2.9-9.el8_10              baseos     242 k
+ libsemanage                 x86_64  2.9-10.el8_10             baseos     168 k
+ libsmbclient                x86_64  4.19.4-6.el8_10           baseos     155 k
+ libsss_autofs               x86_64  2.9.4-5.el8_10.1          baseos     130 k
+ libsss_certmap              x86_64  2.9.4-5.el8_10.1          baseos     186 k
+ libsss_idmap                x86_64  2.9.4-5.el8_10.1          baseos     132 k
+ libsss_nss_idmap            x86_64  2.9.4-5.el8_10.1          baseos     141 k
+ libsss_sudo                 x86_64  2.9.4-5.el8_10.1          baseos     128 k
+ libwbclient                 x86_64  4.19.4-6.el8_10           baseos     128 k
+ mdadm                       x86_64  4.2-16.el8_10             baseos     468 k
+ python3-libselinux          x86_64  2.9-9.el8_10              baseos     282 k
+ python3-libsemanage         x86_64  2.9-10.el8_10             baseos     127 k
+ python3-perf                x86_64  4.18.0-553.33.1.el8_10    baseos      11 M
+ python3-rpm                 x86_64  4.14.3-32.el8_10          baseos     154 k
+ python3-sssdconfig          noarch  2.9.4-5.el8_10.1          baseos     154 k
+ rpm                         x86_64  4.14.3-32.el8_10          baseos     543 k
+ rpm-build-libs              x86_64  4.14.3-32.el8_10          baseos     157 k
+ rpm-libs                    x86_64  4.14.3-32.el8_10          baseos     347 k
+ rpm-plugin-selinux          x86_64  4.14.3-32.el8_10          baseos      77 k
+ rpm-plugin-systemd-inhibit  x86_64  4.14.3-32.el8_10          baseos      78 k
+ samba-client-libs           x86_64  4.19.4-6.el8_10           baseos     5.0 M
+ samba-common                noarch  4.19.4-6.el8_10           baseos     233 k
+ samba-common-libs           x86_64  4.19.4-6.el8_10           baseos     182 k
+ selinux-policy              noarch  3.14.3-139.el8_10.1       baseos     668 k
+ selinux-policy-targeted     noarch  3.14.3-139.el8_10.1       baseos      15 M
+ sssd                        x86_64  2.9.4-5.el8_10.1          baseos     119 k
+ sssd-ad                     x86_64  2.9.4-5.el8_10.1          baseos     314 k
+ sssd-client                 x86_64  2.9.4-5.el8_10.1          baseos     245 k
+ sssd-common                 x86_64  2.9.4-5.el8_10.1          baseos     1.7 M
+ sssd-common-pac             x86_64  2.9.4-5.el8_10.1          baseos     195 k
+ sssd-ipa                    x86_64  2.9.4-5.el8_10.1          baseos     379 k
+ sssd-kcm                    x86_64  2.9.4-5.el8_10.1          baseos     265 k
+ sssd-krb5                   x86_64  2.9.4-5.el8_10.1          baseos     165 k
+ sssd-krb5-common            x86_64  2.9.4-5.el8_10.1          baseos     206 k
+ sssd-ldap                   x86_64  2.9.4-5.el8_10.1          baseos     251 k
+ sssd-nfs-idmap              x86_64  2.9.4-5.el8_10.1          baseos     129 k
+ sssd-proxy                  x86_64  2.9.4-5.el8_10.1          baseos     163 k
+ systemd                     x86_64  239-82.el8_10.3           baseos     3.6 M
+ systemd-libs                x86_64  239-82.el8_10.3           baseos     1.1 M
+ systemd-pam                 x86_64  239-82.el8_10.3           baseos     513 k
+ systemd-udev                x86_64  239-82.el8_10.3           baseos     1.6 M
+ tuned                       noarch  2.22.1-5.el8_10           baseos     366 k
+ unzip                       x86_64  6.0-47.el8_10             baseos     195 k
+ vdo                         x86_64  6.2.11.5-14.el8_10        baseos     665 k
+Installing dependencies:
+ kernel-core                 x86_64  4.18.0-553.33.1.el8_10    baseos      43 M
+ kernel-modules              x86_64  4.18.0-553.33.1.el8_10    baseos      36 M
+Removing:
+ kernel                      x86_64  4.18.0-513.5.1.el8_9      @anaconda    0  
+ kernel-core                 x86_64  4.18.0-513.5.1.el8_9      @anaconda   71 M
+ kernel-modules              x86_64  4.18.0-513.5.1.el8_9      @anaconda   25 M
+
+Transaction Summary
+================================================================================
+Install   3 Packages
+Upgrade  49 Packages
+Remove    3 Packages
+
+Total download size: 171 M
+Downloading Packages:
+
+The downloaded packages were saved in cache until the next successful transaction.
+You can remove cached packages by executing 'yum clean packages'.
+

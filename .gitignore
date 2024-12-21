@@ -4,5 +4,19 @@
 .vscode
 .cursor
 .pytest_cache
-# ignore pycache
-**/__pycache__/
+
+# Compiled Python files
+*.py[cod]
+__pycache__/
+
+# Log files
+*.log
+
+# Backup and temporary files
+*~
+*.bak
+*.swp
+*.tmp
+
+# Ignore the config/hosts.txt if it's environment-specific
+# config/hosts.txt
