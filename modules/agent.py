@@ -14,6 +14,7 @@ load_dotenv()
 
 class Agent:
     def __init__(self):
+        # Initialize logging
         logging.basicConfig(
             level=logging.INFO,
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -24,18 +25,23 @@ class Agent:
         )
         self.logger = logging.getLogger("SystemAgent")
 
+        # Initialize directories
         self.config_dir = Path("config")
         self.data_dir = Path("data")
         self.modules_dir = Path("modules")
         self._create_directories()
 
+        # Load config
         self.config = self._load_config()
+
+        # Initialize GitHubClient
         self.github_client = GitHubClient(
             token=os.getenv("AV_AGENT_GITHUB_TOKEN"),
             repository=self.config["repository"],
         )
         self.logger.info("Agent initialized successfully with GitHubClient")
 
+        # Initialize SSHConnector
         self.ssh_connector = SSHConnector(
             self.config["hosts_file"], self.config["private_key_path"]
         )
