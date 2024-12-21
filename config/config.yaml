@@ -1,4 +1,6 @@
 github_token: ${{ secrets.GITHUB_TOKEN }}
 repository: "Antwanus/av-agent-fw"
 check_interval: 300
-enabled_modules: []
+enabled_modules: ["ssh_connector"]
+hosts_file: "config/hosts.txt"
+private_key_path: "C:/Users/veree/.ssh/id_jacko"

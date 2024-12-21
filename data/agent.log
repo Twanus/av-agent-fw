@@ -1,0 +1,77 @@
+2024-12-21 15:26:10,313 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:30:16,086 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:31:55,310 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:32:18,123 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:36:08,915 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:36:08,915 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:36:09,018 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:36:09,077 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:36:09,181 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:36:09,190 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: Authentication failed.
+2024-12-21 15:47:24,964 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:47:24,965 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:47:24,965 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: [Errno 2] No such file or directory: '~/.ssh/id_jacko'
+2024-12-21 15:48:06,473 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:48:06,473 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:48:06,717 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:48:06,790 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:48:06,895 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:48:06,895 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: Authentication failed.
+2024-12-21 15:51:33,802 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:51:33,802 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:51:34,015 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:51:34,074 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:51:34,183 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:51:34,183 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: Authentication failed.
+2024-12-21 15:51:58,768 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:51:58,769 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:51:58,974 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:51:59,032 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:51:59,137 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:51:59,137 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: Authentication failed.
+2024-12-21 15:52:32,860 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:52:32,860 - SystemAgent - INFO - Connecting to hosts from config/hosts.txt with private key C:/Users/veree/.ssh/id_jacko
+2024-12-21 15:52:32,860 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:52:38,122 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:52:38,181 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:52:38,286 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:52:38,286 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: Authentication failed.
+2024-12-21 15:54:34,880 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:54:34,880 - SystemAgent - INFO - Connecting to hosts from config/hosts.txt with private key C:/Users/veree/.ssh/id_jacko
+2024-12-21 15:54:34,880 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:54:35,087 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:54:35,146 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:54:35,252 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-21 15:54:35,252 - modules.ssh_connector - ERROR - Failed to connect to 192.168.1.114: Authentication failed.
+2024-12-21 15:56:52,072 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:56:52,072 - SystemAgent - INFO - Connecting to hosts from config/hosts.txt with private key C:/Users/veree/.ssh/id_jacko
+2024-12-21 15:56:52,072 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:56:52,280 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:56:52,343 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 15:56:52,344 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 15:56:52,429 - modules.ssh_connector - INFO - Command output: Hello, World!
+
+2024-12-21 15:56:52,430 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 15:57:16,098 - SystemAgent - INFO - Agent initialized successfully
+2024-12-21 15:57:16,098 - SystemAgent - INFO - Connecting to hosts from config/hosts.txt with private key C:/Users/veree/.ssh/id_jacko
+2024-12-21 15:57:16,099 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 15:57:16,314 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 15:57:16,375 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 15:57:16,375 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 15:57:16,455 - modules.ssh_connector - INFO - Command output: total 32
+drwx------. 8 jacko jacko 4096 Nov 25 23:30 .
+drwxr-xr-x. 3 root  root    19 Nov 24 15:26 ..
+-rw-------. 1 jacko jacko 5893 Dec 21 15:30 .bash_history
+-rw-r--r--. 1 jacko jacko   18 Aug  2  2022 .bash_logout
+-rw-r--r--. 1 jacko jacko  141 Aug  2  2022 .bash_profile
+-rw-r--r--. 1 jacko jacko  376 Aug  2  2022 .bashrc
+drwx------. 5 jacko jacko   52 Nov 24 17:28 .cache
+drwx------. 5 jacko jacko   43 Dec 17 10:15 .config
+drwxrwxr-x. 5 jacko jacko  159 Nov 24 19:58 .cursor-server
+drwxrwxr-x. 3 jacko jacko   55 Nov 24 20:18 DOS-demo
+drwx------. 5 jacko jacko   41 Nov 24 17:29 .local
+drwx------. 2 jacko jacko   29 Nov 24 15:40 .ssh
+-rw-rw-r--. 1 jacko jacko    2 Nov 25 21:06 test.file
+-rw-rw-r--. 1 jacko jacko   20 Nov 25 23:30 wordlist.txt
+
+2024-12-21 15:57:16,456 - modules.ssh_connector - INFO - Connection closed.
