@@ -16,22 +16,26 @@ class CommandUpdate(Command):
 
         # Determine the update command based on the OS
         if os_id in ["ubuntu", "debian"]:
-            update_command = f"echo {sudo_password} | sudo -S apt update && sudo apt upgrade -y && echo Update completed"
+            update_command = f"echo {sudo_password} | sudo -S apt update && sudo apt upgrade -y"
         elif os_id in ["centos", "rhel", "rocky", "fedora"]:
-            update_command = f"echo {sudo_password} | sudo -S yum update -y && echo 'Update completed'"
+            update_command = f"echo {sudo_password} | sudo -S yum update -y"
         else:
             raise ValueError(f"Unsupported OS ID: {os_id}")
 
         # Execute the update command
         stdin, stdout, stderr = client.exec_command(update_command)
 
+        # Wait for the command to complete
+        exit_status = stdout.channel.recv_exit_status()
+
         # Read the output
         output = stdout.read().decode()
         error_output = stderr.read().decode()
 
-        if error_output:
-            print(f"Error: {error_output}")
-        else:
+        if exit_status == 0:
             print(f"Output: {output}")
+        else:
+            print(f"Error: {error_output}")
+            # You can add notification logic here if needed
 
-        return output
+        return output if exit_status == 0 else None
