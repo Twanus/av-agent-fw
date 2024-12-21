@@ -7,7 +7,7 @@
 
 # Compiled Python files
 *.py[cod]
-__pycache__/
+**/__pycache__/
 
 # Log files
 *.log
@@ -20,3 +20,5 @@ __pycache__/
 
 # Ignore the config/hosts.txt if it's environment-specific
 # config/hosts.txt
+
+*.pdf

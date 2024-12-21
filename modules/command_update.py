@@ -16,9 +16,9 @@ class CommandUpdate(Command):
 
         # Determine the update command based on the OS
         if os_id in ["ubuntu", "debian"]:
-            update_command = f"echo {sudo_password} | sudo -S apt update && sudo apt upgrade -y"
+            update_command = f"echo {sudo_password} | sudo -S apt update && sudo apt upgrade -y && echo Update completed"
         elif os_id in ["centos", "rhel", "rocky", "fedora"]:
-            update_command = f"echo {sudo_password} | sudo -S yum update -y"
+            update_command = f"echo {sudo_password} | sudo -S yum update -y && echo 'Update completed'"
         else:
             raise ValueError(f"Unsupported OS ID: {os_id}")
 
