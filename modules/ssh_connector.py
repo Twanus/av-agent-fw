@@ -9,7 +9,7 @@ class SSHConnector:
         self.logger = logging.getLogger(__name__)
         self.hosts_file = hosts_file
         self.private_key_path = private_key_path
-        self.known_hosts_file = os.path.expanduser('~/.ssh/known_hosts')
+        self.known_hosts_file = os.path.expanduser("~/.ssh/known_hosts")
 
     def read_hosts(self):
         with open(self.hosts_file, "r") as file:
@@ -21,22 +21,21 @@ class SSHConnector:
             self.logger.info(f"Connecting to {host}...")
             key = paramiko.RSAKey.from_private_key_file(self.private_key_path)
             client = paramiko.SSHClient()
-            
             # First try to load known hosts
             if os.path.exists(self.known_hosts_file):
                 client.load_system_host_keys(self.known_hosts_file)
-            
-            # Use WarningPolicy() as a middle ground - it will warn but not block
+
+            # Use WarningPolicy() as a middle ground - warn but no block
             client.set_missing_host_key_policy(paramiko.WarningPolicy())
-            
+
             client.connect(
                 hostname=host,
                 username="jacko",
                 pkey=key,
                 allow_agent=False,
-                look_for_keys=False
+                look_for_keys=False,
             )
-            
+
             self.logger.info(f"Connected to {host}")
             return client
         except paramiko.SSHException as ssh_err:

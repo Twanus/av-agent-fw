@@ -16,7 +16,10 @@ class CommandUpdate(Command):
 
         # Determine the update command based on the OS
         if os_id in ["ubuntu", "debian"]:
-            update_command = f"echo {sudo_password} | sudo -S apt update && sudo apt upgrade -y"
+            update_command = (
+                f"echo {sudo_password} | "
+                f"sudo -S apt update && sudo apt upgrade -y"
+            )
         elif os_id in ["centos", "rhel", "rocky", "fedora"]:
             update_command = f"echo {sudo_password} | sudo -S yum update -y"
         else:
