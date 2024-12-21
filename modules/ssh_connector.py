@@ -12,22 +12,37 @@ class SSHConnector:
         self.known_hosts_file = os.path.expanduser("~/.ssh/known_hosts")
 
     def read_hosts(self):
-        with open(self.hosts_file, "r") as file:
-            hosts = file.read().splitlines()
-        return hosts
+        """Reads the hosts from the specified hosts file."""
+        try:
+            with open(self.hosts_file, "r") as file:
+                hosts = file.read().splitlines()
+            self.logger.info(f"Loaded hosts from {self.hosts_file}")
+            return hosts
+        except FileNotFoundError:
+            self.logger.error(f"Hosts file {self.hosts_file} not found.")
+            return []
+        except Exception as e:
+            self.logger.error(
+                f"Error reading hosts file {self.hosts_file}: {e}"
+            )
+            return []
+
+    def add_host_key(self, client, hostname):
+        host_key = client.get_transport().get_remote_server_key()
+        host_keys = paramiko.HostKeys()
+        if os.path.exists(self.known_hosts_file):
+            host_keys.load(self.known_hosts_file)
+        host_keys.add(hostname, host_key.get_name(), host_key)
+        host_keys.save(self.known_hosts_file)
+        self.logger.info(f"Host key for {hostname} added to known_hosts.")
 
     def connect_to_host(self, host):
+        client = paramiko.SSHClient()
         try:
-            self.logger.info(f"Connecting to {host}...")
             key = paramiko.RSAKey.from_private_key_file(self.private_key_path)
-            client = paramiko.SSHClient()
-            # First try to load known hosts
             if os.path.exists(self.known_hosts_file):
                 client.load_system_host_keys(self.known_hosts_file)
-
-            # Use WarningPolicy() as a middle ground - warn but no block
-            client.set_missing_host_key_policy(paramiko.WarningPolicy())
-
+            client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             client.connect(
                 hostname=host,
                 username="jacko",
@@ -35,17 +50,19 @@ class SSHConnector:
                 allow_agent=False,
                 look_for_keys=False,
             )
-
-            self.logger.info(f"Connected to {host}")
+            self.add_host_key(client, host)
+            self.logger.info(f"Connected to {host}.")
             return client
         except paramiko.SSHException as ssh_err:
             self.logger.error(f"SSH error connecting to {host}: {ssh_err}")
-            return None
         except Exception as e:
             self.logger.error(f"Failed to connect to {host}: {e}")
-            return None
+        return None
 
     def execute_command(self, client, command: Command):
+        if client is None:
+            self.logger.error("SSH client is None, cannot execute command.")
+            return None
         try:
             output = command.execute(client)
             return output
@@ -53,9 +70,10 @@ class SSHConnector:
             self.logger.error(f"Failed to execute command: {e}")
             return None
 
-    def close_connection(self, client: paramiko.SSHClient):
-        self.logger.info("Connection closed.")
-        client.close()
+    def close_connection(self, client):
+        if client:
+            client.close()
+            self.logger.info("Connection closed.")
 
     def connect_and_run(self, command: Command):
         """Connect to hosts and run a command using SSHConnector."""
