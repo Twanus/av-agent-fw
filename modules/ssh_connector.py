@@ -31,23 +31,19 @@ class SSHConnector:
         try:
             stdin, stdout, stderr = client.exec_command(command)
             output = stdout.read().decode()
-            self.logger.info(f"Command output: {output}")
             return output
         except Exception as e:
             self.logger.error(f"Failed to execute command: {e}")
             return None
 
-    def close_connection(self, client):
+    def close_connection(self, client: paramiko.SSHClient):
+        self.logger.info(f"Connection closed.")
         client.close()
-        self.logger.info("Connection closed.")
 
     def connect_and_run(self, command):
         """Connect to hosts and run a command using SSHConnector."""
         hosts_file = self.config.get("hosts_file")
         private_key_path = self.config.get("private_key_path")
-        self.logger.info(
-            f"Connecting to hosts from {hosts_file} with private key {private_key_path}"
-        )
         try:
             ssh_connector = SSHConnector(hosts_file, private_key_path)
             ssh_connector.run(command)
