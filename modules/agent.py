@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 from modules.ssh_connector import SSHConnector
 from modules.commander import Command
+from modules.github_client import GitHubClient
 
 load_dotenv()
 
@@ -29,7 +30,11 @@ class Agent:
         self._create_directories()
 
         self.config = self._load_config()
-        self._setup_github_client()
+        self.github_client = GitHubClient(
+            token=os.getenv("AV_AGENT_GITHUB_TOKEN"),
+            repository=self.config["repository"],
+        )
+        self.logger.info("Agent initialized successfully with GitHubClient")
 
         self.ssh_connector = SSHConnector(
             self.config["hosts_file"], self.config["private_key_path"]
@@ -63,47 +68,10 @@ class Agent:
         with open(config_file) as f:
             return yaml.safe_load(f)
 
-    def _setup_github_client(self):
-        """Initialize GitHub client with token from environment."""
-        token = os.getenv("AV_AGENT_GITHUB_TOKEN")
-        if not token:
-            self.logger.error("GitHub token is not configured in environment")
-            raise ValueError("GitHub token is required but not configured")
-
-        if not self.config["repository"]:
-            self.logger.error("GitHub repository is not configured")
-            raise ValueError(
-                "GitHub repository is required but not configured"
-            )
-
-        try:
-            self.github = Github(token)
-            # Test authentication
-            user = self.github.get_user()
-            self.logger.info(f"Authenticated as GitHub user: {user.login}")
-
-            self.repo = self.github.get_repo(self.config["repository"])
-            self.logger.info(
-                f"Successfully connected to repository: {self.config['repository']}"
-            )
-        except GithubException as e:
-            if e.status == 401:
-                self.logger.error(
-                    "Authentication failed. Please check your GitHub token"
-                )
-            elif e.status == 404:
-                self.logger.error(
-                    f"Repository {self.config['repository']} not found"
-                )
-            else:
-                self.logger.error(f"GitHub API error: {str(e)}")
-            raise
-
     def sync_modules(self):
         """Synchronize modules from GitHub repository."""
         try:
-            contents = self.repo.get_contents("modules")
-
+            contents = self.github_client.get_module_contents()
             for content in contents:
                 if content.type == "file" and content.name.endswith(".py"):
                     module_path = self.modules_dir / content.name
@@ -112,7 +80,6 @@ class Agent:
                     self.logger.info(
                         f"Successfully synchronized module: {content.name}"
                     )
-
         except GithubException as e:
             self.logger.error(f"Failed to sync modules: {str(e)}")
             raise

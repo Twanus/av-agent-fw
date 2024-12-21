@@ -340,3 +340,39 @@ tmp
 usr
 var
 
+2024-12-21 16:56:26,170 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 16:56:26,613 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 16:56:26,613 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 16:56:26,614 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 16:56:26,614 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:56:26,819 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:56:26,881 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:56:26,881 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:56:26,957 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:56:26,958 - SystemAgent - INFO - Output from 192.168.1.114: Hello, World!
+
+2024-12-21 16:56:26,958 - modules.ssh_connector - INFO - Connecting to 192.168.1.114...
+2024-12-21 16:56:27,167 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.0)
+2024-12-21 16:56:27,228 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-21 16:56:27,228 - modules.ssh_connector - INFO - Connected to 192.168.1.114
+2024-12-21 16:56:27,308 - modules.ssh_connector - INFO - Connection closed.
+2024-12-21 16:56:27,308 - SystemAgent - INFO - Output from 192.168.1.114: bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+
