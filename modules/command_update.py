@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-sudo_password = os.getenv("SUDO_PASSWORD")
+sudo_password = os.getenv("AV_AGENT_SUDO_PASSWORD")
 
 
 class CommandUpdate(Command):
