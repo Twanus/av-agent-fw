@@ -1,18 +1,33 @@
 from modules.commander import Command, DetectOSCommand
 from dotenv import load_dotenv
 import os
+import logging
+from pathlib import Path
 
 load_dotenv()
 
 sudo_password = os.getenv("AV_AGENT_SUDO_PASSWORD")
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler(Path("data/command_update.log")),
+        logging.StreamHandler(),
+    ],
+)
+
 
 class CommandUpdate(Command):
+    def __init__(self):
+        self.logger = logging.getLogger("CommandUpdate")
+
     def execute(self, client):
         # Detect the OS
         os_command = DetectOSCommand()
         os_id = os_command.execute(client).strip().strip('"')
-        print("os_id", os_id)
+        self.logger.info("OS detected: %s", os_id)
 
         # Determine the update command based on the OS
         if os_id in ["ubuntu", "debian"]:
@@ -25,6 +40,7 @@ class CommandUpdate(Command):
         else:
             raise ValueError(f"Unsupported OS ID: {os_id}")
 
+        # Execute command with timeout
         try:
             stdin, stdout, stderr = client.exec_command(
                 update_command, timeout=120
