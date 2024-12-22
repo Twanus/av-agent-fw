@@ -1,7 +1,7 @@
 from modules.agent import Agent
-from modules.command_update import CommandUpdate
+from modules.commander import EchoCommand
 
 if __name__ == "__main__":
     agent = Agent()
 
-    agent.run_ssh_command(CommandUpdate())
+    agent.run_ssh_command(EchoCommand("Hello, world!"))

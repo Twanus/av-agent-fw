@@ -38,3 +38,40 @@ Dependencies resolved.
 Nothing to do.
 Complete!
 
+2024-12-21 22:08:44,447 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 22:08:44,920 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 22:08:44,920 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 22:08:44,921 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 22:08:44,921 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-21 22:09:06,182 - modules.ssh_connector - ERROR - Failed to connect to 172.21.236.152: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2024-12-21 22:09:06,183 - SystemAgent - ERROR - Could not connect to 172.21.236.152
+2024-12-21 22:15:25,891 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 22:15:26,359 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 22:15:26,359 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 22:15:26,359 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 22:15:26,360 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-21 22:15:26,605 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-21 22:15:26,623 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Server '172.21.238.161' not found in known_hosts
+2024-12-21 22:15:26,624 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-21 22:16:42,424 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 22:16:42,912 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 22:16:42,913 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 22:16:42,913 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 22:16:42,913 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-21 22:17:04,161 - modules.ssh_connector - ERROR - Failed to connect to 172.21.236.161: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2024-12-21 22:17:04,161 - SystemAgent - ERROR - Could not connect to 172.21.236.161
+2024-12-21 22:17:20,634 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-21 22:17:21,111 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-21 22:17:21,111 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-21 22:17:21,111 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-21 22:17:21,112 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-21 22:17:42,361 - modules.ssh_connector - ERROR - Failed to connect to 172.21.236.161: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2024-12-21 22:17:42,362 - SystemAgent - ERROR - Could not connect to 172.21.236.161
+2024-12-22 10:20:48,185 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 10:20:48,662 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 10:20:48,662 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 10:20:48,662 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 10:20:48,662 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 10:20:48,882 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 10:20:48,889 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Server '172.21.238.161' not found in known_hosts
+2024-12-22 10:20:48,890 - SystemAgent - ERROR - Could not connect to 172.21.238.161

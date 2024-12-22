@@ -42,7 +42,9 @@ class SSHConnector:
             key = paramiko.RSAKey.from_private_key_file(self.private_key_path)
             if os.path.exists(self.known_hosts_file):
                 client.load_system_host_keys(self.known_hosts_file)
-            client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+            client.set_missing_host_key_policy(paramiko.RejectPolicy())
+
             client.connect(
                 hostname=host,
                 username="jacko",
