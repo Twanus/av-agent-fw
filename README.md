@@ -1,6 +1,6 @@
 # av-agent-fw
 
-### Dev merges with main when CI pipe is success
+### Dev merges with main when security-checks action is success
 
 [![Current dev build is: ](https://github.com/Twanus/av-agent-fw/actions/workflows/branch-ci.yml/badge.svg)](https://github.com/Twanus/av-agent-fw/actions/workflows/branch-ci.yml)
 
