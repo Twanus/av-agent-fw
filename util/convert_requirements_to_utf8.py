@@ -9,4 +9,4 @@ def convert_to_utf8(file_path):
 
 
 # Replace 'requirements.txt' with the path to your file
-convert_to_utf8("requirements.txt")
+convert_to_utf8("../requirements.txt")

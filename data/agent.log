@@ -75,3 +75,80 @@ Complete!
 2024-12-22 10:20:48,882 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
 2024-12-22 10:20:48,889 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Server '172.21.238.161' not found in known_hosts
 2024-12-22 10:20:48,890 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-22 10:39:03,634 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 10:39:04,090 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 10:39:04,090 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 10:39:04,091 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 10:39:04,091 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 10:39:04,302 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 10:39:04,308 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Server '172.21.238.161' not found in known_hosts
+2024-12-22 10:39:04,308 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-22 14:06:26,502 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:06:26,968 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:06:26,968 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:06:26,968 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:06:26,968 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:06:27,171 - paramiko.hostkeys - INFO - Unable to handle key of type  s s h - r s a 
+2024-12-22 14:06:27,172 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 9 ('\x00')
+2024-12-22 14:06:27,172 - paramiko.hostkeys - INFO - Unable to handle key of type  e c d s a - s h a 2 - n i s t p 2 5 6 
+2024-12-22 14:06:27,172 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 11 ('\x00')
+2024-12-22 14:06:27,172 - paramiko.hostkeys - INFO - Unable to handle key of type  s s h - e d 2 5 5 1 9 
+2024-12-22 14:06:27,172 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 13 ('\x00')
+2024-12-22 14:06:27,173 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 14 ('\x00')
+2024-12-22 14:06:27,180 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:06:27,186 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Server '172.21.238.161' not found in known_hosts
+2024-12-22 14:06:27,186 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-22 14:08:23,760 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:08:24,231 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:08:24,231 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:08:24,231 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:08:24,232 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:08:24,437 - paramiko.hostkeys - INFO - Unable to handle key of type  s s h - r s a 
+2024-12-22 14:08:24,437 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 9 ('\x00')
+2024-12-22 14:08:24,437 - paramiko.hostkeys - INFO - Unable to handle key of type  e c d s a - s h a 2 - n i s t p 2 5 6 
+2024-12-22 14:08:24,437 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 11 ('\x00')
+2024-12-22 14:08:24,438 - paramiko.hostkeys - INFO - Unable to handle key of type  s s h - e d 2 5 5 1 9 
+2024-12-22 14:08:24,438 - paramiko.hostkeys - INFO - Not enough fields found in known_hosts in line 13 ('\x00')
+2024-12-22 14:08:24,445 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:08:24,450 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Server '172.21.238.161' not found in known_hosts
+2024-12-22 14:08:24,450 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-22 14:14:19,502 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:14:19,968 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:14:19,968 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:14:19,969 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:14:19,969 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:14:20,182 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:14:20,188 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Host key for server '172.21.238.161' does not match: got 'AAAAC3NzaC1lZDI1NTE5AAAAII4cRnbrpPBk92OyOfDfldiG6jcoI6YUCfCbEVwnQqUA', expected 'AAAAB3NzaC1yc2EAAAADAQABAAABgQCSwFGI8SJFGQqYtYZyDea4wxMt/qwASM5slT36U8qEVfVQRPCSXhlKAV8sBhjcOmesmWqNmZcHS3uMv0TH82Jf1BEmwQejKOPDZbGZZCKvyxIfo4e1QeQYUstuZLoKoXBqDi4obUw2Fqki3gHNlIRDujYNEd+OwEe2TJ1Pt9wnFSlJwZj6ucUldOGdylx3pNeSNydjqyBwvW8vKcsik6nUeuFuNt6D2EVUdCV5U7d2wtEPJwq+jVuuacGTNl0lfzeA6/vXNb6sb+l6RfTrTggv/JR5eKAlw1HNdDD37ZDBnb50+rwkFErGCQzv8DPtOBYTWPPKB4DaM4LJD2wngfA7uZHLZ1ypjg5DPI8twLUAS+9YLeFdKyvAbh6FQ261TQ8EC19SFt2K5TD3le7AjjDjCfp8yfpEkokHsnY4Q0z41my79GzPTZ+GYvpjmJyeFNyJ+6c4JXCZnzOAN/QBG7pMBpQWP2lHWzI8HwtKcyybzzEyFB9Q7kYCMhTYQviWWt0='
+2024-12-22 14:14:20,188 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-22 14:17:04,734 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:17:05,184 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:17:05,185 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:17:05,185 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:17:05,185 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:17:05,391 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:17:05,457 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-22 14:17:05,459 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-22 14:17:05,459 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-22 14:17:05,540 - modules.ssh_connector - INFO - Connection closed.
+2024-12-22 14:17:05,540 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+
+2024-12-22 14:22:24,012 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:22:24,473 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:22:24,473 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:22:24,474 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:22:24,474 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:22:24,677 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:22:24,683 - modules.ssh_connector - ERROR - SSH error connecting to 172.21.238.161: Host key for server '172.21.238.161' does not match: got 'AAAAC3NzaC1lZDI1NTE5AAAAII4cRnbrpPBk92OyOfDfldiG6jcoI6YUCfCbEVwnQqUA', expected 'AAAAB3NzaC1yc2EAAAADAQABAAABgQCSwFGI8SJFGQqYtYZyDea4wxMt/qwASM5slT36U8qEVfVQRPCSXhlKAV8sBhjcOmesmWqNmZcHS3uMv0TH82Jf1BEmwQejKOPDZbGZZCKvyxIfo4e1QeQYUstuZLoKoXBqDi4obUw2Fqki3gHNlIRDujYNEd+OwEe2TJ1Pt9wnFSlJwZj6ucUldOGdylx3pNeSNydjqyBwvW8vKcsik6nUeuFuNt6D2EVUdCV5U7d2wtEPJwq+jVuuacGTNl0lfzeA6/vXNb6sb+l6RfTrTggv/JR5eKAlw1HNdDD37ZDBnb50+rwkFErGCQzv8DPtOBYTWPPKB4DaM4LJD2wngfA7uZHLZ1ypjg5DPI8twLUAS+9YLeFdKyvAbh6FQ261TQ8EC19SFt2K5TD3le7AjjDjCfp8yfpEkokHsnY4Q0z41my79GzPTZ+GYvpjmJyeFNyJ+6c4JXCZnzOAN/QBG7pMBpQWP2lHWzI8HwtKcyybzzEyFB9Q7kYCMhTYQviWWt0='
+2024-12-22 14:22:24,683 - SystemAgent - ERROR - Could not connect to 172.21.238.161
+2024-12-22 14:34:30,901 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:34:31,355 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:34:31,356 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:34:31,356 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:34:31,356 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:34:31,569 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:34:31,634 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-22 14:34:31,635 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-22 14:34:31,636 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-22 14:34:31,714 - modules.ssh_connector - INFO - Connection closed.
+2024-12-22 14:34:31,715 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+
