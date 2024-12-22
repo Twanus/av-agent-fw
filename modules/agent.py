@@ -24,7 +24,7 @@ class Agent:
         )
         self.logger = logging.getLogger("SystemAgent")
 
-        # Initialize directories
+        # Initialize directories (or create when not exists)
         self.config_dir = Path("config")
         self.data_dir = Path("data")
         self.modules_dir = Path("modules")
