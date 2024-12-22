@@ -152,3 +152,1783 @@ Complete!
 2024-12-22 14:34:31,714 - modules.ssh_connector - INFO - Connection closed.
 2024-12-22 14:34:31,715 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
 
+2024-12-22 14:44:11,001 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
+2024-12-22 14:44:11,477 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-22 14:44:11,477 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-22 14:44:11,477 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-22 14:44:11,478 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:44:11,698 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:44:11,762 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-22 14:44:11,764 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-22 14:44:11,764 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-22 14:44:11,846 - modules.ssh_connector - INFO - Connection closed.
+2024-12-22 14:44:11,846 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+
+2024-12-22 14:44:11,846 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-22 14:44:12,055 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-22 14:44:12,119 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-22 14:44:12,121 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-22 14:44:12,121 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-22 14:46:24,451 - modules.ssh_connector - INFO - Connection closed.
+2024-12-22 14:46:24,451 - SystemAgent - INFO - Output from 172.21.238.161: Last metadata expiration check: 0:40:38 ago on Sun 22 Dec 2024 02:03:34 PM CET.
+Dependencies resolved.
+=======================================================================================
+ Package                         Arch    Version                       Repo        Size
+=======================================================================================
+Installing:
+ kernel                          x86_64  5.14.0-503.19.1.el9_5         baseos     2.0 M
+Upgrading:
+ NetworkManager                  x86_64  1:1.48.10-3.el9_5             baseos     2.3 M
+ NetworkManager-libnm            x86_64  1:1.48.10-3.el9_5             baseos     1.8 M
+ NetworkManager-team             x86_64  1:1.48.10-3.el9_5             baseos      39 k
+ NetworkManager-tui              x86_64  1:1.48.10-3.el9_5             baseos     246 k
+ acl                             x86_64  2.3.1-4.el9                   baseos      69 k
+ alternatives                    x86_64  1.24-1.el9_5.1                baseos      38 k
+ audit                           x86_64  3.1.5-1.el9                   baseos     254 k
+ audit-libs                      x86_64  3.1.5-1.el9                   baseos     120 k
+ basesystem                      noarch  11-13.el9.0.1                 baseos     6.4 k
+ bash                            x86_64  5.1.8-9.el9                   baseos     1.7 M
+ binutils                        x86_64  2.35.2-54.el9                 baseos     4.5 M
+ binutils-gold                   x86_64  2.35.2-54.el9                 baseos     734 k
+ c-ares                          x86_64  1.19.1-2.el9_4                baseos     110 k
+ ca-certificates                 noarch  2024.2.69_v8.0.303-91.4.el9_4 baseos     911 k
+ chrony                          x86_64  4.5-3.el9                     baseos     334 k
+ coreutils                       x86_64  8.32-36.el9                   baseos     1.1 M
+ coreutils-common                x86_64  8.32-36.el9                   baseos     2.0 M
+ cronie                          x86_64  1.5.7-12.el9_5                baseos     115 k
+ cronie-anacron                  x86_64  1.5.7-12.el9_5                baseos      31 k
+ crypto-policies                 noarch  20240828-2.git626aa59.el9_5   baseos      55 k
+ crypto-policies-scripts         noarch  20240828-2.git626aa59.el9_5   baseos      83 k
+ cryptsetup-libs                 x86_64  2.7.2-3.el9_5                 baseos     514 k
+ curl                            x86_64  7.76.1-31.el9                 baseos     293 k
+ device-mapper                   x86_64  9:1.02.198-2.el9              baseos     137 k
+ device-mapper-event             x86_64  9:1.02.198-2.el9              baseos      34 k
+ device-mapper-event-libs        x86_64  9:1.02.198-2.el9              baseos      31 k
+ device-mapper-libs              x86_64  9:1.02.198-2.el9              baseos     177 k
+ device-mapper-persistent-data   x86_64  1.0.9-3.el9_4                 baseos     1.0 M
+ dnf                             noarch  4.14.0-17.el9                 baseos     467 k
+ dnf-data                        noarch  4.14.0-17.el9                 baseos      34 k
+ dnf-plugins-core                noarch  4.3.0-16.el9                  baseos      36 k
+ dracut                          x86_64  057-70.git20240819.el9        baseos     376 k
+ dracut-config-rescue            x86_64  057-70.git20240819.el9        baseos      12 k
+ dracut-network                  x86_64  057-70.git20240819.el9        baseos      68 k
+ dracut-squash                   x86_64  057-70.git20240819.el9        baseos      12 k
+ e2fsprogs                       x86_64  1.46.5-5.el9                  baseos     1.0 M
+ e2fsprogs-libs                  x86_64  1.46.5-5.el9                  baseos     221 k
+ elfutils-debuginfod-client      x86_64  0.191-4.el9                   baseos      36 k
+ elfutils-default-yama-scope     noarch  0.191-4.el9                   baseos      11 k
+ elfutils-libelf                 x86_64  0.191-4.el9                   baseos     206 k
+ elfutils-libs                   x86_64  0.191-4.el9                   baseos     259 k
+ expat                           x86_64  2.5.0-3.el9_5.1               baseos     115 k
+ file                            x86_64  5.39-16.el9                   baseos      48 k
+ file-libs                       x86_64  5.39-16.el9                   baseos     588 k
+ filesystem                      x86_64  3.16-5.el9                    baseos     1.1 M
+ findutils                       x86_64  1:4.8.0-7.el9                 baseos     536 k
+ firewalld                       noarch  1.3.4-7.el9                   baseos     453 k
+ firewalld-filesystem            noarch  1.3.4-7.el9                   baseos     8.7 k
+ fuse-libs                       x86_64  2.9.9-16.el9                  baseos      96 k
+ gdbm-libs                       x86_64  1:1.23-1.el9                  baseos      55 k
+ glib2                           x86_64  2.68.4-14.el9_4.1             baseos     2.6 M
+ glibc                           x86_64  2.34-125.el9_5.1              baseos     2.0 M
+ glibc-common                    x86_64  2.34-125.el9_5.1              baseos     296 k
+ glibc-gconv-extra               x86_64  2.34-125.el9_5.1              baseos     1.6 M
+ glibc-langpack-en               x86_64  2.34-125.el9_5.1              baseos     552 k
+ gnutls                          x86_64  3.8.3-4.el9_4                 baseos     1.1 M
+ grub2-common                    noarch  1:2.06-92.el9                 baseos     904 k
+ grub2-pc                        x86_64  1:2.06-92.el9                 baseos      13 k
+ grub2-pc-modules                noarch  1:2.06-92.el9                 baseos     910 k
+ grub2-tools                     x86_64  1:2.06-92.el9                 baseos     1.8 M
+ grub2-tools-minimal             x86_64  1:2.06-92.el9                 baseos     604 k
+ grubby                          x86_64  8.40-64.el9                   baseos      32 k
+ hwdata                          noarch  0.348-9.15.el9                baseos     1.6 M
+ ima-evm-utils                   x86_64  1.5-2.el9.0.1                 baseos      68 k
+ initscripts-rename-device       x86_64  10.11.7-1.el9                 baseos      14 k
+ initscripts-service             noarch  10.11.7-1.el9                 baseos      10 k
+ iproute                         x86_64  6.2.0-6.el9_4                 baseos     786 k
+ iproute-tc                      x86_64  6.2.0-6.el9_4                 baseos     448 k
+ iptables-libs                   x86_64  1.8.10-4.el9_4                baseos     396 k
+ iptables-nft                    x86_64  1.8.10-4.el9_4                baseos     186 k
+ iputils                         x86_64  20210202-10.el9_5             baseos     168 k
+ irqbalance                      x86_64  2:1.9.4-1.el9                 baseos      61 k
+ iwl100-firmware                 noarch  39.31.5.1-146.2.el9_5         baseos     184 k
+ iwl1000-firmware                noarch  1:39.31.5.1-146.2.el9_5       baseos     184 k
+ iwl105-firmware                 noarch  18.168.6.1-146.2.el9_5        baseos     263 k
+ iwl135-firmware                 noarch  18.168.6.1-146.2.el9_5        baseos     272 k
+ iwl2000-firmware                noarch  18.168.6.1-146.2.el9_5        baseos     265 k
+ iwl2030-firmware                noarch  18.168.6.1-146.2.el9_5        baseos     274 k
+ iwl3160-firmware                noarch  1:25.30.13.0-146.2.el9_5      baseos     541 k
+ iwl5000-firmware                noarch  8.83.5.1_1-146.2.el9_5        baseos     181 k
+ iwl5150-firmware                noarch  8.24.2.2-146.2.el9_5          baseos     181 k
+ iwl6000g2a-firmware             noarch  18.168.6.1-146.2.el9_5        baseos     249 k
+ iwl6050-firmware                noarch  41.28.5.1-146.2.el9_5         baseos     206 k
+ iwl7260-firmware                noarch  1:25.30.13.0-146.2.el9_5      baseos      57 M
+ kbd                             x86_64  2.4.0-10.el9                  baseos     387 k
+ kbd-legacy                      noarch  2.4.0-10.el9                  baseos     502 k
+ kbd-misc                        noarch  2.4.0-10.el9                  baseos     1.5 M
+ kernel-tools                    x86_64  5.14.0-503.19.1.el9_5         baseos     2.3 M
+ kernel-tools-libs               x86_64  5.14.0-503.19.1.el9_5         baseos     2.0 M
+ kexec-tools                     x86_64  2.0.27-16.el9_5.1             baseos     477 k
+ kmod                            x86_64  28-10.el9                     baseos     121 k
+ kmod-libs                       x86_64  28-10.el9                     baseos      62 k
+ kpartx                          x86_64  0.8.7-32.el9                  baseos      47 k
+ krb5-libs                       x86_64  1.21.1-4.el9_5                baseos     756 k
+ less                            x86_64  590-5.el9                     baseos     161 k
+ libacl                          x86_64  2.3.1-4.el9                   baseos      22 k
+ libarchive                      x86_64  3.5.3-4.el9.0.1               baseos     387 k
+ libblkid                        x86_64  2.37.4-20.el9                 baseos     106 k
+ libbpf                          x86_64  2:1.4.0-1.el9                 baseos     177 k
+ libbrotli                       x86_64  1.0.9-7.el9_5                 baseos     312 k
+ libcom_err                      x86_64  1.46.5-5.el9                  baseos      25 k
+ libcurl                         x86_64  7.76.1-31.el9                 baseos     283 k
+ libdb                           x86_64  5.3.28-54.el9                 baseos     736 k
+ libdnf                          x86_64  0.69.0-12.el9                 baseos     650 k
+ libeconf                        x86_64  0.4.1-4.el9                   baseos      26 k
+ libevent                        x86_64  2.1.12-8.el9_4                baseos     262 k
+ libfdisk                        x86_64  2.37.4-20.el9                 baseos     153 k
+ libfido2                        x86_64  1.13.0-2.el9                  baseos      97 k
+ libgcc                          x86_64  11.5.0-2.el9                  baseos      87 k
+ libgcrypt                       x86_64  1.10.0-11.el9                 baseos     507 k
+ libgomp                         x86_64  11.5.0-2.el9                  baseos     263 k
+ libibverbs                      x86_64  51.0-1.el9                    baseos     427 k
+ libkcapi                        x86_64  1.4.0-2.el9                   baseos      45 k
+ libkcapi-hmaccalc               x86_64  1.4.0-2.el9                   baseos      23 k
+ libksba                         x86_64  1.5.1-7.el9                   baseos     152 k
+ libldb                          x86_64  2.9.1-2.el9                   baseos     182 k
+ libmnl                          x86_64  1.0.4-16.el9_4                baseos      27 k
+ libmount                        x86_64  2.37.4-20.el9                 baseos     134 k
+ libndp                          x86_64  1.9-1.el9                     baseos      37 k
+ libnftnl                        x86_64  1.2.6-4.el9_4                 baseos      87 k
+ libnghttp2                      x86_64  1.43.0-6.el9                  baseos      72 k
+ libnl3                          x86_64  3.9.0-1.el9                   baseos     351 k
+ libnl3-cli                      x86_64  3.9.0-1.el9                   baseos     195 k
+ libnvme                         x86_64  1.9-3.el9                     baseos     105 k
+ librepo                         x86_64  1.14.5-2.el9                  baseos      87 k
+ libselinux                      x86_64  3.6-1.el9                     baseos      85 k
+ libselinux-utils                x86_64  3.6-1.el9                     baseos     164 k
+ libsemanage                     x86_64  3.6-2.1.el9_5                 baseos     116 k
+ libsepol                        x86_64  3.6-1.el9                     baseos     329 k
+ libsmartcols                    x86_64  2.37.4-20.el9                 baseos      62 k
+ libsolv                         x86_64  0.7.24-3.el9                  baseos     404 k
+ libss                           x86_64  1.46.5-5.el9                  baseos      31 k
+ libssh                          x86_64  0.10.4-13.el9                 baseos     215 k
+ libssh-config                   noarch  0.10.4-13.el9                 baseos     9.5 k
+ libsss_certmap                  x86_64  2.9.5-4.el9_5.4               baseos      90 k
+ libsss_idmap                    x86_64  2.9.5-4.el9_5.4               baseos      41 k
+ libsss_nss_idmap                x86_64  2.9.5-4.el9_5.4               baseos      45 k
+ libsss_sudo                     x86_64  2.9.5-4.el9_5.4               baseos      35 k
+ libstdc++                       x86_64  11.5.0-2.el9                  baseos     734 k
+ libtalloc                       x86_64  2.4.2-1.el9                   baseos      30 k
+ libtdb                          x86_64  1.4.10-1.el9                  baseos      50 k
+ libtevent                       x86_64  0.16.1-1.el9                  baseos      47 k
+ libuser                         x86_64  0.63-15.el9                   baseos     387 k
+ libuuid                         x86_64  2.37.4-20.el9                 baseos      27 k
+ libxml2                         x86_64  2.9.13-6.el9_4                baseos     746 k
+ linux-firmware                  noarch  20241121-146.2.el9_5          baseos     418 M
+ linux-firmware-whence           noarch  20241121-146.2.el9_5          baseos     103 k
+ lvm2                            x86_64  9:2.03.24-2.el9               baseos     1.5 M
+ lvm2-libs                       x86_64  9:2.03.24-2.el9               baseos     1.0 M
+ microcode_ctl                   noarch  4:20240910-1.el9_5            baseos     8.5 M
+ nettle                          x86_64  3.9.1-1.el9                   baseos     558 k
+ nftables                        x86_64  1:1.0.9-3.el9                 baseos     421 k
+ numactl-libs                    x86_64  2.0.18-2.el9                  baseos      31 k
+ nvme-cli                        x86_64  2.9.1-6.el9                   baseos     820 k
+ openldap                        x86_64  2.6.6-3.el9                   baseos     254 k
+ openssh                         x86_64  8.7p1-43.el9                  baseos     457 k
+ openssh-clients                 x86_64  8.7p1-43.el9                  baseos     713 k
+ openssh-server                  x86_64  8.7p1-43.el9                  baseos     459 k
+ openssl                         x86_64  1:3.2.2-6.el9_5               baseos     1.3 M
+ openssl-libs                    x86_64  1:3.2.2-6.el9_5               baseos     2.4 M
+ p11-kit                         x86_64  0.25.3-3.el9_5                baseos     510 k
+ p11-kit-trust                   x86_64  0.25.3-3.el9_5                baseos     141 k
+ pam                             x86_64  1.5.1-22.el9_5                baseos     548 k
+ pcre                            x86_64  8.44-4.el9                    baseos     196 k
+ pcre2                           x86_64  10.40-6.el9                   baseos     233 k
+ pcre2-syntax                    noarch  10.40-6.el9                   baseos     140 k
+ policycoreutils                 x86_64  3.6-2.1.el9                   baseos     208 k
+ procps-ng                       x86_64  3.3.17-14.el9                 baseos     332 k
+ python-unversioned-command      noarch  3.9.21-1.el9_5                appstream  9.1 k
+ python3                         x86_64  3.9.21-1.el9_5                baseos      26 k
+ python3-dbus                    x86_64  1.2.18-2.el9.0.1              baseos     131 k
+ python3-dnf                     noarch  4.14.0-17.el9                 baseos     405 k
+ python3-dnf-plugins-core        noarch  4.3.0-16.el9                  baseos     246 k
+ python3-firewall                noarch  1.3.4-7.el9                   baseos     355 k
+ python3-hawkey                  x86_64  0.69.0-12.el9                 baseos     101 k
+ python3-libdnf                  x86_64  0.69.0-12.el9                 baseos     771 k
+ python3-libs                    x86_64  3.9.21-1.el9_5                baseos     7.5 M
+ python3-libselinux              x86_64  3.6-1.el9                     appstream  187 k
+ python3-nftables                x86_64  1:1.0.9-3.el9                 baseos      21 k
+ python3-pip-wheel               noarch  21.3.1-1.el9                  baseos     1.1 M
+ python3-rpm                     x86_64  4.16.1.3-34.el9.0.1           baseos      64 k
+ python3-setuptools-wheel        noarch  53.0.0-13.el9                 baseos     467 k
+ python3-systemd                 x86_64  234-19.el9                    baseos      82 k
+ rocky-gpg-keys                  noarch  9.5-1.2.el9                   baseos      13 k
+ rocky-release                   noarch  9.5-1.2.el9                   baseos      24 k
+ rocky-repos                     noarch  9.5-1.2.el9                   baseos      13 k
+ rpm                             x86_64  4.16.1.3-34.el9.0.1           baseos     485 k
+ rpm-build-libs                  x86_64  4.16.1.3-34.el9.0.1           baseos      88 k
+ rpm-libs                        x86_64  4.16.1.3-34.el9.0.1           baseos     307 k
+ rpm-plugin-audit                x86_64  4.16.1.3-34.el9.0.1           baseos      15 k
+ rpm-plugin-selinux              x86_64  4.16.1.3-34.el9.0.1           baseos      16 k
+ rpm-plugin-systemd-inhibit      x86_64  4.16.1.3-34.el9.0.1           appstream   16 k
+ rpm-sign-libs                   x86_64  4.16.1.3-34.el9.0.1           baseos      20 k
+ rsyslog                         x86_64  8.2310.0-4.el9                appstream  781 k
+ rsyslog-logrotate               x86_64  8.2310.0-4.el9                appstream   11 k
+ selinux-policy                  noarch  38.1.45-3.el9_5               baseos      48 k
+ selinux-policy-targeted         noarch  38.1.45-3.el9_5               baseos     6.5 M
+ setup                           noarch  2.13.7-10.el9                 baseos     140 k
+ shadow-utils                    x86_64  2:4.9-10.el9_5                baseos     1.1 M
+ snappy                          x86_64  1.1.8-8.el9.0.1               baseos      33 k
+ sqlite-libs                     x86_64  3.34.1-7.el9_3                baseos     618 k
+ squashfs-tools                  x86_64  4.4-10.git1.el9               baseos     164 k
+ sssd-client                     x86_64  2.9.5-4.el9_5.4               baseos     161 k
+ sssd-common                     x86_64  2.9.5-4.el9_5.4               baseos     1.6 M
+ sssd-kcm                        x86_64  2.9.5-4.el9_5.4               baseos     109 k
+ sudo                            x86_64  1.9.5p2-10.el9_3              baseos     1.0 M
+ systemd                         x86_64  252-46.el9_5.2.0.1            baseos     4.0 M
+ systemd-libs                    x86_64  252-46.el9_5.2.0.1            baseos     678 k
+ systemd-pam                     x86_64  252-46.el9_5.2.0.1            baseos     285 k
+ systemd-rpm-macros              noarch  252-46.el9_5.2.0.1            baseos      73 k
+ systemd-udev                    x86_64  252-46.el9_5.2.0.1            baseos     1.9 M
+ tpm2-tss                        x86_64  3.2.3-1.el9                   baseos     594 k
+ tzdata                          noarch  2024b-2.el9                   baseos     430 k
+ util-linux                      x86_64  2.37.4-20.el9                 baseos     2.2 M
+ util-linux-core                 x86_64  2.37.4-20.el9                 baseos     437 k
+ vim-minimal                     x86_64  2:8.2.2637-21.el9             baseos     670 k
+ xfsprogs                        x86_64  6.4.0-4.el9                   baseos     1.1 M
+ yum                             noarch  4.14.0-17.el9                 baseos      87 k
+Installing dependencies:
+ attr                            x86_64  2.5.1-3.el9                   baseos      58 k
+ freetype                        x86_64  2.10.4-9.el9                  baseos     387 k
+ graphite2                       x86_64  1.3.14-9.el9                  baseos      94 k
+ grub2-tools-efi                 x86_64  1:2.06-92.el9                 baseos     540 k
+ grub2-tools-extra               x86_64  1:2.06-92.el9                 baseos     841 k
+ harfbuzz                        x86_64  2.7.4-10.el9                  baseos     623 k
+ jq                              x86_64  1.6-17.el9                    baseos     186 k
+ kernel-core                     x86_64  5.14.0-503.19.1.el9_5         baseos      18 M
+ kernel-modules                  x86_64  5.14.0-503.19.1.el9_5         baseos      36 M
+ kernel-modules-core             x86_64  5.14.0-503.19.1.el9_5         baseos      30 M
+ keyutils                        x86_64  1.6.3-1.el9                   baseos      72 k
+ libpng                          x86_64  2:1.6.37-12.el9               baseos     116 k
+ oniguruma                       x86_64  6.9.6-1.el9.6                 baseos     217 k
+
+Transaction Summary
+=======================================================================================
+Install   14 Packages
+Upgrade  218 Packages
+
+Total download size: 682 M
+Downloading Packages:
+(1/232): attr-2.5.1-3.el9.x86_64.rpm            241 kB/s |  58 kB     00:00    
+(2/232): graphite2-1.3.14-9.el9.x86_64.rpm      370 kB/s |  94 kB     00:00    
+(3/232): harfbuzz-2.7.4-10.el9.x86_64.rpm       1.9 MB/s | 623 kB     00:00    
+(4/232): freetype-2.10.4-9.el9.x86_64.rpm       3.3 MB/s | 387 kB     00:00    
+(5/232): libpng-1.6.37-12.el9.x86_64.rpm        1.1 MB/s | 116 kB     00:00    
+(6/232): keyutils-1.6.3-1.el9.x86_64.rpm        1.8 MB/s |  72 kB     00:00    
+(7/232): grub2-tools-extra-2.06-92.el9.x86_64.r  13 MB/s | 841 kB     00:00    
+(8/232): jq-1.6-17.el9.x86_64.rpm               3.0 MB/s | 186 kB     00:00    
+(9/232): grub2-tools-efi-2.06-92.el9.x86_64.rpm 6.6 MB/s | 540 kB     00:00    
+(10/232): oniguruma-6.9.6-1.el9.6.x86_64.rpm    2.7 MB/s | 217 kB     00:00    
+(11/232): kernel-modules-core-5.14.0-503.19.1.e  17 MB/s |  30 MB     00:01    
+(12/232): kernel-core-5.14.0-503.19.1.el9_5.x86 9.4 MB/s |  18 MB     00:01    
+(13/232): kernel-5.14.0-503.19.1.el9_5.x86_64.r 9.7 MB/s | 2.0 MB     00:00    
+(14/232): kernel-modules-5.14.0-503.19.1.el9_5.  18 MB/s |  36 MB     00:02    
+(15/232): dnf-data-4.14.0-17.el9.noarch.rpm     252 kB/s |  34 kB     00:00    
+(16/232): yum-4.14.0-17.el9.noarch.rpm          346 kB/s |  87 kB     00:00    
+(17/232): python3-dnf-4.14.0-17.el9.noarch.rpm  1.6 MB/s | 405 kB     00:00    
+(18/232): dnf-4.14.0-17.el9.noarch.rpm           14 MB/s | 467 kB     00:00    
+(19/232): basesystem-11-13.el9.0.1.noarch.rpm   156 kB/s | 6.4 kB     00:00    
+(20/232): hwdata-0.348-9.15.el9.noarch.rpm       24 MB/s | 1.6 MB     00:00    
+(21/232): selinux-policy-38.1.45-3.el9_5.noarch 952 kB/s |  48 kB     00:00    
+(22/232): setup-2.13.7-10.el9.noarch.rpm        1.4 MB/s | 140 kB     00:00    
+(23/232): libacl-2.3.1-4.el9.x86_64.rpm         397 kB/s |  22 kB     00:00    
+(24/232): selinux-policy-targeted-38.1.45-3.el9  35 MB/s | 6.5 MB     00:00    
+(25/232): crypto-policies-scripts-20240828-2.gi 268 kB/s |  83 kB     00:00    
+(26/232): acl-2.3.1-4.el9.x86_64.rpm            192 kB/s |  69 kB     00:00    
+(27/232): crypto-policies-20240828-2.git626aa59 200 kB/s |  55 kB     00:00    
+(28/232): firewalld-filesystem-1.3.4-7.el9.noar 227 kB/s | 8.7 kB     00:00    
+(29/232): python3-firewall-1.3.4-7.el9.noarch.r 7.1 MB/s | 355 kB     00:00    
+(30/232): firewalld-1.3.4-7.el9.noarch.rpm       11 MB/s | 453 kB     00:00    
+(31/232): expat-2.5.0-3.el9_5.1.x86_64.rpm      1.6 MB/s | 115 kB     00:00    
+(32/232): libbrotli-1.0.9-7.el9_5.x86_64.rpm    4.9 MB/s | 312 kB     00:00    
+(33/232): c-ares-1.19.1-2.el9_4.x86_64.rpm      1.2 MB/s | 110 kB     00:00    
+(34/232): glib2-2.68.4-14.el9_4.1.x86_64.rpm     31 MB/s | 2.6 MB     00:00    
+(35/232): file-5.39-16.el9.x86_64.rpm           645 kB/s |  48 kB     00:00    
+(36/232): file-libs-5.39-16.el9.x86_64.rpm      6.8 MB/s | 588 kB     00:00    
+(37/232): audit-libs-3.1.5-1.el9.x86_64.rpm     1.9 MB/s | 120 kB     00:00    
+(38/232): binutils-gold-2.35.2-54.el9.x86_64.rp 7.7 MB/s | 734 kB     00:00    
+(39/232): binutils-2.35.2-54.el9.x86_64.rpm      29 MB/s | 4.5 MB     00:00    
+(40/232): alternatives-1.24-1.el9_5.1.x86_64.rp 131 kB/s |  38 kB     00:00    
+(41/232): audit-3.1.5-1.el9.x86_64.rpm          784 kB/s | 254 kB     00:00    
+(42/232): iptables-libs-1.8.10-4.el9_4.x86_64.r 5.7 MB/s | 396 kB     00:00    
+(43/232): iptables-nft-1.8.10-4.el9_4.x86_64.rp 596 kB/s | 186 kB     00:00    
+(44/232): kbd-misc-2.4.0-10.el9.noarch.rpm       17 MB/s | 1.5 MB     00:00    
+(45/232): kbd-2.4.0-10.el9.x86_64.rpm            10 MB/s | 387 kB     00:00    
+(46/232): libarchive-3.5.3-4.el9.0.1.x86_64.rpm  11 MB/s | 387 kB     00:00    
+(47/232): libdb-5.3.28-54.el9.x86_64.rpm        5.6 MB/s | 736 kB     00:00    
+(48/232): policycoreutils-3.6-2.1.el9.x86_64.rp 1.8 MB/s | 208 kB     00:00    
+(49/232): libxml2-2.9.13-6.el9_4.x86_64.rpm     4.9 MB/s | 746 kB     00:00    
+(50/232): rpm-sign-libs-4.16.1.3-34.el9.0.1.x86 300 kB/s |  20 kB     00:00    
+(51/232): libibverbs-51.0-1.el9.x86_64.rpm      4.5 MB/s | 427 kB     00:00    
+(52/232): python3-pip-wheel-21.3.1-1.el9.noarch  11 MB/s | 1.1 MB     00:00    
+(53/232): rpm-plugin-selinux-4.16.1.3-34.el9.0. 180 kB/s |  16 kB     00:00    
+(54/232): rpm-plugin-audit-4.16.1.3-34.el9.0.1. 216 kB/s |  15 kB     00:00    
+(55/232): rpm-libs-4.16.1.3-34.el9.0.1.x86_64.r 4.6 MB/s | 307 kB     00:00    
+(56/232): rpm-build-libs-4.16.1.3-34.el9.0.1.x8 2.7 MB/s |  88 kB     00:00    
+(57/232): python3-rpm-4.16.1.3-34.el9.0.1.x86_6 1.5 MB/s |  64 kB     00:00    
+(58/232): rpm-4.16.1.3-34.el9.0.1.x86_64.rpm    8.6 MB/s | 485 kB     00:00    
+(59/232): pcre2-syntax-10.40-6.el9.noarch.rpm   2.1 MB/s | 140 kB     00:00    
+(60/232): openssl-libs-3.2.2-6.el9_5.x86_64.rpm  20 MB/s | 2.4 MB     00:00    
+(61/232): openssl-3.2.2-6.el9_5.x86_64.rpm       11 MB/s | 1.3 MB     00:00    
+(62/232): libnftnl-1.2.6-4.el9_4.x86_64.rpm     1.4 MB/s |  87 kB     00:00    
+(63/232): pcre2-10.40-6.el9.x86_64.rpm          2.0 MB/s | 233 kB     00:00    
+(64/232): grubby-8.40-64.el9.x86_64.rpm         409 kB/s |  32 kB     00:00    
+(65/232): dnf-plugins-core-4.3.0-16.el9.noarch. 623 kB/s |  36 kB     00:00    
+(66/232): python3-dnf-plugins-core-4.3.0-16.el9 3.7 MB/s | 246 kB     00:00    
+(67/232): nvme-cli-2.9.1-6.el9.x86_64.rpm        11 MB/s | 820 kB     00:00    
+(68/232): python3-setuptools-wheel-53.0.0-13.el  13 MB/s | 467 kB     00:00    
+(69/232): libbpf-1.4.0-1.el9.x86_64.rpm         3.4 MB/s | 177 kB     00:00    
+(70/232): bash-5.1.8-9.el9.x86_64.rpm            23 MB/s | 1.7 MB     00:00    
+(71/232): initscripts-service-10.11.7-1.el9.noa 188 kB/s |  10 kB     00:00    
+(72/232): tzdata-2024b-2.el9.noarch.rpm         4.8 MB/s | 430 kB     00:00    
+(73/232): libfido2-1.13.0-2.el9.x86_64.rpm      2.2 MB/s |  97 kB     00:00    
+(74/232): libndp-1.9-1.el9.x86_64.rpm           1.3 MB/s |  37 kB     00:00    
+(75/232): fuse-libs-2.9.9-16.el9.x86_64.rpm     1.3 MB/s |  96 kB     00:00    
+(76/232): irqbalance-1.9.4-1.el9.x86_64.rpm     796 kB/s |  61 kB     00:00    
+(77/232): cryptsetup-libs-2.7.2-3.el9_5.x86_64. 6.3 MB/s | 514 kB     00:00    
+(78/232): kmod-libs-28-10.el9.x86_64.rpm        1.0 MB/s |  62 kB     00:00    
+(79/232): device-mapper-persistent-data-1.0.9-3 9.6 MB/s | 1.0 MB     00:00    
+(80/232): shadow-utils-4.9-10.el9_5.x86_64.rpm  9.1 MB/s | 1.1 MB     00:00    
+(81/232): kmod-28-10.el9.x86_64.rpm             1.4 MB/s | 121 kB     00:00    
+(82/232): iproute-tc-6.2.0-6.el9_4.x86_64.rpm   6.8 MB/s | 448 kB     00:00    
+(83/232): libmnl-1.0.4-16.el9_4.x86_64.rpm      893 kB/s |  27 kB     00:00    
+(84/232): squashfs-tools-4.4-10.git1.el9.x86_64 4.1 MB/s | 164 kB     00:00    
+(85/232): iproute-6.2.0-6.el9_4.x86_64.rpm      5.8 MB/s | 786 kB     00:00    
+(86/232): procps-ng-3.3.17-14.el9.x86_64.rpm    4.1 MB/s | 332 kB     00:00    
+(87/232): libnghttp2-1.43.0-6.el9.x86_64.rpm    998 kB/s |  72 kB     00:00    
+(88/232): linux-firmware-whence-20241121-146.2. 1.7 MB/s | 103 kB     00:00    
+(89/232): less-590-5.el9.x86_64.rpm             1.5 MB/s | 161 kB     00:00    
+(90/232): sqlite-libs-3.34.1-7.el9_3.x86_64.rpm 3.4 MB/s | 618 kB     00:00    
+(91/232): iwl6050-firmware-41.28.5.1-146.2.el9_ 2.9 MB/s | 206 kB     00:00    
+(92/232): iwl6000g2a-firmware-18.168.6.1-146.2. 2.5 MB/s | 249 kB     00:00    
+(93/232): iwl5150-firmware-8.24.2.2-146.2.el9_5 1.9 MB/s | 181 kB     00:00    
+(94/232): iwl5000-firmware-8.83.5.1_1-146.2.el9 564 kB/s | 181 kB     00:00    
+(95/232): iwl3160-firmware-25.30.13.0-146.2.el9 3.6 MB/s | 541 kB     00:00    
+(96/232): iwl2030-firmware-18.168.6.1-146.2.el9 404 kB/s | 274 kB     00:00    
+(97/232): iwl2000-firmware-18.168.6.1-146.2.el9 730 kB/s | 265 kB     00:00    
+(98/232): iwl135-firmware-18.168.6.1-146.2.el9_ 2.4 MB/s | 272 kB     00:00    
+(99/232): iwl105-firmware-18.168.6.1-146.2.el9_ 2.8 MB/s | 263 kB     00:00    
+(100/232): iwl1000-firmware-39.31.5.1-146.2.el9 1.4 MB/s | 184 kB     00:00    
+(101/232): iwl7260-firmware-25.30.13.0-146.2.el  21 MB/s |  57 MB     00:02    
+(102/232): iwl100-firmware-39.31.5.1-146.2.el9_ 373 kB/s | 184 kB     00:00    
+(103/232): libksba-1.5.1-7.el9.x86_64.rpm       2.5 MB/s | 152 kB     00:00    
+(104/232): gdbm-libs-1.23-1.el9.x86_64.rpm      173 kB/s |  55 kB     00:00    
+(105/232): filesystem-3.16-5.el9.x86_64.rpm     2.9 MB/s | 1.1 MB     00:00    
+(106/232): findutils-4.8.0-7.el9.x86_64.rpm     1.0 MB/s | 536 kB     00:00    
+(107/232): python3-systemd-234-19.el9.x86_64.rp 161 kB/s |  82 kB     00:00    
+(108/232): kexec-tools-2.0.27-16.el9_5.1.x86_64 550 kB/s | 477 kB     00:00    
+(109/232): microcode_ctl-20240910-1.el9_5.noarc 7.4 MB/s | 8.5 MB     00:01    
+(110/232): coreutils-8.32-36.el9.x86_64.rpm     2.6 MB/s | 1.1 MB     00:00    
+(111/232): coreutils-common-8.32-36.el9.x86_64. 2.6 MB/s | 2.0 MB     00:00    
+(112/232): python3-3.9.21-1.el9_5.x86_64.rpm     50 kB/s |  26 kB     00:00    
+(113/232): gnutls-3.8.3-4.el9_4.x86_64.rpm      6.0 MB/s | 1.1 MB     00:00    
+(114/232): iputils-20210202-10.el9_5.x86_64.rpm 2.4 MB/s | 168 kB     00:00    
+(115/232): python3-libs-3.9.21-1.el9_5.x86_64.r 9.0 MB/s | 7.5 MB     00:00    
+(116/232): libgcrypt-1.10.0-11.el9.x86_64.rpm   6.0 MB/s | 507 kB     00:00    
+(117/232): libsolv-0.7.24-3.el9.x86_64.rpm      4.2 MB/s | 404 kB     00:00    
+(118/232): libsepol-3.6-1.el9.x86_64.rpm        3.4 MB/s | 329 kB     00:00    
+(119/232): ca-certificates-2024.2.69_v8.0.303-9 9.3 MB/s | 911 kB     00:00    
+(120/232): libss-1.46.5-5.el9.x86_64.rpm         84 kB/s |  31 kB     00:00    
+(121/232): libcom_err-1.46.5-5.el9.x86_64.rpm    67 kB/s |  25 kB     00:00    
+(122/232): e2fsprogs-libs-1.46.5-5.el9.x86_64.r 342 kB/s | 221 kB     00:00    
+(123/232): e2fsprogs-1.46.5-5.el9.x86_64.rpm    1.6 MB/s | 1.0 MB     00:00    
+(124/232): libnl3-cli-3.9.0-1.el9.x86_64.rpm    2.3 MB/s | 195 kB     00:00    
+(125/232): libnl3-3.9.0-1.el9.x86_64.rpm        5.1 MB/s | 351 kB     00:00    
+(126/232): libsemanage-3.6-2.1.el9_5.x86_64.rpm 1.3 MB/s | 116 kB     00:00    
+(127/232): libselinux-3.6-1.el9.x86_64.rpm      222 kB/s |  85 kB     00:00    
+(128/232): libselinux-utils-3.6-1.el9.x86_64.rp 383 kB/s | 164 kB     00:00    
+(129/232): dracut-squash-057-70.git20240819.el9  32 kB/s |  12 kB     00:00    
+(130/232): dracut-network-057-70.git20240819.el 164 kB/s |  68 kB     00:00    
+(131/232): dracut-config-rescue-057-70.git20240 108 kB/s |  12 kB     00:00    
+(132/232): dracut-057-70.git20240819.el9.x86_64 3.7 MB/s | 376 kB     00:00    
+(133/232): chrony-4.5-3.el9.x86_64.rpm          3.7 MB/s | 334 kB     00:00    
+(134/232): libevent-2.1.12-8.el9_4.x86_64.rpm   717 kB/s | 262 kB     00:00    
+(135/232): ima-evm-utils-1.5-2.el9.0.1.x86_64.r 201 kB/s |  68 kB     00:00    
+(136/232): numactl-libs-2.0.18-2.el9.x86_64.rpm 215 kB/s |  31 kB     00:00    
+(137/232): nettle-3.9.1-1.el9.x86_64.rpm        1.2 MB/s | 558 kB     00:00    
+(138/232): pcre-8.44-4.el9.x86_64.rpm           305 kB/s | 196 kB     00:00    
+(139/232): tpm2-tss-3.2.3-1.el9.x86_64.rpm      958 kB/s | 594 kB     00:00    
+(140/232): openssh-server-8.7p1-43.el9.x86_64.r 1.1 MB/s | 459 kB     00:00    
+(141/232): openssh-clients-8.7p1-43.el9.x86_64. 845 kB/s | 713 kB     00:00    
+(142/232): openssh-8.7p1-43.el9.x86_64.rpm      606 kB/s | 457 kB     00:00    
+(143/232): python3-nftables-1.0.9-3.el9.x86_64. 207 kB/s |  21 kB     00:00    
+(144/232): nftables-1.0.9-3.el9.x86_64.rpm      2.1 MB/s | 421 kB     00:00    
+(145/232): librepo-1.14.5-2.el9.x86_64.rpm      177 kB/s |  87 kB     00:00    
+(146/232): cronie-anacron-1.5.7-12.el9_5.x86_64  79 kB/s |  31 kB     00:00    
+(147/232): cronie-1.5.7-12.el9_5.x86_64.rpm     1.3 MB/s | 115 kB     00:00    
+(148/232): libtdb-1.4.10-1.el9.x86_64.rpm       473 kB/s |  50 kB     00:00    
+(149/232): linux-firmware-20241121-146.2.el9_5.  35 MB/s | 418 MB     00:11    
+(150/232): sssd-kcm-2.9.5-4.el9_5.4.x86_64.rpm  150 kB/s | 109 kB     00:00    
+(151/232): sssd-common-2.9.5-4.el9_5.4.x86_64.r 2.2 MB/s | 1.6 MB     00:00    
+(152/232): sssd-client-2.9.5-4.el9_5.4.x86_64.r 5.1 MB/s | 161 kB     00:00    
+(153/232): libsss_sudo-2.9.5-4.el9_5.4.x86_64.r 527 kB/s |  35 kB     00:00    
+(154/232): libsss_nss_idmap-2.9.5-4.el9_5.4.x86 717 kB/s |  45 kB     00:00    
+(155/232): libsss_idmap-2.9.5-4.el9_5.4.x86_64. 683 kB/s |  41 kB     00:00    
+(156/232): libsss_certmap-2.9.5-4.el9_5.4.x86_6 1.1 MB/s |  90 kB     00:00    
+(157/232): p11-kit-trust-0.25.3-3.el9_5.x86_64. 1.7 MB/s | 141 kB     00:00    
+(158/232): p11-kit-0.25.3-3.el9_5.x86_64.rpm    7.2 MB/s | 510 kB     00:00    
+(159/232): systemd-pam-252-46.el9_5.2.0.1.x86_6 5.1 MB/s | 285 kB     00:00    
+(160/232): systemd-rpm-macros-252-46.el9_5.2.0. 1.2 MB/s |  73 kB     00:00    
+(161/232): systemd-udev-252-46.el9_5.2.0.1.x86_  22 MB/s | 1.9 MB     00:00    
+(162/232): elfutils-libs-0.191-4.el9.x86_64.rpm 4.5 MB/s | 259 kB     00:00    
+(163/232): systemd-libs-252-46.el9_5.2.0.1.x86_ 7.7 MB/s | 678 kB     00:00    
+(164/232): systemd-252-46.el9_5.2.0.1.x86_64.rp  25 MB/s | 4.0 MB     00:00    
+(165/232): elfutils-debuginfod-client-0.191-4.e 208 kB/s |  36 kB     00:00    
+(166/232): elfutils-default-yama-scope-0.191-4. 118 kB/s |  11 kB     00:00    
+(167/232): elfutils-libelf-0.191-4.el9.x86_64.r 1.1 MB/s | 206 kB     00:00    
+(168/232): libkcapi-hmaccalc-1.4.0-2.el9.x86_64 916 kB/s |  23 kB     00:00    
+(169/232): libkcapi-1.4.0-2.el9.x86_64.rpm      1.2 MB/s |  45 kB     00:00    
+(170/232): libcurl-7.76.1-31.el9.x86_64.rpm     6.1 MB/s | 283 kB     00:00    
+(171/232): libtalloc-2.4.2-1.el9.x86_64.rpm     556 kB/s |  30 kB     00:00    
+(172/232): libtevent-0.16.1-1.el9.x86_64.rpm    734 kB/s |  47 kB     00:00    
+(173/232): curl-7.76.1-31.el9.x86_64.rpm        3.5 MB/s | 293 kB     00:00    
+(174/232): openldap-2.6.6-3.el9.x86_64.rpm      3.8 MB/s | 254 kB     00:00    
+(175/232): libuser-0.63-15.el9.x86_64.rpm       5.9 MB/s | 387 kB     00:00    
+(176/232): libldb-2.9.1-2.el9.x86_64.rpm        2.5 MB/s | 182 kB     00:00    
+(177/232): libssh-config-0.10.4-13.el9.noarch.r 357 kB/s | 9.5 kB     00:00    
+(178/232): sudo-1.9.5p2-10.el9_3.x86_64.rpm      15 MB/s | 1.0 MB     00:00    
+(179/232): libssh-0.10.4-13.el9.x86_64.rpm      3.0 MB/s | 215 kB     00:00    
+(180/232): python3-dbus-1.2.18-2.el9.0.1.x86_64 2.6 MB/s | 131 kB     00:00    
+(181/232): initscripts-rename-device-10.11.7-1. 274 kB/s |  14 kB     00:00    
+(182/232): snappy-1.1.8-8.el9.0.1.x86_64.rpm    683 kB/s |  33 kB     00:00    
+(183/232): krb5-libs-1.21.1-4.el9_5.x86_64.rpm   12 MB/s | 756 kB     00:00    
+(184/232): vim-minimal-8.2.2637-21.el9.x86_64.r  10 MB/s | 670 kB     00:00    
+(185/232): pam-1.5.1-22.el9_5.x86_64.rpm        6.8 MB/s | 548 kB     00:00    
+(186/232): kpartx-0.8.7-32.el9.x86_64.rpm       575 kB/s |  47 kB     00:00    
+(187/232): libstdc++-11.5.0-2.el9.x86_64.rpm     18 MB/s | 734 kB     00:00    
+(188/232): libgcc-11.5.0-2.el9.x86_64.rpm       1.8 MB/s |  87 kB     00:00    
+(189/232): libgomp-11.5.0-2.el9.x86_64.rpm      5.1 MB/s | 263 kB     00:00    
+(190/232): glibc-common-2.34-125.el9_5.1.x86_64 3.5 MB/s | 296 kB     00:00    
+(191/232): glibc-langpack-en-2.34-125.el9_5.1.x 5.4 MB/s | 552 kB     00:00    
+(192/232): glibc-gconv-extra-2.34-125.el9_5.1.x  15 MB/s | 1.6 MB     00:00    
+(193/232): glibc-2.34-125.el9_5.1.x86_64.rpm     29 MB/s | 2.0 MB     00:00    
+(194/232): util-linux-core-2.37.4-20.el9.x86_64 5.8 MB/s | 437 kB     00:00    
+(195/232): util-linux-2.37.4-20.el9.x86_64.rpm   26 MB/s | 2.2 MB     00:00    
+(196/232): libuuid-2.37.4-20.el9.x86_64.rpm     432 kB/s |  27 kB     00:00    
+(197/232): libsmartcols-2.37.4-20.el9.x86_64.rp 834 kB/s |  62 kB     00:00    
+(198/232): libblkid-2.37.4-20.el9.x86_64.rpm    1.6 MB/s | 106 kB     00:00    
+(199/232): libfdisk-2.37.4-20.el9.x86_64.rpm    1.7 MB/s | 153 kB     00:00    
+(200/232): libmount-2.37.4-20.el9.x86_64.rpm    1.2 MB/s | 134 kB     00:00    
+(201/232): NetworkManager-team-1.48.10-3.el9_5. 723 kB/s |  39 kB     00:00    
+(202/232): NetworkManager-tui-1.48.10-3.el9_5.x 3.8 MB/s | 246 kB     00:00    
+(203/232): xfsprogs-6.4.0-4.el9.x86_64.rpm       14 MB/s | 1.1 MB     00:00    
+(204/232): NetworkManager-libnm-1.48.10-3.el9_5  26 MB/s | 1.8 MB     00:00    
+(205/232): python3-libdnf-0.69.0-12.el9.x86_64.  12 MB/s | 771 kB     00:00    
+(206/232): NetworkManager-1.48.10-3.el9_5.x86_6  22 MB/s | 2.3 MB     00:00    
+(207/232): python3-hawkey-0.69.0-12.el9.x86_64. 1.2 MB/s | 101 kB     00:00    
+(208/232): libdnf-0.69.0-12.el9.x86_64.rpm      8.8 MB/s | 650 kB     00:00    
+(209/232): libeconf-0.4.1-4.el9.x86_64.rpm      507 kB/s |  26 kB     00:00    
+(210/232): device-mapper-libs-1.02.198-2.el9.x8 2.8 MB/s | 177 kB     00:00    
+(211/232): lvm2-libs-2.03.24-2.el9.x86_64.rpm   9.5 MB/s | 1.0 MB     00:00    
+(212/232): lvm2-2.03.24-2.el9.x86_64.rpm         14 MB/s | 1.5 MB     00:00    
+(213/232): device-mapper-event-libs-1.02.198-2. 394 kB/s |  31 kB     00:00    
+(214/232): device-mapper-event-1.02.198-2.el9.x 608 kB/s |  34 kB     00:00    
+(215/232): device-mapper-1.02.198-2.el9.x86_64. 2.8 MB/s | 137 kB     00:00    
+(216/232): kbd-legacy-2.4.0-10.el9.noarch.rpm   5.1 MB/s | 502 kB     00:00    
+(217/232): grub2-tools-minimal-2.06-92.el9.x86_ 6.1 MB/s | 604 kB     00:00    
+(218/232): libnvme-1.9-3.el9.x86_64.rpm         1.0 MB/s | 105 kB     00:00    
+(219/232): grub2-pc-2.06-92.el9.x86_64.rpm      223 kB/s |  13 kB     00:00    
+(220/232): grub2-pc-modules-2.06-92.el9.noarch.  11 MB/s | 910 kB     00:00    
+(221/232): grub2-tools-2.06-92.el9.x86_64.rpm    19 MB/s | 1.8 MB     00:00    
+(222/232): grub2-common-2.06-92.el9.noarch.rpm   14 MB/s | 904 kB     00:00    
+(223/232): kernel-tools-libs-5.14.0-503.19.1.el  28 MB/s | 2.0 MB     00:00    
+(224/232): kernel-tools-5.14.0-503.19.1.el9_5.x  23 MB/s | 2.3 MB     00:00    
+(225/232): rocky-repos-9.5-1.2.el9.noarch.rpm   182 kB/s |  13 kB     00:00    
+(226/232): rocky-gpg-keys-9.5-1.2.el9.noarch.rp 392 kB/s |  13 kB     00:00    
+(227/232): rocky-release-9.5-1.2.el9.noarch.rpm 316 kB/s |  24 kB     00:00    
+(228/232): rpm-plugin-systemd-inhibit-4.16.1.3- 317 kB/s |  16 kB     00:00    
+(229/232): python-unversioned-command-3.9.21-1. 135 kB/s | 9.1 kB     00:00    
+(230/232): rsyslog-logrotate-8.2310.0-4.el9.x86 200 kB/s |  11 kB     00:00    
+(231/232): python3-libselinux-3.6-1.el9.x86_64. 2.6 MB/s | 187 kB     00:00    
+(232/232): rsyslog-8.2310.0-4.el9.x86_64.rpm     19 MB/s | 781 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            35 MB/s | 682 MB     00:19     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Running scriptlet: filesystem-3.16-5.el9.x86_64                           1/1 
+  Running scriptlet: selinux-policy-targeted-38.1.45-3.el9_5.noarch         1/1 
+  Running scriptlet: firewalld-1.3.4-7.el9.noarch                           1/1 
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-11.5.0-2.el9.x86_64                           1/450 
+  Running scriptlet: libgcc-11.5.0-2.el9.x86_64                           1/450 
+  Upgrading        : linux-firmware-whence-20241121-146.2.el9_5.noarc     2/450 
+  Upgrading        : tzdata-2024b-2.el9.noarch                            3/450 
+  Upgrading        : linux-firmware-20241121-146.2.el9_5.noarch           4/450 
+  Upgrading        : rocky-gpg-keys-9.5-1.2.el9.noarch                    5/450 
+  Upgrading        : rocky-release-9.5-1.2.el9.noarch                     6/450 
+  Upgrading        : rocky-repos-9.5-1.2.el9.noarch                       7/450 
+  Upgrading        : setup-2.13.7-10.el9.noarch                           8/450 
+warning: /etc/shadow created as /etc/shadow.rpmnew
+
+  Running scriptlet: setup-2.13.7-10.el9.noarch                           8/450 
+  Upgrading        : filesystem-3.16-5.el9.x86_64                         9/450 
+  Upgrading        : basesystem-11-13.el9.0.1.noarch                     10/450 
+  Upgrading        : bash-5.1.8-9.el9.x86_64                             11/450 
+  Running scriptlet: bash-5.1.8-9.el9.x86_64                             11/450 
+  Upgrading        : glibc-langpack-en-2.34-125.el9_5.1.x86_64           12/450 
+  Upgrading        : glibc-gconv-extra-2.34-125.el9_5.1.x86_64           13/450 
+  Running scriptlet: glibc-gconv-extra-2.34-125.el9_5.1.x86_64           13/450 
+  Upgrading        : glibc-common-2.34-125.el9_5.1.x86_64                14/450 
+  Running scriptlet: glibc-2.34-125.el9_5.1.x86_64                       15/450 
+  Upgrading        : glibc-2.34-125.el9_5.1.x86_64                       15/450 
+  Running scriptlet: glibc-2.34-125.el9_5.1.x86_64                       15/450 
+  Upgrading        : audit-libs-3.1.5-1.el9.x86_64                       16/450 
+  Upgrading        : libacl-2.3.1-4.el9.x86_64                           17/450 
+  Upgrading        : libuuid-2.37.4-20.el9.x86_64                        18/450 
+  Upgrading        : sqlite-libs-3.34.1-7.el9_3.x86_64                   19/450 
+  Upgrading        : libcom_err-1.46.5-5.el9.x86_64                      20/450 
+  Upgrading        : p11-kit-0.25.3-3.el9_5.x86_64                       21/450 
+  Upgrading        : elfutils-libelf-0.191-4.el9.x86_64                  22/450 
+  Upgrading        : libstdc++-11.5.0-2.el9.x86_64                       23/450 
+  Upgrading        : crypto-policies-20240828-2.git626aa59.el9_5.noar    24/450 
+  Running scriptlet: crypto-policies-20240828-2.git626aa59.el9_5.noar    24/450 
+  Upgrading        : alternatives-1.24-1.el9_5.1.x86_64                  25/450 
+  Upgrading        : libmnl-1.0.4-16.el9_4.x86_64                        26/450 
+  Upgrading        : libtalloc-2.4.2-1.el9.x86_64                        27/450 
+  Upgrading        : libsepol-3.6-1.el9.x86_64                           28/450 
+  Upgrading        : libnl3-3.9.0-1.el9.x86_64                           29/450 
+  Upgrading        : libsmartcols-2.37.4-20.el9.x86_64                   30/450 
+  Upgrading        : libtevent-0.16.1-1.el9.x86_64                       31/450 
+  Upgrading        : iptables-libs-1.8.10-4.el9_4.x86_64                 32/450 
+  Upgrading        : libxml2-2.9.13-6.el9_4.x86_64                       33/450 
+  Upgrading        : libtdb-1.4.10-1.el9.x86_64                          34/450 
+  Upgrading        : libnftnl-1.2.6-4.el9_4.x86_64                       35/450 
+  Upgrading        : p11-kit-trust-0.25.3-3.el9_5.x86_64                 36/450 
+  Running scriptlet: p11-kit-trust-0.25.3-3.el9_5.x86_64                 36/450 
+  Upgrading        : libbpf-2:1.4.0-1.el9.x86_64                         37/450 
+  Upgrading        : libbrotli-1.0.9-7.el9_5.x86_64                      38/450 
+  Upgrading        : file-libs-5.39-16.el9.x86_64                        39/450 
+  Upgrading        : file-5.39-16.el9.x86_64                             40/450 
+  Upgrading        : libdb-5.3.28-54.el9.x86_64                          41/450 
+  Upgrading        : fuse-libs-2.9.9-16.el9.x86_64                       42/450 
+  Upgrading        : libgcrypt-1.10.0-11.el9.x86_64                      43/450 
+  Upgrading        : libsss_idmap-2.9.5-4.el9_5.4.x86_64                 44/450 
+  Upgrading        : nftables-1:1.0.9-3.el9.x86_64                       45/450 
+  Running scriptlet: nftables-1:1.0.9-3.el9.x86_64                       45/450 
+  Installing       : graphite2-1.3.14-9.el9.x86_64                       46/450 
+  Upgrading        : snappy-1.1.8-8.el9.0.1.x86_64                       47/450 
+  Upgrading        : libss-1.46.5-5.el9.x86_64                           48/450 
+  Upgrading        : e2fsprogs-libs-1.46.5-5.el9.x86_64                  49/450 
+  Upgrading        : acl-2.3.1-4.el9.x86_64                              50/450 
+  Installing       : attr-2.5.1-3.el9.x86_64                             51/450 
+  Installing       : libpng-2:1.6.37-12.el9.x86_64                       52/450 
+  Installing       : keyutils-1.6.3-1.el9.x86_64                         53/450 
+  Installing       : oniguruma-6.9.6-1.el9.6.x86_64                      54/450 
+  Installing       : jq-1.6-17.el9.x86_64                                55/450 
+  Upgrading        : c-ares-1.19.1-2.el9_4.x86_64                        56/450 
+  Upgrading        : expat-2.5.0-3.el9_5.1.x86_64                        57/450 
+  Upgrading        : libndp-1.9-1.el9.x86_64                             58/450 
+  Upgrading        : device-mapper-persistent-data-1.0.9-3.el9_4.x86_    59/450 
+  Upgrading        : squashfs-tools-4.4-10.git1.el9.x86_64               60/450 
+  Upgrading        : libnghttp2-1.43.0-6.el9.x86_64                      61/450 
+  Upgrading        : gdbm-libs-1:1.23-1.el9.x86_64                       62/450 
+  Upgrading        : numactl-libs-2.0.18-2.el9.x86_64                    63/450 
+  Upgrading        : nettle-3.9.1-1.el9.x86_64                           64/450 
+  Upgrading        : gnutls-3.8.3-4.el9_4.x86_64                         65/450 
+  Upgrading        : pcre-8.44-4.el9.x86_64                              66/450 
+  Upgrading        : libsss_sudo-2.9.5-4.el9_5.4.x86_64                  67/450 
+  Upgrading        : libsss_nss_idmap-2.9.5-4.el9_5.4.x86_64             68/450 
+  Upgrading        : libgomp-11.5.0-2.el9.x86_64                         69/450 
+  Upgrading        : libeconf-0.4.1-4.el9.x86_64                         70/450 
+  Upgrading        : kernel-tools-libs-5.14.0-503.19.1.el9_5.x86_64      71/450 
+  Running scriptlet: kernel-tools-libs-5.14.0-503.19.1.el9_5.x86_64      71/450 
+  Upgrading        : systemd-rpm-macros-252-46.el9_5.2.0.1.noarch        72/450 
+  Upgrading        : kbd-legacy-2.4.0-10.el9.noarch                      73/450 
+  Upgrading        : libssh-config-0.10.4-13.el9.noarch                  74/450 
+  Upgrading        : coreutils-common-8.32-36.el9.x86_64                 75/450 
+  Upgrading        : python3-setuptools-wheel-53.0.0-13.el9.noarch       76/450 
+  Upgrading        : pcre2-syntax-10.40-6.el9.noarch                     77/450 
+  Upgrading        : pcre2-10.40-6.el9.x86_64                            78/450 
+  Running scriptlet: pcre2-10.40-6.el9.x86_64                            78/450 
+  Upgrading        : libselinux-3.6-1.el9.x86_64                         79/450 
+  Running scriptlet: libselinux-3.6-1.el9.x86_64                         79/450 
+  Upgrading        : openssl-libs-1:3.2.2-6.el9_5.x86_64                 80/450 
+  Upgrading        : coreutils-8.32-36.el9.x86_64                        81/450 
+  Running scriptlet: ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.no    82/450 
+  Upgrading        : ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.no    82/450 
+  Running scriptlet: ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.no    82/450 
+  Upgrading        : systemd-libs-252-46.el9_5.2.0.1.x86_64              83/450 
+  Running scriptlet: systemd-libs-252-46.el9_5.2.0.1.x86_64              83/450 
+  Upgrading        : libblkid-2.37.4-20.el9.x86_64                       84/450 
+  Running scriptlet: libblkid-2.37.4-20.el9.x86_64                       84/450 
+  Upgrading        : krb5-libs-1.21.1-4.el9_5.x86_64                     85/450 
+  Upgrading        : libmount-2.37.4-20.el9.x86_64                       86/450 
+  Upgrading        : glib2-2.68.4-14.el9_4.1.x86_64                      87/450 
+  Upgrading        : util-linux-core-2.37.4-20.el9.x86_64                88/450 
+  Running scriptlet: util-linux-core-2.37.4-20.el9.x86_64                88/450 
+  Upgrading        : libfdisk-2.37.4-20.el9.x86_64                       89/450 
+  Upgrading        : kmod-libs-28-10.el9.x86_64                          90/450 
+  Upgrading        : kmod-28-10.el9.x86_64                               91/450 
+  Upgrading        : libsemanage-3.6-2.1.el9_5.x86_64                    92/450 
+  Upgrading        : shadow-utils-2:4.9-10.el9_5.x86_64                  93/450 
+  Upgrading        : NetworkManager-libnm-1:1.48.10-3.el9_5.x86_64       94/450 
+  Running scriptlet: NetworkManager-libnm-1:1.48.10-3.el9_5.x86_64       94/450 
+  Upgrading        : iproute-6.2.0-6.el9_4.x86_64                        95/450 
+  Upgrading        : findutils-1:4.8.0-7.el9.x86_64                      96/450 
+  Upgrading        : libselinux-utils-3.6-1.el9.x86_64                   97/450 
+  Installing       : freetype-2.10.4-9.el9.x86_64                        98/450 
+  Installing       : harfbuzz-2.7.4-10.el9.x86_64                        99/450 
+  Upgrading        : libssh-0.10.4-13.el9.x86_64                        100/450 
+  Upgrading        : procps-ng-3.3.17-14.el9.x86_64                     101/450 
+  Upgrading        : python3-pip-wheel-21.3.1-1.el9.noarch              102/450 
+  Upgrading        : python-unversioned-command-3.9.21-1.el9_5.noarch   103/450 
+  Upgrading        : python3-3.9.21-1.el9_5.x86_64                      104/450 
+  Upgrading        : python3-libs-3.9.21-1.el9_5.x86_64                 105/450 
+  Upgrading        : python3-dbus-1.2.18-2.el9.0.1.x86_64               106/450 
+  Upgrading        : python3-systemd-234-19.el9.x86_64                  107/450 
+  Upgrading        : python3-nftables-1:1.0.9-3.el9.x86_64              108/450 
+  Upgrading        : python3-firewall-1.3.4-7.el9.noarch                109/450 
+  Upgrading        : iptables-nft-1.8.10-4.el9_4.x86_64                 110/450 
+  Running scriptlet: iptables-nft-1.8.10-4.el9_4.x86_64                 110/450 
+  Upgrading        : openssl-1:3.2.2-6.el9_5.x86_64                     111/450 
+  Upgrading        : pam-1.5.1-22.el9_5.x86_64                          112/450 
+  Running scriptlet: pam-1.5.1-22.el9_5.x86_64                          112/450 
+  Upgrading        : util-linux-2.37.4-20.el9.x86_64                    113/450 
+  Upgrading        : grub2-common-1:2.06-92.el9.noarch                  114/450 
+  Running scriptlet: openssh-8.7p1-43.el9.x86_64                        115/450 
+  Upgrading        : openssh-8.7p1-43.el9.x86_64                        115/450 
+  Upgrading        : grub2-pc-modules-1:2.06-92.el9.noarch              116/450 
+  Upgrading        : sssd-client-2.9.5-4.el9_5.4.x86_64                 117/450 
+  Running scriptlet: sssd-client-2.9.5-4.el9_5.4.x86_64                 117/450 
+  Upgrading        : libarchive-3.5.3-4.el9.0.1.x86_64                  118/450 
+  Upgrading        : libevent-2.1.12-8.el9_4.x86_64                     119/450 
+  Upgrading        : openldap-2.6.6-3.el9.x86_64                        120/450 
+  Upgrading        : libcurl-7.76.1-31.el9.x86_64                       121/450 
+  Running scriptlet: tpm2-tss-3.2.3-1.el9.x86_64                        122/450 
+  Upgrading        : tpm2-tss-3.2.3-1.el9.x86_64                        122/450 
+  Upgrading        : libldb-2.9.1-2.el9.x86_64                          123/450 
+  Upgrading        : ima-evm-utils-1.5-2.el9.0.1.x86_64                 124/450 
+  Upgrading        : librepo-1.14.5-2.el9.x86_64                        125/450 
+  Upgrading        : curl-7.76.1-31.el9.x86_64                          126/450 
+  Upgrading        : rpm-libs-4.16.1.3-34.el9.0.1.x86_64                127/450 
+  Upgrading        : rpm-4.16.1.3-34.el9.0.1.x86_64                     128/450 
+  Upgrading        : policycoreutils-3.6-2.1.el9.x86_64                 129/450 
+  Running scriptlet: policycoreutils-3.6-2.1.el9.x86_64                 129/450 
+  Upgrading        : libsolv-0.7.24-3.el9.x86_64                        130/450 
+  Upgrading        : libdnf-0.69.0-12.el9.x86_64                        131/450 
+  Upgrading        : python3-libdnf-0.69.0-12.el9.x86_64                132/450 
+  Upgrading        : python3-hawkey-0.69.0-12.el9.x86_64                133/450 
+  Upgrading        : selinux-policy-38.1.45-3.el9_5.noarch              134/450 
+  Running scriptlet: selinux-policy-38.1.45-3.el9_5.noarch              134/450 
+  Running scriptlet: selinux-policy-targeted-38.1.45-3.el9_5.noarch     135/450 
+  Upgrading        : selinux-policy-targeted-38.1.45-3.el9_5.noarch     135/450 
+  Running scriptlet: selinux-policy-targeted-38.1.45-3.el9_5.noarch     135/450 
+  Upgrading        : systemd-pam-252-46.el9_5.2.0.1.x86_64              136/450 
+  Running scriptlet: systemd-252-46.el9_5.2.0.1.x86_64                  137/450 
+  Upgrading        : systemd-252-46.el9_5.2.0.1.x86_64                  137/450 
+  Running scriptlet: systemd-252-46.el9_5.2.0.1.x86_64                  137/450 
+  Upgrading        : device-mapper-libs-9:1.02.198-2.el9.x86_64         138/450 
+  Upgrading        : device-mapper-9:1.02.198-2.el9.x86_64              139/450 
+  Upgrading        : device-mapper-event-libs-9:1.02.198-2.el9.x86_64   140/450 
+  Upgrading        : grub2-tools-minimal-1:2.06-92.el9.x86_64           141/450 
+  Upgrading        : device-mapper-event-9:1.02.198-2.el9.x86_64        142/450 
+  Running scriptlet: device-mapper-event-9:1.02.198-2.el9.x86_64        142/450 
+  Upgrading        : lvm2-libs-9:2.03.24-2.el9.x86_64                   143/450 
+  Upgrading        : cryptsetup-libs-2.7.2-3.el9_5.x86_64               144/450 
+  Upgrading        : kpartx-0.8.7-32.el9.x86_64                         145/450 
+  Upgrading        : initscripts-service-10.11.7-1.el9.noarch           146/450 
+  Upgrading        : iputils-20210202-10.el9_5.x86_64                   147/450 
+  Running scriptlet: iputils-20210202-10.el9_5.x86_64                   147/450 
+  Upgrading        : cronie-anacron-1.5.7-12.el9_5.x86_64               148/450 
+  Running scriptlet: cronie-anacron-1.5.7-12.el9_5.x86_64               148/450 
+  Upgrading        : cronie-1.5.7-12.el9_5.x86_64                       149/450 
+  Running scriptlet: cronie-1.5.7-12.el9_5.x86_64                       149/450 
+  Upgrading        : elfutils-default-yama-scope-0.191-4.el9.noarch     150/450 
+  Running scriptlet: elfutils-default-yama-scope-0.191-4.el9.noarch     150/450 
+  Upgrading        : elfutils-libs-0.191-4.el9.x86_64                   151/450 
+  Upgrading        : elfutils-debuginfod-client-0.191-4.el9.x86_64      152/450 
+  Upgrading        : binutils-gold-2.35.2-54.el9.x86_64                 153/450 
+  Upgrading        : binutils-2.35.2-54.el9.x86_64                      154/450 
+  Running scriptlet: binutils-2.35.2-54.el9.x86_64                      154/450 
+  Upgrading        : rpm-build-libs-4.16.1.3-34.el9.0.1.x86_64          155/450 
+  Upgrading        : libkcapi-1.4.0-2.el9.x86_64                        156/450 
+  Upgrading        : libkcapi-hmaccalc-1.4.0-2.el9.x86_64               157/450 
+  Upgrading        : rsyslog-logrotate-8.2310.0-4.el9.x86_64            158/450 
+  Upgrading        : rsyslog-8.2310.0-4.el9.x86_64                      159/450 
+  Running scriptlet: rsyslog-8.2310.0-4.el9.x86_64                      159/450 
+  Upgrading        : rpm-sign-libs-4.16.1.3-34.el9.0.1.x86_64           160/450 
+  Upgrading        : python3-rpm-4.16.1.3-34.el9.0.1.x86_64             161/450 
+  Upgrading        : rpm-plugin-systemd-inhibit-4.16.1.3-34.el9.0.1.x   162/450 
+  Upgrading        : libsss_certmap-2.9.5-4.el9_5.4.x86_64              163/450 
+  Running scriptlet: sssd-common-2.9.5-4.el9_5.4.x86_64                 164/450 
+  Upgrading        : sssd-common-2.9.5-4.el9_5.4.x86_64                 164/450 
+  Running scriptlet: sssd-common-2.9.5-4.el9_5.4.x86_64                 164/450 
+  Upgrading        : libnvme-1.9-3.el9.x86_64                           165/450 
+  Upgrading        : kbd-misc-2.4.0-10.el9.noarch                       166/450 
+  Upgrading        : kbd-2.4.0-10.el9.x86_64                            167/450 
+  Upgrading        : systemd-udev-252-46.el9_5.2.0.1.x86_64             168/450 
+  Running scriptlet: systemd-udev-252-46.el9_5.2.0.1.x86_64             168/450 
+  Upgrading        : dracut-057-70.git20240819.el9.x86_64               169/450 
+  Installing       : kernel-core-5.14.0-503.19.1.el9_5.x86_64           170/450 
+  Running scriptlet: kernel-core-5.14.0-503.19.1.el9_5.x86_64           170/450 
+  Installing       : kernel-modules-core-5.14.0-503.19.1.el9_5.x86_64   171/450 
+  Running scriptlet: NetworkManager-1:1.48.10-3.el9_5.x86_64            172/450 
+  Upgrading        : NetworkManager-1:1.48.10-3.el9_5.x86_64            172/450 
+  Running scriptlet: NetworkManager-1:1.48.10-3.el9_5.x86_64            172/450 
+  Running scriptlet: grub2-tools-1:2.06-92.el9.x86_64                   173/450 
+  Upgrading        : grub2-tools-1:2.06-92.el9.x86_64                   173/450 
+  Upgrading        : grubby-8.40-64.el9.x86_64                          174/450 
+  Running scriptlet: grubby-8.40-64.el9.x86_64                          174/450 
+  Upgrading        : dracut-network-057-70.git20240819.el9.x86_64       175/450 
+  Installing       : kernel-modules-5.14.0-503.19.1.el9_5.x86_64        176/450 
+  Running scriptlet: kernel-modules-5.14.0-503.19.1.el9_5.x86_64        176/450 
+  Upgrading        : dracut-squash-057-70.git20240819.el9.x86_64        177/450 
+  Upgrading        : libfido2-1.13.0-2.el9.x86_64                       178/450 
+  Upgrading        : firewalld-filesystem-1.3.4-7.el9.noarch            179/450 
+  Upgrading        : dnf-data-4.14.0-17.el9.noarch                      180/450 
+  Upgrading        : python3-dnf-4.14.0-17.el9.noarch                   181/450 
+  Upgrading        : dnf-4.14.0-17.el9.noarch                           182/450 
+  Running scriptlet: dnf-4.14.0-17.el9.noarch                           182/450 
+  Upgrading        : python3-dnf-plugins-core-4.3.0-16.el9.noarch       183/450 
+  Upgrading        : dnf-plugins-core-4.3.0-16.el9.noarch               184/450 
+  Upgrading        : yum-4.14.0-17.el9.noarch                           185/450 
+  Upgrading        : firewalld-1.3.4-7.el9.noarch                       186/450 
+  Running scriptlet: firewalld-1.3.4-7.el9.noarch                       186/450 
+  Upgrading        : openssh-clients-8.7p1-43.el9.x86_64                187/450 
+  Running scriptlet: openssh-clients-8.7p1-43.el9.x86_64                187/450 
+  Upgrading        : kexec-tools-2.0.27-16.el9_5.1.x86_64               188/450 
+  Running scriptlet: kexec-tools-2.0.27-16.el9_5.1.x86_64               188/450 
+  Installing       : kernel-5.14.0-503.19.1.el9_5.x86_64                189/450 
+  Upgrading        : crypto-policies-scripts-20240828-2.git626aa59.el   190/450 
+  Upgrading        : grub2-pc-1:2.06-92.el9.x86_64                      191/450 
+  Upgrading        : NetworkManager-tui-1:1.48.10-3.el9_5.x86_64        192/450 
+  Upgrading        : NetworkManager-team-1:1.48.10-3.el9_5.x86_64       193/450 
+  Upgrading        : dracut-config-rescue-057-70.git20240819.el9.x86_   194/450 
+  Upgrading        : nvme-cli-2.9.1-6.el9.x86_64                        195/450 
+  Running scriptlet: nvme-cli-2.9.1-6.el9.x86_64                        195/450 
+  Upgrading        : sssd-kcm-2.9.5-4.el9_5.4.x86_64                    196/450 
+  Running scriptlet: sssd-kcm-2.9.5-4.el9_5.4.x86_64                    196/450 
+  Upgrading        : audit-3.1.5-1.el9.x86_64                           197/450 
+  Running scriptlet: audit-3.1.5-1.el9.x86_64                           197/450 
+Warning: The unit file, source configuration file or drop-ins of auditd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Warning: The unit file, source configuration file or drop-ins of auditd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+
+  Upgrading        : lvm2-9:2.03.24-2.el9.x86_64                        198/450 
+  Running scriptlet: lvm2-9:2.03.24-2.el9.x86_64                        198/450 
+  Installing       : grub2-tools-extra-1:2.06-92.el9.x86_64             199/450 
+  Installing       : grub2-tools-efi-1:2.06-92.el9.x86_64               200/450 
+  Upgrading        : xfsprogs-6.4.0-4.el9.x86_64                        201/450 
+  Upgrading        : microcode_ctl-4:20240910-1.el9_5.noarch            202/450 
+  Running scriptlet: microcode_ctl-4:20240910-1.el9_5.noarch            202/450 
+  Running scriptlet: chrony-4.5-3.el9.x86_64                            203/450 
+  Upgrading        : chrony-4.5-3.el9.x86_64                            203/450 
+  Running scriptlet: chrony-4.5-3.el9.x86_64                            203/450 
+  Running scriptlet: openssh-server-8.7p1-43.el9.x86_64                 204/450 
+  Upgrading        : openssh-server-8.7p1-43.el9.x86_64                 204/450 
+  Running scriptlet: openssh-server-8.7p1-43.el9.x86_64                 204/450 
+  Upgrading        : rpm-plugin-selinux-4.16.1.3-34.el9.0.1.x86_64      205/450 
+  Upgrading        : rpm-plugin-audit-4.16.1.3-34.el9.0.1.x86_64        206/450 
+  Upgrading        : libuser-0.63-15.el9.x86_64                         207/450 
+  Upgrading        : sudo-1.9.5p2-10.el9_3.x86_64                       208/450 
+  Running scriptlet: sudo-1.9.5p2-10.el9_3.x86_64                       208/450 
+  Upgrading        : kernel-tools-5.14.0-503.19.1.el9_5.x86_64          209/450 
+  Running scriptlet: kernel-tools-5.14.0-503.19.1.el9_5.x86_64          209/450 
+  Upgrading        : python3-libselinux-3.6-1.el9.x86_64                210/450 
+  Upgrading        : iproute-tc-6.2.0-6.el9_4.x86_64                    211/450 
+  Upgrading        : irqbalance-2:1.9.4-1.el9.x86_64                    212/450 
+  Running scriptlet: irqbalance-2:1.9.4-1.el9.x86_64                    212/450 
+  Upgrading        : initscripts-rename-device-10.11.7-1.el9.x86_64     213/450 
+  Upgrading        : e2fsprogs-1.46.5-5.el9.x86_64                      214/450 
+  Upgrading        : vim-minimal-2:8.2.2637-21.el9.x86_64               215/450 
+  Upgrading        : libibverbs-51.0-1.el9.x86_64                       216/450 
+  Upgrading        : libnl3-cli-3.9.0-1.el9.x86_64                      217/450 
+  Upgrading        : less-590-5.el9.x86_64                              218/450 
+  Upgrading        : libksba-1.5.1-7.el9.x86_64                         219/450 
+  Upgrading        : iwl7260-firmware-1:25.30.13.0-146.2.el9_5.noarch   220/450 
+  Upgrading        : iwl6050-firmware-41.28.5.1-146.2.el9_5.noarch      221/450 
+  Upgrading        : iwl6000g2a-firmware-18.168.6.1-146.2.el9_5.noarc   222/450 
+  Upgrading        : iwl5150-firmware-8.24.2.2-146.2.el9_5.noarch       223/450 
+  Upgrading        : iwl5000-firmware-8.83.5.1_1-146.2.el9_5.noarch     224/450 
+  Upgrading        : iwl3160-firmware-1:25.30.13.0-146.2.el9_5.noarch   225/450 
+  Upgrading        : iwl2030-firmware-18.168.6.1-146.2.el9_5.noarch     226/450 
+  Upgrading        : iwl2000-firmware-18.168.6.1-146.2.el9_5.noarch     227/450 
+  Upgrading        : iwl135-firmware-18.168.6.1-146.2.el9_5.noarch      228/450 
+  Upgrading        : iwl105-firmware-18.168.6.1-146.2.el9_5.noarch      229/450 
+  Upgrading        : iwl1000-firmware-1:39.31.5.1-146.2.el9_5.noarch    230/450 
+  Upgrading        : iwl100-firmware-39.31.5.1-146.2.el9_5.noarch       231/450 
+  Upgrading        : hwdata-0.348-9.15.el9.noarch                       232/450 
+  Running scriptlet: microcode_ctl-4:20230808-2.el9.noarch              233/450 
+  Cleanup          : microcode_ctl-4:20230808-2.el9.noarch              233/450 
+  Running scriptlet: microcode_ctl-4:20230808-2.el9.noarch              233/450 
+  Running scriptlet: firewalld-1.2.1-1.el9.noarch                       234/450 
+  Cleanup          : firewalld-1.2.1-1.el9.noarch                       234/450 
+  Running scriptlet: firewalld-1.2.1-1.el9.noarch                       234/450 
+  Cleanup          : selinux-policy-targeted-38.1.23-1.el9.noarch       235/450 
+  Running scriptlet: selinux-policy-targeted-38.1.23-1.el9.noarch       235/450 
+  Cleanup          : grub2-pc-1:2.06-70.el9_3.1.rocky.0.2.x86_64        236/450 
+  Cleanup          : crypto-policies-scripts-20230731-1.git94f0e2c.el   237/450 
+  Cleanup          : python3-firewall-1.2.1-1.el9.noarch                238/450 
+  Cleanup          : python3-nftables-1:1.0.4-11.el9_3.x86_64           239/450 
+  Cleanup          : rocky-repos-9.3-0.6.el9.noarch                     240/450 
+  Cleanup          : dracut-config-rescue-057-44.git20230822.el9.x86_   241/450 
+  Cleanup          : grub2-pc-modules-1:2.06-70.el9_3.1.rocky.0.2.noa   242/450 
+  Cleanup          : rsyslog-logrotate-8.2102.0-117.el9.x86_64          243/450 
+  Cleanup          : iwl100-firmware-39.31.5.1-140.el9_3.noarch         244/450 
+  Cleanup          : iwl1000-firmware-1:39.31.5.1-140.el9_3.noarch      245/450 
+  Cleanup          : iwl105-firmware-18.168.6.1-140.el9_3.noarch        246/450 
+  Cleanup          : iwl135-firmware-18.168.6.1-140.el9_3.noarch        247/450 
+  Cleanup          : iwl2000-firmware-18.168.6.1-140.el9_3.noarch       248/450 
+  Cleanup          : iwl2030-firmware-18.168.6.1-140.el9_3.noarch       249/450 
+  Cleanup          : iwl3160-firmware-1:25.30.13.0-140.el9_3.noarch     250/450 
+  Cleanup          : iwl5000-firmware-8.83.5.1_1-140.el9_3.noarch       251/450 
+  Cleanup          : iwl5150-firmware-8.24.2.2-140.el9_3.noarch         252/450 
+  Cleanup          : iwl6000g2a-firmware-18.168.6.1-140.el9_3.noarch    253/450 
+  Cleanup          : iwl6050-firmware-41.28.5.1-140.el9_3.noarch        254/450 
+  Cleanup          : iwl7260-firmware-1:25.30.13.0-140.el9_3.noarch     255/450 
+  Cleanup          : linux-firmware-20230814-140.el9_3.noarch           256/450 
+  Cleanup          : dnf-plugins-core-4.3.0-11.el9_3.noarch             257/450 
+  Cleanup          : python3-dnf-plugins-core-4.3.0-11.el9_3.noarch     258/450 
+  Cleanup          : yum-4.14.0-8.el9.noarch                            259/450 
+  Running scriptlet: dnf-4.14.0-8.el9.noarch                            260/450 
+  Cleanup          : dnf-4.14.0-8.el9.noarch                            260/450 
+  Running scriptlet: dnf-4.14.0-8.el9.noarch                            260/450 
+  Cleanup          : python3-dnf-4.14.0-8.el9.noarch                    261/450 
+  Cleanup          : dnf-data-4.14.0-8.el9.noarch                       262/450 
+  Cleanup          : linux-firmware-whence-20230814-140.el9_3.noarch    263/450 
+  Cleanup          : rocky-gpg-keys-9.3-0.6.el9.noarch                  264/450 
+  Cleanup          : firewalld-filesystem-1.2.1-1.el9.noarch            265/450 
+  Cleanup          : hwdata-0.348-9.11.el9.noarch                       266/450 
+  Cleanup          : NetworkManager-tui-1:1.44.0-3.el9.x86_64           267/450 
+  Running scriptlet: lvm2-9:2.03.21-3.el9.x86_64                        268/450 
+  Cleanup          : lvm2-9:2.03.21-3.el9.x86_64                        268/450 
+  Running scriptlet: lvm2-9:2.03.21-3.el9.x86_64                        268/450 
+  Running scriptlet: openssh-server-8.7p1-34.el9.x86_64                 269/450 
+  Cleanup          : openssh-server-8.7p1-34.el9.x86_64                 269/450 
+  Running scriptlet: openssh-server-8.7p1-34.el9.x86_64                 269/450 
+  Running scriptlet: sssd-kcm-2.9.1-4.el9_3.x86_64                      270/450 
+  Cleanup          : sssd-kcm-2.9.1-4.el9_3.x86_64                      270/450 
+  Running scriptlet: sssd-kcm-2.9.1-4.el9_3.x86_64                      270/450 
+  Running scriptlet: sssd-common-2.9.1-4.el9_3.x86_64                   271/450 
+  Cleanup          : sssd-common-2.9.1-4.el9_3.x86_64                   271/450 
+  Running scriptlet: sssd-common-2.9.1-4.el9_3.x86_64                   271/450 
+  Running scriptlet: kexec-tools-2.0.26-8.el9.x86_64                    272/450 
+  Cleanup          : kexec-tools-2.0.26-8.el9.x86_64                    272/450 
+  Running scriptlet: kexec-tools-2.0.26-8.el9.x86_64                    272/450 
+  Running scriptlet: sssd-client-2.9.1-4.el9_3.x86_64                   273/450 
+  Cleanup          : sssd-client-2.9.1-4.el9_3.x86_64                   273/450 
+  Cleanup          : systemd-pam-252-18.el9.x86_64                      274/450 
+  Running scriptlet: audit-3.0.7-104.el9.x86_64                         275/450 
+  Cleanup          : audit-3.0.7-104.el9.x86_64                         275/450 
+  Running scriptlet: audit-3.0.7-104.el9.x86_64                         275/450 
+  Cleanup          : lvm2-libs-9:2.03.21-3.el9.x86_64                   276/450 
+  Running scriptlet: rsyslog-8.2102.0-117.el9.x86_64                    277/450 
+  Cleanup          : rsyslog-8.2102.0-117.el9.x86_64                    277/450 
+  Running scriptlet: rsyslog-8.2102.0-117.el9.x86_64                    277/450 
+  Running scriptlet: chrony-4.3-1.el9.x86_64                            278/450 
+  Cleanup          : chrony-4.3-1.el9.x86_64                            278/450 
+  Running scriptlet: chrony-4.3-1.el9.x86_64                            278/450 
+  Cleanup          : e2fsprogs-1.46.5-3.el9.x86_64                      279/450 
+  Cleanup          : sudo-1.9.5p2-9.el9.x86_64                          280/450 
+  Running scriptlet: device-mapper-event-9:1.02.195-3.el9.x86_64        281/450 
+  Cleanup          : device-mapper-event-9:1.02.195-3.el9.x86_64        281/450 
+  Cleanup          : iproute-tc-6.2.0-5.el9.x86_64                      282/450 
+  Cleanup          : binutils-gold-2.35.2-42.el9.x86_64                 283/450 
+  Running scriptlet: binutils-2.35.2-42.el9.x86_64                      284/450 
+  Cleanup          : binutils-2.35.2-42.el9.x86_64                      284/450 
+  Running scriptlet: binutils-2.35.2-42.el9.x86_64                      284/450 
+  Running scriptlet: nftables-1:1.0.4-11.el9_3.x86_64                   285/450 
+  Cleanup          : nftables-1:1.0.4-11.el9_3.x86_64                   285/450 
+  Running scriptlet: nftables-1:1.0.4-11.el9_3.x86_64                   285/450 
+  Running scriptlet: openssh-clients-8.7p1-34.el9.x86_64                286/450 
+  Cleanup          : openssh-clients-8.7p1-34.el9.x86_64                286/450 
+  Cleanup          : xfsprogs-5.19.0-4.el9.x86_64                       287/450 
+  Cleanup          : nvme-cli-2.4-10.el9.x86_64                         288/450 
+  Cleanup          : libldb-2.7.2-2.el9.x86_64                          289/450 
+  Cleanup          : iptables-nft-1.8.8-6.el9_1.x86_64                  290/450 
+  Running scriptlet: iptables-nft-1.8.8-6.el9_1.x86_64                  290/450 
+  Running scriptlet: kernel-tools-5.14.0-362.8.1.el9_3.x86_64           291/450 
+  Cleanup          : kernel-tools-5.14.0-362.8.1.el9_3.x86_64           291/450 
+  Running scriptlet: kernel-tools-5.14.0-362.8.1.el9_3.x86_64           291/450 
+  Cleanup          : python3-hawkey-0.69.0-6.el9_3.x86_64               292/450 
+  Cleanup          : python3-libdnf-0.69.0-6.el9_3.x86_64               293/450 
+  Cleanup          : libdnf-0.69.0-6.el9_3.x86_64                       294/450 
+  Cleanup          : python3-libs-3.9.18-1.el9_3.x86_64                 295/450 
+  Cleanup          : libuser-0.63-13.el9.x86_64                         296/450 
+  Cleanup          : device-mapper-persistent-data-1.0.6-3.el9_3.x86_   297/450 
+  Cleanup          : libnl3-cli-3.7.0-1.el9.x86_64                      298/450 
+  Cleanup          : openssh-8.7p1-34.el9.x86_64                        299/450 
+  Cleanup          : elfutils-debuginfod-client-0.189-3.el9.x86_64      300/450 
+  Cleanup          : librepo-1.14.5-1.el9.x86_64                        301/450 
+  Cleanup          : libibverbs-46.0-1.el9.x86_64                       302/450 
+  Cleanup          : libsolv-0.7.24-2.el9.x86_64                        303/450 
+  Cleanup          : libfido2-1.13.0-1.el9.x86_64                       304/450 
+  Cleanup          : python3-systemd-234-18.el9.x86_64                  305/450 
+  Running scriptlet: irqbalance-2:1.9.2-3.el9.x86_64                    306/450 
+  Cleanup          : irqbalance-2:1.9.2-3.el9.x86_64                    306/450 
+  Running scriptlet: irqbalance-2:1.9.2-3.el9.x86_64                    306/450 
+  Cleanup          : iptables-libs-1.8.8-6.el9_1.x86_64                 307/450 
+  Cleanup          : libnvme-1.4-7.el9.x86_64                           308/450 
+  Cleanup          : vim-minimal-2:8.2.2637-20.el9_1.x86_64             309/450 
+  Cleanup          : libnl3-3.7.0-1.el9.x86_64                          310/450 
+  Cleanup          : e2fsprogs-libs-1.46.5-3.el9.x86_64                 311/450 
+  Cleanup          : grubby-8.40-63.el9.x86_64                          312/450 
+  Cleanup          : grub2-tools-1:2.06-70.el9_3.1.rocky.0.2.x86_64     313/450 
+  Cleanup          : grub2-tools-minimal-1:2.06-70.el9_3.1.rocky.0.2.   314/450 
+  Cleanup          : rpm-plugin-selinux-4.16.1.3-25.el9.x86_64          315/450 
+  Cleanup          : fuse-libs-2.9.9-15.el9.x86_64                      316/450 
+  Cleanup          : python3-libselinux-3.5-1.el9.x86_64                317/450 
+  Cleanup          : cronie-anacron-1.5.7-8.el9.x86_64                  318/450 
+  Running scriptlet: cronie-1.5.7-8.el9.x86_64                          319/450 
+  Cleanup          : cronie-1.5.7-8.el9.x86_64                          319/450 
+  Running scriptlet: cronie-1.5.7-8.el9.x86_64                          319/450 
+  Cleanup          : libtevent-0.14.1-2.el9.x86_64                      320/450 
+  Cleanup          : libsss_nss_idmap-2.9.1-4.el9_3.x86_64              321/450 
+  Cleanup          : rpm-plugin-systemd-inhibit-4.16.1.3-25.el9.x86_6   322/450 
+  Cleanup          : numactl-libs-2.0.16-1.el9.x86_64                   323/450 
+  Cleanup          : device-mapper-event-libs-9:1.02.195-3.el9.x86_64   324/450 
+  Cleanup          : python3-rpm-4.16.1.3-25.el9.x86_64                 325/450 
+  Cleanup          : rpm-build-libs-4.16.1.3-25.el9.x86_64              326/450 
+  Cleanup          : elfutils-libs-0.189-3.el9.x86_64                   327/450 
+  Cleanup          : rpm-sign-libs-4.16.1.3-25.el9.x86_64               328/450 
+  Cleanup          : ima-evm-utils-1.4-4.el9.x86_64                     329/450 
+  Cleanup          : NetworkManager-team-1:1.44.0-3.el9.x86_64          330/450 
+  Cleanup          : rpm-plugin-audit-4.16.1.3-25.el9.x86_64            331/450 
+  Cleanup          : rpm-libs-4.16.1.3-25.el9.x86_64                    332/450 
+  Cleanup          : sqlite-libs-3.34.1-6.el9_1.x86_64                  333/450 
+  Cleanup          : libgomp-11.4.1-2.1.el9.x86_64                      334/450 
+  Cleanup          : libss-1.46.5-3.el9.x86_64                          335/450 
+  Cleanup          : snappy-1.1.8-8.el9.x86_64                          336/450 
+  Cleanup          : libstdc++-11.4.1-2.1.el9.x86_64                    337/450 
+  Cleanup          : libsss_certmap-2.9.1-4.el9_3.x86_64                338/450 
+  Cleanup          : initscripts-rename-device-10.11.5-1.el9.x86_64     339/450 
+  Cleanup          : less-590-2.el9_2.x86_64                            340/450 
+  Cleanup          : expat-2.5.0-1.el9.x86_64                           341/450 
+  Cleanup          : gdbm-libs-1:1.19-4.el9.x86_64                      342/450 
+  Cleanup          : libsss_sudo-2.9.1-4.el9_3.x86_64                   343/450 
+  Cleanup          : kernel-tools-libs-5.14.0-362.8.1.el9_3.x86_64      344/450 
+  Running scriptlet: kernel-tools-libs-5.14.0-362.8.1.el9_3.x86_64      344/450 
+  Cleanup          : libnftnl-1.2.2-1.el9.x86_64                        345/450 
+  Cleanup          : libtdb-1.4.8-2.el9.x86_64                          346/450 
+  Cleanup          : c-ares-1.19.1-1.el9.x86_64                         347/450 
+  Cleanup          : dracut-network-057-44.git20230822.el9.x86_64       348/450 
+  Running scriptlet: NetworkManager-1:1.44.0-3.el9.x86_64               349/450 
+  Cleanup          : NetworkManager-1:1.44.0-3.el9.x86_64               349/450 
+  Running scriptlet: NetworkManager-1:1.44.0-3.el9.x86_64               349/450 
+  Cleanup          : iproute-6.2.0-5.el9.x86_64                         350/450 
+  Cleanup          : NetworkManager-libnm-1:1.44.0-3.el9.x86_64         351/450 
+  Running scriptlet: NetworkManager-libnm-1:1.44.0-3.el9.x86_64         351/450 
+  Cleanup          : libbpf-2:1.2.0-1.el9.x86_64                        352/450 
+  Running scriptlet: iputils-20210202-9.el9.x86_64                      353/450 
+  Cleanup          : iputils-20210202-9.el9.x86_64                      353/450 
+  Running scriptlet: iputils-20210202-9.el9.x86_64                      353/450 
+  Cleanup          : elfutils-libelf-0.189-3.el9.x86_64                 354/450 
+  Cleanup          : libndp-1.8-4.el9.x86_64                            355/450 
+  Cleanup          : file-5.39-14.el9.x86_64                            356/450 
+  Cleanup          : file-libs-5.39-14.el9.x86_64                       357/450 
+  Cleanup          : libmnl-1.0.4-15.el9.x86_64                         358/450 
+  Cleanup          : libtalloc-2.4.0-2.el9.x86_64                       359/450 
+  Cleanup          : libsss_idmap-2.9.1-4.el9_3.x86_64                  360/450 
+  Cleanup          : libksba-1.5.1-6.el9_1.x86_64                       361/450 
+  Running scriptlet: selinux-policy-38.1.23-1.el9.noarch                362/450 
+  Cleanup          : selinux-policy-38.1.23-1.el9.noarch                362/450 
+  Running scriptlet: selinux-policy-38.1.23-1.el9.noarch                362/450 
+  Running scriptlet: policycoreutils-3.5-2.el9.x86_64                   363/450 
+  Cleanup          : policycoreutils-3.5-2.el9.x86_64                   363/450 
+  Cleanup          : libselinux-utils-3.5-1.el9.x86_64                  364/450 
+  Cleanup          : rpm-4.16.1.3-25.el9.x86_64                         365/450 
+  Cleanup          : libarchive-3.5.3-4.el9.x86_64                      366/450 
+  Cleanup          : libxml2-2.9.13-4.el9.x86_64                        367/450 
+  Cleanup          : curl-7.76.1-26.el9_3.2.0.1.x86_64                  368/450 
+  Cleanup          : python3-dbus-1.2.18-2.el9.x86_64                   369/450 
+  Cleanup          : initscripts-service-10.11.5-1.el9.noarch           370/450 
+  Cleanup          : dracut-squash-057-44.git20230822.el9.x86_64        371/450 
+  Cleanup          : elfutils-default-yama-scope-0.189-3.el9.noarch     372/450 
+  Cleanup          : grub2-common-1:2.06-70.el9_3.1.rocky.0.2.noarch    373/450 
+  Cleanup          : python3-pip-wheel-21.2.3-7.el9.noarch              374/450 
+  Cleanup          : python3-setuptools-wheel-53.0.0-12.el9.noarch      375/450 
+  Cleanup          : glib2-2.68.4-11.el9.x86_64                         376/450 
+  Cleanup          : dracut-057-44.git20230822.el9.x86_64               377/450 
+  Running scriptlet: systemd-udev-252-18.el9.x86_64                     378/450 
+  Cleanup          : systemd-udev-252-18.el9.x86_64                     378/450 
+  Running scriptlet: systemd-udev-252-18.el9.x86_64                     378/450 
+  Cleanup          : cryptsetup-libs-2.6.0-3.el9.x86_64                 379/450 
+  Cleanup          : gnutls-3.7.6-23.el9.x86_64                         380/450 
+  Cleanup          : squashfs-tools-4.4-8.git1.el9.x86_64               381/450 
+  Cleanup          : kmod-28-9.el9.x86_64                               382/450 
+  Cleanup          : tpm2-tss-3.2.2-2.el9.x86_64                        383/450 
+  Cleanup          : libcurl-7.76.1-26.el9_3.2.0.1.x86_64               384/450 
+  Cleanup          : libssh-0.10.4-11.el9.x86_64                        385/450 
+  Cleanup          : krb5-libs-1.21.1-1.el9.x86_64                      386/450 
+  Cleanup          : kbd-2.4.0-9.el9.x86_64                             387/450 
+  Cleanup          : openldap-2.6.3-1.el9.x86_64                        388/450 
+  Cleanup          : libevent-2.1.12-6.el9.x86_64                       389/450 
+  Cleanup          : procps-ng-3.3.17-13.el9.x86_64                     390/450 
+  Cleanup          : kpartx-0.8.7-22.el9.x86_64                         391/450 
+  Cleanup          : device-mapper-9:1.02.195-3.el9.x86_64              392/450 
+  Cleanup          : device-mapper-libs-9:1.02.195-3.el9.x86_64         393/450 
+  Cleanup          : libkcapi-hmaccalc-1.3.1-3.el9.x86_64               394/450 
+  Cleanup          : findutils-1:4.8.0-6.el9.x86_64                     395/450 
+  Cleanup          : libkcapi-1.3.1-3.el9.x86_64                        396/450 
+  Cleanup          : systemd-252-18.el9.x86_64                          397/450 
+  Running scriptlet: systemd-252-18.el9.x86_64                          397/450 
+  Cleanup          : util-linux-2.37.4-15.el9.x86_64                    398/450 
+  Cleanup          : util-linux-core-2.37.4-15.el9.x86_64               399/450 
+  Cleanup          : systemd-libs-252-18.el9.x86_64                     400/450 
+  Cleanup          : pam-1.5.1-15.el9.x86_64                            401/450 
+  Cleanup          : libmount-2.37.4-15.el9.x86_64                      402/450 
+  Cleanup          : libfdisk-2.37.4-15.el9.x86_64                      403/450 
+  Cleanup          : shadow-utils-2:4.9-8.el9.x86_64                    404/450 
+  Cleanup          : openssl-1:3.0.7-24.el9.x86_64                      405/450 
+  Cleanup          : libsemanage-3.5-2.el9.x86_64                       406/450 
+  Cleanup          : libblkid-2.37.4-15.el9.x86_64                      407/450 
+  Cleanup          : kmod-libs-28-9.el9.x86_64                          408/450 
+  Cleanup          : ca-certificates-2023.2.60_v7.0.306-90.1.el9_2.no   409/450 
+  Cleanup          : coreutils-8.32-34.el9.x86_64                       410/450 
+  Cleanup          : openssl-libs-1:3.0.7-24.el9.x86_64                 411/450 
+  Cleanup          : p11-kit-trust-0.24.1-2.el9.x86_64                  412/450 
+  Running scriptlet: p11-kit-trust-0.24.1-2.el9.x86_64                  412/450 
+  Cleanup          : libselinux-3.5-1.el9.x86_64                        413/450 
+  Cleanup          : p11-kit-0.24.1-2.el9.x86_64                        414/450 
+  Cleanup          : libdb-5.3.28-53.el9.x86_64                         415/450 
+  Cleanup          : libuuid-2.37.4-15.el9.x86_64                       416/450 
+  Cleanup          : audit-libs-3.0.7-104.el9.x86_64                    417/450 
+  Cleanup          : acl-2.3.1-3.el9.x86_64                             418/450 
+  Cleanup          : libsepol-3.5-1.el9.x86_64                          419/450 
+  Cleanup          : alternatives-1.24-1.el9.x86_64                     420/450 
+  Cleanup          : libgcrypt-1.10.0-10.el9_2.x86_64                   421/450 
+  Cleanup          : pcre2-10.40-2.el9.x86_64                           422/450 
+  Cleanup          : libeconf-0.4.1-3.el9_2.x86_64                      423/450 
+  Cleanup          : libcom_err-1.46.5-3.el9.x86_64                     424/450 
+  Cleanup          : libbrotli-1.0.9-6.el9.x86_64                       425/450 
+  Cleanup          : nettle-3.8-3.el9_0.x86_64                          426/450 
+  Cleanup          : libacl-2.3.1-3.el9.x86_64                          427/450 
+  Cleanup          : libsmartcols-2.37.4-15.el9.x86_64                  428/450 
+  Cleanup          : libnghttp2-1.43.0-5.el9_3.1.x86_64                 429/450 
+  Cleanup          : pcre-8.44-3.el9.3.x86_64                           430/450 
+  Cleanup          : python3-3.9.18-1.el9_3.x86_64                      431/450 
+  Cleanup          : systemd-rpm-macros-252-18.el9.noarch               432/450 
+  Cleanup          : python-unversioned-command-3.9.18-1.el9_3.noarch   433/450 
+  Cleanup          : pcre2-syntax-10.40-2.el9.noarch                    434/450 
+  Cleanup          : crypto-policies-20230731-1.git94f0e2c.el9_3.1.no   435/450 
+  Cleanup          : coreutils-common-8.32-34.el9.x86_64                436/450 
+  Cleanup          : kbd-legacy-2.4.0-9.el9.noarch                      437/450 
+  Cleanup          : kbd-misc-2.4.0-9.el9.noarch                        438/450 
+  Cleanup          : libssh-config-0.10.4-11.el9.noarch                 439/450 
+  Cleanup          : glibc-langpack-en-2.34-83.el9.7.x86_64             440/450 
+  Cleanup          : bash-5.1.8-6.el9_1.x86_64                          441/450 
+  Running scriptlet: bash-5.1.8-6.el9_1.x86_64                          441/450 
+  Cleanup          : glibc-common-2.34-83.el9.7.x86_64                  442/450 
+  Cleanup          : glibc-gconv-extra-2.34-83.el9.7.x86_64             443/450 
+  Running scriptlet: glibc-gconv-extra-2.34-83.el9.7.x86_64             443/450 
+  Cleanup          : glibc-2.34-83.el9.7.x86_64                         444/450 
+  Cleanup          : basesystem-11-13.el9.noarch                        445/450 
+  Cleanup          : filesystem-3.16-2.el9.x86_64                       446/450 
+  Cleanup          : setup-2.13.7-9.el9.noarch                          447/450 
+  Cleanup          : rocky-release-9.3-0.6.el9.noarch                   448/450 
+  Cleanup          : tzdata-2023c-1.el9.noarch                          449/450 
+  Cleanup          : libgcc-11.4.1-2.1.el9.x86_64                       450/450 
+  Running scriptlet: libgcc-11.4.1-2.1.el9.x86_64                       450/450 
+  Running scriptlet: filesystem-3.16-5.el9.x86_64                       450/450 
+  Running scriptlet: ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.no   450/450 
+  Running scriptlet: grub2-common-1:2.06-92.el9.noarch                  450/450 
+  Running scriptlet: rpm-4.16.1.3-34.el9.0.1.x86_64                     450/450 
+  Running scriptlet: selinux-policy-targeted-38.1.45-3.el9_5.noarch     450/450 
+  Running scriptlet: systemd-252-46.el9_5.2.0.1.x86_64                  450/450 
+  Running scriptlet: sssd-common-2.9.5-4.el9_5.4.x86_64                 450/450 
+  Running scriptlet: kernel-core-5.14.0-503.19.1.el9_5.x86_64           450/450 
+  Running scriptlet: kernel-modules-core-5.14.0-503.19.1.el9_5.x86_64   450/450 
+  Running scriptlet: kernel-modules-5.14.0-503.19.1.el9_5.x86_64        450/450 
+  Running scriptlet: kexec-tools-2.0.27-16.el9_5.1.x86_64               450/450 
+  Running scriptlet: crypto-policies-scripts-20240828-2.git626aa59.el   450/450 
+  Running scriptlet: microcode_ctl-4:20240910-1.el9_5.noarch            450/450 
+  Running scriptlet: libgcc-11.4.1-2.1.el9.x86_64                       450/450 
+  Verifying        : harfbuzz-2.7.4-10.el9.x86_64                         1/450 
+  Verifying        : graphite2-1.3.14-9.el9.x86_64                        2/450 
+  Verifying        : attr-2.5.1-3.el9.x86_64                              3/450 
+  Verifying        : freetype-2.10.4-9.el9.x86_64                         4/450 
+  Verifying        : libpng-2:1.6.37-12.el9.x86_64                        5/450 
+  Verifying        : keyutils-1.6.3-1.el9.x86_64                          6/450 
+  Verifying        : grub2-tools-extra-1:2.06-92.el9.x86_64               7/450 
+  Verifying        : grub2-tools-efi-1:2.06-92.el9.x86_64                 8/450 
+  Verifying        : jq-1.6-17.el9.x86_64                                 9/450 
+  Verifying        : oniguruma-6.9.6-1.el9.6.x86_64                      10/450 
+  Verifying        : kernel-modules-core-5.14.0-503.19.1.el9_5.x86_64    11/450 
+  Verifying        : kernel-modules-5.14.0-503.19.1.el9_5.x86_64         12/450 
+  Verifying        : kernel-core-5.14.0-503.19.1.el9_5.x86_64            13/450 
+  Verifying        : kernel-5.14.0-503.19.1.el9_5.x86_64                 14/450 
+  Verifying        : yum-4.14.0-17.el9.noarch                            15/450 
+  Verifying        : yum-4.14.0-8.el9.noarch                             16/450 
+  Verifying        : python3-dnf-4.14.0-17.el9.noarch                    17/450 
+  Verifying        : python3-dnf-4.14.0-8.el9.noarch                     18/450 
+  Verifying        : dnf-data-4.14.0-17.el9.noarch                       19/450 
+  Verifying        : dnf-data-4.14.0-8.el9.noarch                        20/450 
+  Verifying        : dnf-4.14.0-17.el9.noarch                            21/450 
+  Verifying        : dnf-4.14.0-8.el9.noarch                             22/450 
+  Verifying        : hwdata-0.348-9.15.el9.noarch                        23/450 
+  Verifying        : hwdata-0.348-9.11.el9.noarch                        24/450 
+  Verifying        : basesystem-11-13.el9.0.1.noarch                     25/450 
+  Verifying        : basesystem-11-13.el9.noarch                         26/450 
+  Verifying        : setup-2.13.7-10.el9.noarch                          27/450 
+  Verifying        : setup-2.13.7-9.el9.noarch                           28/450 
+  Verifying        : selinux-policy-targeted-38.1.45-3.el9_5.noarch      29/450 
+  Verifying        : selinux-policy-targeted-38.1.23-1.el9.noarch        30/450 
+  Verifying        : selinux-policy-38.1.45-3.el9_5.noarch               31/450 
+  Verifying        : selinux-policy-38.1.23-1.el9.noarch                 32/450 
+  Verifying        : libacl-2.3.1-4.el9.x86_64                           33/450 
+  Verifying        : libacl-2.3.1-3.el9.x86_64                           34/450 
+  Verifying        : acl-2.3.1-4.el9.x86_64                              35/450 
+  Verifying        : acl-2.3.1-3.el9.x86_64                              36/450 
+  Verifying        : crypto-policies-scripts-20240828-2.git626aa59.el    37/450 
+  Verifying        : crypto-policies-scripts-20230731-1.git94f0e2c.el    38/450 
+  Verifying        : crypto-policies-20240828-2.git626aa59.el9_5.noar    39/450 
+  Verifying        : crypto-policies-20230731-1.git94f0e2c.el9_3.1.no    40/450 
+  Verifying        : python3-firewall-1.3.4-7.el9.noarch                 41/450 
+  Verifying        : python3-firewall-1.2.1-1.el9.noarch                 42/450 
+  Verifying        : firewalld-filesystem-1.3.4-7.el9.noarch             43/450 
+  Verifying        : firewalld-filesystem-1.2.1-1.el9.noarch             44/450 
+  Verifying        : firewalld-1.3.4-7.el9.noarch                        45/450 
+  Verifying        : firewalld-1.2.1-1.el9.noarch                        46/450 
+  Verifying        : c-ares-1.19.1-2.el9_4.x86_64                        47/450 
+  Verifying        : c-ares-1.19.1-1.el9.x86_64                          48/450 
+  Verifying        : expat-2.5.0-3.el9_5.1.x86_64                        49/450 
+  Verifying        : expat-2.5.0-1.el9.x86_64                            50/450 
+  Verifying        : libbrotli-1.0.9-7.el9_5.x86_64                      51/450 
+  Verifying        : libbrotli-1.0.9-6.el9.x86_64                        52/450 
+  Verifying        : glib2-2.68.4-14.el9_4.1.x86_64                      53/450 
+  Verifying        : glib2-2.68.4-11.el9.x86_64                          54/450 
+  Verifying        : file-libs-5.39-16.el9.x86_64                        55/450 
+  Verifying        : file-libs-5.39-14.el9.x86_64                        56/450 
+  Verifying        : file-5.39-16.el9.x86_64                             57/450 
+  Verifying        : file-5.39-14.el9.x86_64                             58/450 
+  Verifying        : binutils-gold-2.35.2-54.el9.x86_64                  59/450 
+  Verifying        : binutils-gold-2.35.2-42.el9.x86_64                  60/450 
+  Verifying        : binutils-2.35.2-54.el9.x86_64                       61/450 
+  Verifying        : binutils-2.35.2-42.el9.x86_64                       62/450 
+  Verifying        : audit-libs-3.1.5-1.el9.x86_64                       63/450 
+  Verifying        : audit-libs-3.0.7-104.el9.x86_64                     64/450 
+  Verifying        : audit-3.1.5-1.el9.x86_64                            65/450 
+  Verifying        : audit-3.0.7-104.el9.x86_64                          66/450 
+  Verifying        : alternatives-1.24-1.el9_5.1.x86_64                  67/450 
+  Verifying        : alternatives-1.24-1.el9.x86_64                      68/450 
+  Verifying        : iptables-nft-1.8.10-4.el9_4.x86_64                  69/450 
+  Verifying        : iptables-nft-1.8.8-6.el9_1.x86_64                   70/450 
+  Verifying        : iptables-libs-1.8.10-4.el9_4.x86_64                 71/450 
+  Verifying        : iptables-libs-1.8.8-6.el9_1.x86_64                  72/450 
+  Verifying        : kbd-misc-2.4.0-10.el9.noarch                        73/450 
+  Verifying        : kbd-misc-2.4.0-9.el9.noarch                         74/450 
+  Verifying        : kbd-2.4.0-10.el9.x86_64                             75/450 
+  Verifying        : kbd-2.4.0-9.el9.x86_64                              76/450 
+  Verifying        : libarchive-3.5.3-4.el9.0.1.x86_64                   77/450 
+  Verifying        : libarchive-3.5.3-4.el9.x86_64                       78/450 
+  Verifying        : libxml2-2.9.13-6.el9_4.x86_64                       79/450 
+  Verifying        : libxml2-2.9.13-4.el9.x86_64                         80/450 
+  Verifying        : libdb-5.3.28-54.el9.x86_64                          81/450 
+  Verifying        : libdb-5.3.28-53.el9.x86_64                          82/450 
+  Verifying        : policycoreutils-3.6-2.1.el9.x86_64                  83/450 
+  Verifying        : policycoreutils-3.5-2.el9.x86_64                    84/450 
+  Verifying        : libibverbs-51.0-1.el9.x86_64                        85/450 
+  Verifying        : libibverbs-46.0-1.el9.x86_64                        86/450 
+  Verifying        : python3-pip-wheel-21.3.1-1.el9.noarch               87/450 
+  Verifying        : python3-pip-wheel-21.2.3-7.el9.noarch               88/450 
+  Verifying        : rpm-sign-libs-4.16.1.3-34.el9.0.1.x86_64            89/450 
+  Verifying        : rpm-sign-libs-4.16.1.3-25.el9.x86_64                90/450 
+  Verifying        : rpm-plugin-selinux-4.16.1.3-34.el9.0.1.x86_64       91/450 
+  Verifying        : rpm-plugin-selinux-4.16.1.3-25.el9.x86_64           92/450 
+  Verifying        : rpm-plugin-audit-4.16.1.3-34.el9.0.1.x86_64         93/450 
+  Verifying        : rpm-plugin-audit-4.16.1.3-25.el9.x86_64             94/450 
+  Verifying        : rpm-libs-4.16.1.3-34.el9.0.1.x86_64                 95/450 
+  Verifying        : rpm-libs-4.16.1.3-25.el9.x86_64                     96/450 
+  Verifying        : rpm-build-libs-4.16.1.3-34.el9.0.1.x86_64           97/450 
+  Verifying        : rpm-build-libs-4.16.1.3-25.el9.x86_64               98/450 
+  Verifying        : rpm-4.16.1.3-34.el9.0.1.x86_64                      99/450 
+  Verifying        : rpm-4.16.1.3-25.el9.x86_64                         100/450 
+  Verifying        : python3-rpm-4.16.1.3-34.el9.0.1.x86_64             101/450 
+  Verifying        : python3-rpm-4.16.1.3-25.el9.x86_64                 102/450 
+  Verifying        : openssl-libs-1:3.2.2-6.el9_5.x86_64                103/450 
+  Verifying        : openssl-libs-1:3.0.7-24.el9.x86_64                 104/450 
+  Verifying        : openssl-1:3.2.2-6.el9_5.x86_64                     105/450 
+  Verifying        : openssl-1:3.0.7-24.el9.x86_64                      106/450 
+  Verifying        : pcre2-syntax-10.40-6.el9.noarch                    107/450 
+  Verifying        : pcre2-syntax-10.40-2.el9.noarch                    108/450 
+  Verifying        : pcre2-10.40-6.el9.x86_64                           109/450 
+  Verifying        : pcre2-10.40-2.el9.x86_64                           110/450 
+  Verifying        : grubby-8.40-64.el9.x86_64                          111/450 
+  Verifying        : grubby-8.40-63.el9.x86_64                          112/450 
+  Verifying        : libnftnl-1.2.6-4.el9_4.x86_64                      113/450 
+  Verifying        : libnftnl-1.2.2-1.el9.x86_64                        114/450 
+  Verifying        : python3-dnf-plugins-core-4.3.0-16.el9.noarch       115/450 
+  Verifying        : python3-dnf-plugins-core-4.3.0-11.el9_3.noarch     116/450 
+  Verifying        : dnf-plugins-core-4.3.0-16.el9.noarch               117/450 
+  Verifying        : dnf-plugins-core-4.3.0-11.el9_3.noarch             118/450 
+  Verifying        : nvme-cli-2.9.1-6.el9.x86_64                        119/450 
+  Verifying        : nvme-cli-2.4-10.el9.x86_64                         120/450 
+  Verifying        : python3-setuptools-wheel-53.0.0-13.el9.noarch      121/450 
+  Verifying        : python3-setuptools-wheel-53.0.0-12.el9.noarch      122/450 
+  Verifying        : libbpf-2:1.4.0-1.el9.x86_64                        123/450 
+  Verifying        : libbpf-2:1.2.0-1.el9.x86_64                        124/450 
+  Verifying        : bash-5.1.8-9.el9.x86_64                            125/450 
+  Verifying        : bash-5.1.8-6.el9_1.x86_64                          126/450 
+  Verifying        : tzdata-2024b-2.el9.noarch                          127/450 
+  Verifying        : tzdata-2023c-1.el9.noarch                          128/450 
+  Verifying        : initscripts-service-10.11.7-1.el9.noarch           129/450 
+  Verifying        : initscripts-service-10.11.5-1.el9.noarch           130/450 
+  Verifying        : libfido2-1.13.0-2.el9.x86_64                       131/450 
+  Verifying        : libfido2-1.13.0-1.el9.x86_64                       132/450 
+  Verifying        : libndp-1.9-1.el9.x86_64                            133/450 
+  Verifying        : libndp-1.8-4.el9.x86_64                            134/450 
+  Verifying        : fuse-libs-2.9.9-16.el9.x86_64                      135/450 
+  Verifying        : fuse-libs-2.9.9-15.el9.x86_64                      136/450 
+  Verifying        : irqbalance-2:1.9.4-1.el9.x86_64                    137/450 
+  Verifying        : irqbalance-2:1.9.2-3.el9.x86_64                    138/450 
+  Verifying        : cryptsetup-libs-2.7.2-3.el9_5.x86_64               139/450 
+  Verifying        : cryptsetup-libs-2.6.0-3.el9.x86_64                 140/450 
+  Verifying        : shadow-utils-2:4.9-10.el9_5.x86_64                 141/450 
+  Verifying        : shadow-utils-2:4.9-8.el9.x86_64                    142/450 
+  Verifying        : device-mapper-persistent-data-1.0.9-3.el9_4.x86_   143/450 
+  Verifying        : device-mapper-persistent-data-1.0.6-3.el9_3.x86_   144/450 
+  Verifying        : kmod-libs-28-10.el9.x86_64                         145/450 
+  Verifying        : kmod-libs-28-9.el9.x86_64                          146/450 
+  Verifying        : kmod-28-10.el9.x86_64                              147/450 
+  Verifying        : kmod-28-9.el9.x86_64                               148/450 
+  Verifying        : iproute-tc-6.2.0-6.el9_4.x86_64                    149/450 
+  Verifying        : iproute-tc-6.2.0-5.el9.x86_64                      150/450 
+  Verifying        : iproute-6.2.0-6.el9_4.x86_64                       151/450 
+  Verifying        : iproute-6.2.0-5.el9.x86_64                         152/450 
+  Verifying        : libmnl-1.0.4-16.el9_4.x86_64                       153/450 
+  Verifying        : libmnl-1.0.4-15.el9.x86_64                         154/450 
+  Verifying        : squashfs-tools-4.4-10.git1.el9.x86_64              155/450 
+  Verifying        : squashfs-tools-4.4-8.git1.el9.x86_64               156/450 
+  Verifying        : procps-ng-3.3.17-14.el9.x86_64                     157/450 
+  Verifying        : procps-ng-3.3.17-13.el9.x86_64                     158/450 
+  Verifying        : libnghttp2-1.43.0-6.el9.x86_64                     159/450 
+  Verifying        : libnghttp2-1.43.0-5.el9_3.1.x86_64                 160/450 
+  Verifying        : less-590-5.el9.x86_64                              161/450 
+  Verifying        : less-590-2.el9_2.x86_64                            162/450 
+  Verifying        : sqlite-libs-3.34.1-7.el9_3.x86_64                  163/450 
+  Verifying        : sqlite-libs-3.34.1-6.el9_1.x86_64                  164/450 
+  Verifying        : linux-firmware-whence-20241121-146.2.el9_5.noarc   165/450 
+  Verifying        : linux-firmware-whence-20230814-140.el9_3.noarch    166/450 
+  Verifying        : linux-firmware-20241121-146.2.el9_5.noarch         167/450 
+  Verifying        : linux-firmware-20230814-140.el9_3.noarch           168/450 
+  Verifying        : iwl7260-firmware-1:25.30.13.0-146.2.el9_5.noarch   169/450 
+  Verifying        : iwl7260-firmware-1:25.30.13.0-140.el9_3.noarch     170/450 
+  Verifying        : iwl6050-firmware-41.28.5.1-146.2.el9_5.noarch      171/450 
+  Verifying        : iwl6050-firmware-41.28.5.1-140.el9_3.noarch        172/450 
+  Verifying        : iwl6000g2a-firmware-18.168.6.1-146.2.el9_5.noarc   173/450 
+  Verifying        : iwl6000g2a-firmware-18.168.6.1-140.el9_3.noarch    174/450 
+  Verifying        : iwl5150-firmware-8.24.2.2-146.2.el9_5.noarch       175/450 
+  Verifying        : iwl5150-firmware-8.24.2.2-140.el9_3.noarch         176/450 
+  Verifying        : iwl5000-firmware-8.83.5.1_1-146.2.el9_5.noarch     177/450 
+  Verifying        : iwl5000-firmware-8.83.5.1_1-140.el9_3.noarch       178/450 
+  Verifying        : iwl3160-firmware-1:25.30.13.0-146.2.el9_5.noarch   179/450 
+  Verifying        : iwl3160-firmware-1:25.30.13.0-140.el9_3.noarch     180/450 
+  Verifying        : iwl2030-firmware-18.168.6.1-146.2.el9_5.noarch     181/450 
+  Verifying        : iwl2030-firmware-18.168.6.1-140.el9_3.noarch       182/450 
+  Verifying        : iwl2000-firmware-18.168.6.1-146.2.el9_5.noarch     183/450 
+  Verifying        : iwl2000-firmware-18.168.6.1-140.el9_3.noarch       184/450 
+  Verifying        : iwl135-firmware-18.168.6.1-146.2.el9_5.noarch      185/450 
+  Verifying        : iwl135-firmware-18.168.6.1-140.el9_3.noarch        186/450 
+  Verifying        : iwl105-firmware-18.168.6.1-146.2.el9_5.noarch      187/450 
+  Verifying        : iwl105-firmware-18.168.6.1-140.el9_3.noarch        188/450 
+  Verifying        : iwl1000-firmware-1:39.31.5.1-146.2.el9_5.noarch    189/450 
+  Verifying        : iwl1000-firmware-1:39.31.5.1-140.el9_3.noarch      190/450 
+  Verifying        : iwl100-firmware-39.31.5.1-146.2.el9_5.noarch       191/450 
+  Verifying        : iwl100-firmware-39.31.5.1-140.el9_3.noarch         192/450 
+  Verifying        : libksba-1.5.1-7.el9.x86_64                         193/450 
+  Verifying        : libksba-1.5.1-6.el9_1.x86_64                       194/450 
+  Verifying        : filesystem-3.16-5.el9.x86_64                       195/450 
+  Verifying        : filesystem-3.16-2.el9.x86_64                       196/450 
+  Verifying        : gdbm-libs-1:1.23-1.el9.x86_64                      197/450 
+  Verifying        : gdbm-libs-1:1.19-4.el9.x86_64                      198/450 
+  Verifying        : findutils-1:4.8.0-7.el9.x86_64                     199/450 
+  Verifying        : findutils-1:4.8.0-6.el9.x86_64                     200/450 
+  Verifying        : python3-systemd-234-19.el9.x86_64                  201/450 
+  Verifying        : python3-systemd-234-18.el9.x86_64                  202/450 
+  Verifying        : kexec-tools-2.0.27-16.el9_5.1.x86_64               203/450 
+  Verifying        : kexec-tools-2.0.26-8.el9.x86_64                    204/450 
+  Verifying        : microcode_ctl-4:20240910-1.el9_5.noarch            205/450 
+  Verifying        : microcode_ctl-4:20230808-2.el9.noarch              206/450 
+  Verifying        : coreutils-common-8.32-36.el9.x86_64                207/450 
+  Verifying        : coreutils-common-8.32-34.el9.x86_64                208/450 
+  Verifying        : coreutils-8.32-36.el9.x86_64                       209/450 
+  Verifying        : coreutils-8.32-34.el9.x86_64                       210/450 
+  Verifying        : python3-libs-3.9.21-1.el9_5.x86_64                 211/450 
+  Verifying        : python3-libs-3.9.18-1.el9_3.x86_64                 212/450 
+  Verifying        : python3-3.9.21-1.el9_5.x86_64                      213/450 
+  Verifying        : python3-3.9.18-1.el9_3.x86_64                      214/450 
+  Verifying        : gnutls-3.8.3-4.el9_4.x86_64                        215/450 
+  Verifying        : gnutls-3.7.6-23.el9.x86_64                         216/450 
+  Verifying        : iputils-20210202-10.el9_5.x86_64                   217/450 
+  Verifying        : iputils-20210202-9.el9.x86_64                      218/450 
+  Verifying        : libgcrypt-1.10.0-11.el9.x86_64                     219/450 
+  Verifying        : libgcrypt-1.10.0-10.el9_2.x86_64                   220/450 
+  Verifying        : libsolv-0.7.24-3.el9.x86_64                        221/450 
+  Verifying        : libsolv-0.7.24-2.el9.x86_64                        222/450 
+  Verifying        : libsepol-3.6-1.el9.x86_64                          223/450 
+  Verifying        : libsepol-3.5-1.el9.x86_64                          224/450 
+  Verifying        : ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.no   225/450 
+  Verifying        : ca-certificates-2023.2.60_v7.0.306-90.1.el9_2.no   226/450 
+  Verifying        : libss-1.46.5-5.el9.x86_64                          227/450 
+  Verifying        : libss-1.46.5-3.el9.x86_64                          228/450 
+  Verifying        : libcom_err-1.46.5-5.el9.x86_64                     229/450 
+  Verifying        : libcom_err-1.46.5-3.el9.x86_64                     230/450 
+  Verifying        : e2fsprogs-libs-1.46.5-5.el9.x86_64                 231/450 
+  Verifying        : e2fsprogs-libs-1.46.5-3.el9.x86_64                 232/450 
+  Verifying        : e2fsprogs-1.46.5-5.el9.x86_64                      233/450 
+  Verifying        : e2fsprogs-1.46.5-3.el9.x86_64                      234/450 
+  Verifying        : libnl3-cli-3.9.0-1.el9.x86_64                      235/450 
+  Verifying        : libnl3-cli-3.7.0-1.el9.x86_64                      236/450 
+  Verifying        : libnl3-3.9.0-1.el9.x86_64                          237/450 
+  Verifying        : libnl3-3.7.0-1.el9.x86_64                          238/450 
+  Verifying        : libsemanage-3.6-2.1.el9_5.x86_64                   239/450 
+  Verifying        : libsemanage-3.5-2.el9.x86_64                       240/450 
+  Verifying        : libselinux-utils-3.6-1.el9.x86_64                  241/450 
+  Verifying        : libselinux-utils-3.5-1.el9.x86_64                  242/450 
+  Verifying        : libselinux-3.6-1.el9.x86_64                        243/450 
+  Verifying        : libselinux-3.5-1.el9.x86_64                        244/450 
+  Verifying        : dracut-squash-057-70.git20240819.el9.x86_64        245/450 
+  Verifying        : dracut-squash-057-44.git20230822.el9.x86_64        246/450 
+  Verifying        : dracut-network-057-70.git20240819.el9.x86_64       247/450 
+  Verifying        : dracut-network-057-44.git20230822.el9.x86_64       248/450 
+  Verifying        : dracut-config-rescue-057-70.git20240819.el9.x86_   249/450 
+  Verifying        : dracut-config-rescue-057-44.git20230822.el9.x86_   250/450 
+  Verifying        : dracut-057-70.git20240819.el9.x86_64               251/450 
+  Verifying        : dracut-057-44.git20230822.el9.x86_64               252/450 
+  Verifying        : chrony-4.5-3.el9.x86_64                            253/450 
+  Verifying        : chrony-4.3-1.el9.x86_64                            254/450 
+  Verifying        : libevent-2.1.12-8.el9_4.x86_64                     255/450 
+  Verifying        : libevent-2.1.12-6.el9.x86_64                       256/450 
+  Verifying        : ima-evm-utils-1.5-2.el9.0.1.x86_64                 257/450 
+  Verifying        : ima-evm-utils-1.4-4.el9.x86_64                     258/450 
+  Verifying        : numactl-libs-2.0.18-2.el9.x86_64                   259/450 
+  Verifying        : numactl-libs-2.0.16-1.el9.x86_64                   260/450 
+  Verifying        : nettle-3.9.1-1.el9.x86_64                          261/450 
+  Verifying        : nettle-3.8-3.el9_0.x86_64                          262/450 
+  Verifying        : pcre-8.44-4.el9.x86_64                             263/450 
+  Verifying        : pcre-8.44-3.el9.3.x86_64                           264/450 
+  Verifying        : tpm2-tss-3.2.3-1.el9.x86_64                        265/450 
+  Verifying        : tpm2-tss-3.2.2-2.el9.x86_64                        266/450 
+  Verifying        : openssh-server-8.7p1-43.el9.x86_64                 267/450 
+  Verifying        : openssh-server-8.7p1-34.el9.x86_64                 268/450 
+  Verifying        : openssh-clients-8.7p1-43.el9.x86_64                269/450 
+  Verifying        : openssh-clients-8.7p1-34.el9.x86_64                270/450 
+  Verifying        : openssh-8.7p1-43.el9.x86_64                        271/450 
+  Verifying        : openssh-8.7p1-34.el9.x86_64                        272/450 
+  Verifying        : python3-nftables-1:1.0.9-3.el9.x86_64              273/450 
+  Verifying        : python3-nftables-1:1.0.4-11.el9_3.x86_64           274/450 
+  Verifying        : nftables-1:1.0.9-3.el9.x86_64                      275/450 
+  Verifying        : nftables-1:1.0.4-11.el9_3.x86_64                   276/450 
+  Verifying        : librepo-1.14.5-2.el9.x86_64                        277/450 
+  Verifying        : librepo-1.14.5-1.el9.x86_64                        278/450 
+  Verifying        : cronie-anacron-1.5.7-12.el9_5.x86_64               279/450 
+  Verifying        : cronie-anacron-1.5.7-8.el9.x86_64                  280/450 
+  Verifying        : cronie-1.5.7-12.el9_5.x86_64                       281/450 
+  Verifying        : cronie-1.5.7-8.el9.x86_64                          282/450 
+  Verifying        : libtdb-1.4.10-1.el9.x86_64                         283/450 
+  Verifying        : libtdb-1.4.8-2.el9.x86_64                          284/450 
+  Verifying        : sssd-kcm-2.9.5-4.el9_5.4.x86_64                    285/450 
+  Verifying        : sssd-kcm-2.9.1-4.el9_3.x86_64                      286/450 
+  Verifying        : sssd-common-2.9.5-4.el9_5.4.x86_64                 287/450 
+  Verifying        : sssd-common-2.9.1-4.el9_3.x86_64                   288/450 
+  Verifying        : sssd-client-2.9.5-4.el9_5.4.x86_64                 289/450 
+  Verifying        : sssd-client-2.9.1-4.el9_3.x86_64                   290/450 
+  Verifying        : libsss_sudo-2.9.5-4.el9_5.4.x86_64                 291/450 
+  Verifying        : libsss_sudo-2.9.1-4.el9_3.x86_64                   292/450 
+  Verifying        : libsss_nss_idmap-2.9.5-4.el9_5.4.x86_64            293/450 
+  Verifying        : libsss_nss_idmap-2.9.1-4.el9_3.x86_64              294/450 
+  Verifying        : libsss_idmap-2.9.5-4.el9_5.4.x86_64                295/450 
+  Verifying        : libsss_idmap-2.9.1-4.el9_3.x86_64                  296/450 
+  Verifying        : libsss_certmap-2.9.5-4.el9_5.4.x86_64              297/450 
+  Verifying        : libsss_certmap-2.9.1-4.el9_3.x86_64                298/450 
+  Verifying        : p11-kit-trust-0.25.3-3.el9_5.x86_64                299/450 
+  Verifying        : p11-kit-trust-0.24.1-2.el9.x86_64                  300/450 
+  Verifying        : p11-kit-0.25.3-3.el9_5.x86_64                      301/450 
+  Verifying        : p11-kit-0.24.1-2.el9.x86_64                        302/450 
+  Verifying        : systemd-udev-252-46.el9_5.2.0.1.x86_64             303/450 
+  Verifying        : systemd-udev-252-18.el9.x86_64                     304/450 
+  Verifying        : systemd-rpm-macros-252-46.el9_5.2.0.1.noarch       305/450 
+  Verifying        : systemd-rpm-macros-252-18.el9.noarch               306/450 
+  Verifying        : systemd-pam-252-46.el9_5.2.0.1.x86_64              307/450 
+  Verifying        : systemd-pam-252-18.el9.x86_64                      308/450 
+  Verifying        : systemd-libs-252-46.el9_5.2.0.1.x86_64             309/450 
+  Verifying        : systemd-libs-252-18.el9.x86_64                     310/450 
+  Verifying        : systemd-252-46.el9_5.2.0.1.x86_64                  311/450 
+  Verifying        : systemd-252-18.el9.x86_64                          312/450 
+  Verifying        : elfutils-libs-0.191-4.el9.x86_64                   313/450 
+  Verifying        : elfutils-libs-0.189-3.el9.x86_64                   314/450 
+  Verifying        : elfutils-libelf-0.191-4.el9.x86_64                 315/450 
+  Verifying        : elfutils-libelf-0.189-3.el9.x86_64                 316/450 
+  Verifying        : elfutils-debuginfod-client-0.191-4.el9.x86_64      317/450 
+  Verifying        : elfutils-debuginfod-client-0.189-3.el9.x86_64      318/450 
+  Verifying        : elfutils-default-yama-scope-0.191-4.el9.noarch     319/450 
+  Verifying        : elfutils-default-yama-scope-0.189-3.el9.noarch     320/450 
+  Verifying        : libkcapi-hmaccalc-1.4.0-2.el9.x86_64               321/450 
+  Verifying        : libkcapi-hmaccalc-1.3.1-3.el9.x86_64               322/450 
+  Verifying        : libkcapi-1.4.0-2.el9.x86_64                        323/450 
+  Verifying        : libkcapi-1.3.1-3.el9.x86_64                        324/450 
+  Verifying        : libcurl-7.76.1-31.el9.x86_64                       325/450 
+  Verifying        : libcurl-7.76.1-26.el9_3.2.0.1.x86_64               326/450 
+  Verifying        : curl-7.76.1-31.el9.x86_64                          327/450 
+  Verifying        : curl-7.76.1-26.el9_3.2.0.1.x86_64                  328/450 
+  Verifying        : libtevent-0.16.1-1.el9.x86_64                      329/450 
+  Verifying        : libtevent-0.14.1-2.el9.x86_64                      330/450 
+  Verifying        : libtalloc-2.4.2-1.el9.x86_64                       331/450 
+  Verifying        : libtalloc-2.4.0-2.el9.x86_64                       332/450 
+  Verifying        : libldb-2.9.1-2.el9.x86_64                          333/450 
+  Verifying        : libldb-2.7.2-2.el9.x86_64                          334/450 
+  Verifying        : openldap-2.6.6-3.el9.x86_64                        335/450 
+  Verifying        : openldap-2.6.3-1.el9.x86_64                        336/450 
+  Verifying        : libuser-0.63-15.el9.x86_64                         337/450 
+  Verifying        : libuser-0.63-13.el9.x86_64                         338/450 
+  Verifying        : libssh-config-0.10.4-13.el9.noarch                 339/450 
+  Verifying        : libssh-config-0.10.4-11.el9.noarch                 340/450 
+  Verifying        : libssh-0.10.4-13.el9.x86_64                        341/450 
+  Verifying        : libssh-0.10.4-11.el9.x86_64                        342/450 
+  Verifying        : sudo-1.9.5p2-10.el9_3.x86_64                       343/450 
+  Verifying        : sudo-1.9.5p2-9.el9.x86_64                          344/450 
+  Verifying        : python3-dbus-1.2.18-2.el9.0.1.x86_64               345/450 
+  Verifying        : python3-dbus-1.2.18-2.el9.x86_64                   346/450 
+  Verifying        : initscripts-rename-device-10.11.7-1.el9.x86_64     347/450 
+  Verifying        : initscripts-rename-device-10.11.5-1.el9.x86_64     348/450 
+  Verifying        : snappy-1.1.8-8.el9.0.1.x86_64                      349/450 
+  Verifying        : snappy-1.1.8-8.el9.x86_64                          350/450 
+  Verifying        : krb5-libs-1.21.1-4.el9_5.x86_64                    351/450 
+  Verifying        : krb5-libs-1.21.1-1.el9.x86_64                      352/450 
+  Verifying        : kpartx-0.8.7-32.el9.x86_64                         353/450 
+  Verifying        : kpartx-0.8.7-22.el9.x86_64                         354/450 
+  Verifying        : pam-1.5.1-22.el9_5.x86_64                          355/450 
+  Verifying        : pam-1.5.1-15.el9.x86_64                            356/450 
+  Verifying        : vim-minimal-2:8.2.2637-21.el9.x86_64               357/450 
+  Verifying        : vim-minimal-2:8.2.2637-20.el9_1.x86_64             358/450 
+  Verifying        : libstdc++-11.5.0-2.el9.x86_64                      359/450 
+  Verifying        : libstdc++-11.4.1-2.1.el9.x86_64                    360/450 
+  Verifying        : libgomp-11.5.0-2.el9.x86_64                        361/450 
+  Verifying        : libgomp-11.4.1-2.1.el9.x86_64                      362/450 
+  Verifying        : libgcc-11.5.0-2.el9.x86_64                         363/450 
+  Verifying        : libgcc-11.4.1-2.1.el9.x86_64                       364/450 
+  Verifying        : glibc-langpack-en-2.34-125.el9_5.1.x86_64          365/450 
+  Verifying        : glibc-langpack-en-2.34-83.el9.7.x86_64             366/450 
+  Verifying        : glibc-gconv-extra-2.34-125.el9_5.1.x86_64          367/450 
+  Verifying        : glibc-gconv-extra-2.34-83.el9.7.x86_64             368/450 
+  Verifying        : glibc-common-2.34-125.el9_5.1.x86_64               369/450 
+  Verifying        : glibc-common-2.34-83.el9.7.x86_64                  370/450 
+  Verifying        : glibc-2.34-125.el9_5.1.x86_64                      371/450 
+  Verifying        : glibc-2.34-83.el9.7.x86_64                         372/450 
+  Verifying        : util-linux-core-2.37.4-20.el9.x86_64               373/450 
+  Verifying        : util-linux-core-2.37.4-15.el9.x86_64               374/450 
+  Verifying        : util-linux-2.37.4-20.el9.x86_64                    375/450 
+  Verifying        : util-linux-2.37.4-15.el9.x86_64                    376/450 
+  Verifying        : libuuid-2.37.4-20.el9.x86_64                       377/450 
+  Verifying        : libuuid-2.37.4-15.el9.x86_64                       378/450 
+  Verifying        : libsmartcols-2.37.4-20.el9.x86_64                  379/450 
+  Verifying        : libsmartcols-2.37.4-15.el9.x86_64                  380/450 
+  Verifying        : libmount-2.37.4-20.el9.x86_64                      381/450 
+  Verifying        : libmount-2.37.4-15.el9.x86_64                      382/450 
+  Verifying        : libfdisk-2.37.4-20.el9.x86_64                      383/450 
+  Verifying        : libfdisk-2.37.4-15.el9.x86_64                      384/450 
+  Verifying        : libblkid-2.37.4-20.el9.x86_64                      385/450 
+  Verifying        : libblkid-2.37.4-15.el9.x86_64                      386/450 
+  Verifying        : xfsprogs-6.4.0-4.el9.x86_64                        387/450 
+  Verifying        : xfsprogs-5.19.0-4.el9.x86_64                       388/450 
+  Verifying        : NetworkManager-tui-1:1.48.10-3.el9_5.x86_64        389/450 
+  Verifying        : NetworkManager-tui-1:1.44.0-3.el9.x86_64           390/450 
+  Verifying        : NetworkManager-team-1:1.48.10-3.el9_5.x86_64       391/450 
+  Verifying        : NetworkManager-team-1:1.44.0-3.el9.x86_64          392/450 
+  Verifying        : NetworkManager-libnm-1:1.48.10-3.el9_5.x86_64      393/450 
+  Verifying        : NetworkManager-libnm-1:1.44.0-3.el9.x86_64         394/450 
+  Verifying        : NetworkManager-1:1.48.10-3.el9_5.x86_64            395/450 
+  Verifying        : NetworkManager-1:1.44.0-3.el9.x86_64               396/450 
+  Verifying        : python3-libdnf-0.69.0-12.el9.x86_64                397/450 
+  Verifying        : python3-libdnf-0.69.0-6.el9_3.x86_64               398/450 
+  Verifying        : python3-hawkey-0.69.0-12.el9.x86_64                399/450 
+  Verifying        : python3-hawkey-0.69.0-6.el9_3.x86_64               400/450 
+  Verifying        : libdnf-0.69.0-12.el9.x86_64                        401/450 
+  Verifying        : libdnf-0.69.0-6.el9_3.x86_64                       402/450 
+  Verifying        : libeconf-0.4.1-4.el9.x86_64                        403/450 
+  Verifying        : libeconf-0.4.1-3.el9_2.x86_64                      404/450 
+  Verifying        : lvm2-libs-9:2.03.24-2.el9.x86_64                   405/450 
+  Verifying        : lvm2-libs-9:2.03.21-3.el9.x86_64                   406/450 
+  Verifying        : lvm2-9:2.03.24-2.el9.x86_64                        407/450 
+  Verifying        : lvm2-9:2.03.21-3.el9.x86_64                        408/450 
+  Verifying        : device-mapper-libs-9:1.02.198-2.el9.x86_64         409/450 
+  Verifying        : device-mapper-libs-9:1.02.195-3.el9.x86_64         410/450 
+  Verifying        : device-mapper-event-libs-9:1.02.198-2.el9.x86_64   411/450 
+  Verifying        : device-mapper-event-libs-9:1.02.195-3.el9.x86_64   412/450 
+  Verifying        : device-mapper-event-9:1.02.198-2.el9.x86_64        413/450 
+  Verifying        : device-mapper-event-9:1.02.195-3.el9.x86_64        414/450 
+  Verifying        : device-mapper-9:1.02.198-2.el9.x86_64              415/450 
+  Verifying        : device-mapper-9:1.02.195-3.el9.x86_64              416/450 
+  Verifying        : libnvme-1.9-3.el9.x86_64                           417/450 
+  Verifying        : libnvme-1.4-7.el9.x86_64                           418/450 
+  Verifying        : kbd-legacy-2.4.0-10.el9.noarch                     419/450 
+  Verifying        : kbd-legacy-2.4.0-9.el9.noarch                      420/450 
+  Verifying        : grub2-tools-minimal-1:2.06-92.el9.x86_64           421/450 
+  Verifying        : grub2-tools-minimal-1:2.06-70.el9_3.1.rocky.0.2.   422/450 
+  Verifying        : grub2-tools-1:2.06-92.el9.x86_64                   423/450 
+  Verifying        : grub2-tools-1:2.06-70.el9_3.1.rocky.0.2.x86_64     424/450 
+  Verifying        : grub2-pc-1:2.06-92.el9.x86_64                      425/450 
+  Verifying        : grub2-pc-1:2.06-70.el9_3.1.rocky.0.2.x86_64        426/450 
+  Verifying        : grub2-pc-modules-1:2.06-92.el9.noarch              427/450 
+  Verifying        : grub2-pc-modules-1:2.06-70.el9_3.1.rocky.0.2.noa   428/450 
+  Verifying        : grub2-common-1:2.06-92.el9.noarch                  429/450 
+  Verifying        : grub2-common-1:2.06-70.el9_3.1.rocky.0.2.noarch    430/450 
+  Verifying        : kernel-tools-libs-5.14.0-503.19.1.el9_5.x86_64     431/450 
+  Verifying        : kernel-tools-libs-5.14.0-362.8.1.el9_3.x86_64      432/450 
+  Verifying        : kernel-tools-5.14.0-503.19.1.el9_5.x86_64          433/450 
+  Verifying        : kernel-tools-5.14.0-362.8.1.el9_3.x86_64           434/450 
+  Verifying        : rocky-repos-9.5-1.2.el9.noarch                     435/450 
+  Verifying        : rocky-repos-9.3-0.6.el9.noarch                     436/450 
+  Verifying        : rocky-release-9.5-1.2.el9.noarch                   437/450 
+  Verifying        : rocky-release-9.3-0.6.el9.noarch                   438/450 
+  Verifying        : rocky-gpg-keys-9.5-1.2.el9.noarch                  439/450 
+  Verifying        : rocky-gpg-keys-9.3-0.6.el9.noarch                  440/450 
+  Verifying        : rpm-plugin-systemd-inhibit-4.16.1.3-34.el9.0.1.x   441/450 
+  Verifying        : rpm-plugin-systemd-inhibit-4.16.1.3-25.el9.x86_6   442/450 
+  Verifying        : python-unversioned-command-3.9.21-1.el9_5.noarch   443/450 
+  Verifying        : python-unversioned-command-3.9.18-1.el9_3.noarch   444/450 
+  Verifying        : python3-libselinux-3.6-1.el9.x86_64                445/450 
+  Verifying        : python3-libselinux-3.5-1.el9.x86_64                446/450 
+  Verifying        : rsyslog-logrotate-8.2310.0-4.el9.x86_64            447/450 
+  Verifying        : rsyslog-logrotate-8.2102.0-117.el9.x86_64          448/450 
+  Verifying        : rsyslog-8.2310.0-4.el9.x86_64                      449/450 
+  Verifying        : rsyslog-8.2102.0-117.el9.x86_64                    450/450 
+
+Upgraded:
+  NetworkManager-1:1.48.10-3.el9_5.x86_64                                       
+  NetworkManager-libnm-1:1.48.10-3.el9_5.x86_64                                 
+  NetworkManager-team-1:1.48.10-3.el9_5.x86_64                                  
+  NetworkManager-tui-1:1.48.10-3.el9_5.x86_64                                   
+  acl-2.3.1-4.el9.x86_64                                                        
+  alternatives-1.24-1.el9_5.1.x86_64                                            
+  audit-3.1.5-1.el9.x86_64                                                      
+  audit-libs-3.1.5-1.el9.x86_64                                                 
+  basesystem-11-13.el9.0.1.noarch                                               
+  bash-5.1.8-9.el9.x86_64                                                       
+  binutils-2.35.2-54.el9.x86_64                                                 
+  binutils-gold-2.35.2-54.el9.x86_64                                            
+  c-ares-1.19.1-2.el9_4.x86_64                                                  
+  ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch                          
+  chrony-4.5-3.el9.x86_64                                                       
+  coreutils-8.32-36.el9.x86_64                                                  
+  coreutils-common-8.32-36.el9.x86_64                                           
+  cronie-1.5.7-12.el9_5.x86_64                                                  
+  cronie-anacron-1.5.7-12.el9_5.x86_64                                          
+  crypto-policies-20240828-2.git626aa59.el9_5.noarch                            
+  crypto-policies-scripts-20240828-2.git626aa59.el9_5.noarch                    
+  cryptsetup-libs-2.7.2-3.el9_5.x86_64                                          
+  curl-7.76.1-31.el9.x86_64                                                     
+  device-mapper-9:1.02.198-2.el9.x86_64                                         
+  device-mapper-event-9:1.02.198-2.el9.x86_64                                   
+  device-mapper-event-libs-9:1.02.198-2.el9.x86_64                              
+  device-mapper-libs-9:1.02.198-2.el9.x86_64                                    
+  device-mapper-persistent-data-1.0.9-3.el9_4.x86_64                            
+  dnf-4.14.0-17.el9.noarch                                                      
+  dnf-data-4.14.0-17.el9.noarch                                                 
+  dnf-plugins-core-4.3.0-16.el9.noarch                                          
+  dracut-057-70.git20240819.el9.x86_64                                          
+  dracut-config-rescue-057-70.git20240819.el9.x86_64                            
+  dracut-network-057-70.git20240819.el9.x86_64                                  
+  dracut-squash-057-70.git20240819.el9.x86_64                                   
+  e2fsprogs-1.46.5-5.el9.x86_64                                                 
+  e2fsprogs-libs-1.46.5-5.el9.x86_64                                            
+  elfutils-debuginfod-client-0.191-4.el9.x86_64                                 
+  elfutils-default-yama-scope-0.191-4.el9.noarch                                
+  elfutils-libelf-0.191-4.el9.x86_64                                            
+  elfutils-libs-0.191-4.el9.x86_64                                              
+  expat-2.5.0-3.el9_5.1.x86_64                                                  
+  file-5.39-16.el9.x86_64                                                       
+  file-libs-5.39-16.el9.x86_64                                                  
+  filesystem-3.16-5.el9.x86_64                                                  
+  findutils-1:4.8.0-7.el9.x86_64                                                
+  firewalld-1.3.4-7.el9.noarch                                                  
+  firewalld-filesystem-1.3.4-7.el9.noarch                                       
+  fuse-libs-2.9.9-16.el9.x86_64                                                 
+  gdbm-libs-1:1.23-1.el9.x86_64                                                 
+  glib2-2.68.4-14.el9_4.1.x86_64                                                
+  glibc-2.34-125.el9_5.1.x86_64                                                 
+  glibc-common-2.34-125.el9_5.1.x86_64                                          
+  glibc-gconv-extra-2.34-125.el9_5.1.x86_64                                     
+  glibc-langpack-en-2.34-125.el9_5.1.x86_64                                     
+  gnutls-3.8.3-4.el9_4.x86_64                                                   
+  grub2-common-1:2.06-92.el9.noarch                                             
+  grub2-pc-1:2.06-92.el9.x86_64                                                 
+  grub2-pc-modules-1:2.06-92.el9.noarch                                         
+  grub2-tools-1:2.06-92.el9.x86_64                                              
+  grub2-tools-minimal-1:2.06-92.el9.x86_64                                      
+  grubby-8.40-64.el9.x86_64                                                     
+  hwdata-0.348-9.15.el9.noarch                                                  
+  ima-evm-utils-1.5-2.el9.0.1.x86_64                                            
+  initscripts-rename-device-10.11.7-1.el9.x86_64                                
+  initscripts-service-10.11.7-1.el9.noarch                                      
+  iproute-6.2.0-6.el9_4.x86_64                                                  
+  iproute-tc-6.2.0-6.el9_4.x86_64                                               
+  iptables-libs-1.8.10-4.el9_4.x86_64                                           
+  iptables-nft-1.8.10-4.el9_4.x86_64                                            
+  iputils-20210202-10.el9_5.x86_64                                              
+  irqbalance-2:1.9.4-1.el9.x86_64                                               
+  iwl100-firmware-39.31.5.1-146.2.el9_5.noarch                                  
+  iwl1000-firmware-1:39.31.5.1-146.2.el9_5.noarch                               
+  iwl105-firmware-18.168.6.1-146.2.el9_5.noarch                                 
+  iwl135-firmware-18.168.6.1-146.2.el9_5.noarch                                 
+  iwl2000-firmware-18.168.6.1-146.2.el9_5.noarch                                
+  iwl2030-firmware-18.168.6.1-146.2.el9_5.noarch                                
+  iwl3160-firmware-1:25.30.13.0-146.2.el9_5.noarch                              
+  iwl5000-firmware-8.83.5.1_1-146.2.el9_5.noarch                                
+  iwl5150-firmware-8.24.2.2-146.2.el9_5.noarch                                  
+  iwl6000g2a-firmware-18.168.6.1-146.2.el9_5.noarch                             
+  iwl6050-firmware-41.28.5.1-146.2.el9_5.noarch                                 
+  iwl7260-firmware-1:25.30.13.0-146.2.el9_5.noarch                              
+  kbd-2.4.0-10.el9.x86_64                                                       
+  kbd-legacy-2.4.0-10.el9.noarch                                                
+  kbd-misc-2.4.0-10.el9.noarch                                                  
+  kernel-tools-5.14.0-503.19.1.el9_5.x86_64                                     
+  kernel-tools-libs-5.14.0-503.19.1.el9_5.x86_64                                
+  kexec-tools-2.0.27-16.el9_5.1.x86_64                                          
+  kmod-28-10.el9.x86_64                                                         
+  kmod-libs-28-10.el9.x86_64                                                    
+  kpartx-0.8.7-32.el9.x86_64                                                    
+  krb5-libs-1.21.1-4.el9_5.x86_64                                               
+  less-590-5.el9.x86_64                                                         
+  libacl-2.3.1-4.el9.x86_64                                                     
+  libarchive-3.5.3-4.el9.0.1.x86_64                                             
+  libblkid-2.37.4-20.el9.x86_64                                                 
+  libbpf-2:1.4.0-1.el9.x86_64                                                   
+  libbrotli-1.0.9-7.el9_5.x86_64                                                
+  libcom_err-1.46.5-5.el9.x86_64                                                
+  libcurl-7.76.1-31.el9.x86_64                                                  
+  libdb-5.3.28-54.el9.x86_64                                                    
+  libdnf-0.69.0-12.el9.x86_64                                                   
+  libeconf-0.4.1-4.el9.x86_64                                                   
+  libevent-2.1.12-8.el9_4.x86_64                                                
+  libfdisk-2.37.4-20.el9.x86_64                                                 
+  libfido2-1.13.0-2.el9.x86_64                                                  
+  libgcc-11.5.0-2.el9.x86_64                                                    
+  libgcrypt-1.10.0-11.el9.x86_64                                                
+  libgomp-11.5.0-2.el9.x86_64                                                   
+  libibverbs-51.0-1.el9.x86_64                                                  
+  libkcapi-1.4.0-2.el9.x86_64                                                   
+  libkcapi-hmaccalc-1.4.0-2.el9.x86_64                                          
+  libksba-1.5.1-7.el9.x86_64                                                    
+  libldb-2.9.1-2.el9.x86_64                                                     
+  libmnl-1.0.4-16.el9_4.x86_64                                                  
+  libmount-2.37.4-20.el9.x86_64                                                 
+  libndp-1.9-1.el9.x86_64                                                       
+  libnftnl-1.2.6-4.el9_4.x86_64                                                 
+  libnghttp2-1.43.0-6.el9.x86_64                                                
+  libnl3-3.9.0-1.el9.x86_64                                                     
+  libnl3-cli-3.9.0-1.el9.x86_64                                                 
+  libnvme-1.9-3.el9.x86_64                                                      
+  librepo-1.14.5-2.el9.x86_64                                                   
+  libselinux-3.6-1.el9.x86_64                                                   
+  libselinux-utils-3.6-1.el9.x86_64                                             
+  libsemanage-3.6-2.1.el9_5.x86_64                                              
+  libsepol-3.6-1.el9.x86_64                                                     
+  libsmartcols-2.37.4-20.el9.x86_64                                             
+  libsolv-0.7.24-3.el9.x86_64                                                   
+  libss-1.46.5-5.el9.x86_64                                                     
+  libssh-0.10.4-13.el9.x86_64                                                   
+  libssh-config-0.10.4-13.el9.noarch                                            
+  libsss_certmap-2.9.5-4.el9_5.4.x86_64                                         
+  libsss_idmap-2.9.5-4.el9_5.4.x86_64                                           
+  libsss_nss_idmap-2.9.5-4.el9_5.4.x86_64                                       
+  libsss_sudo-2.9.5-4.el9_5.4.x86_64                                            
+  libstdc++-11.5.0-2.el9.x86_64                                                 
+  libtalloc-2.4.2-1.el9.x86_64                                                  
+  libtdb-1.4.10-1.el9.x86_64                                                    
+  libtevent-0.16.1-1.el9.x86_64                                                 
+  libuser-0.63-15.el9.x86_64                                                    
+  libuuid-2.37.4-20.el9.x86_64                                                  
+  libxml2-2.9.13-6.el9_4.x86_64                                                 
+  linux-firmware-20241121-146.2.el9_5.noarch                                    
+  linux-firmware-whence-20241121-146.2.el9_5.noarch                             
+  lvm2-9:2.03.24-2.el9.x86_64                                                   
+  lvm2-libs-9:2.03.24-2.el9.x86_64                                              
+  microcode_ctl-4:20240910-1.el9_5.noarch                                       
+  nettle-3.9.1-1.el9.x86_64                                                     
+  nftables-1:1.0.9-3.el9.x86_64                                                 
+  numactl-libs-2.0.18-2.el9.x86_64                                              
+  nvme-cli-2.9.1-6.el9.x86_64                                                   
+  openldap-2.6.6-3.el9.x86_64                                                   
+  openssh-8.7p1-43.el9.x86_64                                                   
+  openssh-clients-8.7p1-43.el9.x86_64                                           
+  openssh-server-8.7p1-43.el9.x86_64                                            
+  openssl-1:3.2.2-6.el9_5.x86_64                                                
+  openssl-libs-1:3.2.2-6.el9_5.x86_64                                           
+  p11-kit-0.25.3-3.el9_5.x86_64                                                 
+  p11-kit-trust-0.25.3-3.el9_5.x86_64                                           
+  pam-1.5.1-22.el9_5.x86_64                                                     
+  pcre-8.44-4.el9.x86_64                                                        
+  pcre2-10.40-6.el9.x86_64                                                      
+  pcre2-syntax-10.40-6.el9.noarch                                               
+  policycoreutils-3.6-2.1.el9.x86_64                                            
+  procps-ng-3.3.17-14.el9.x86_64                                                
+  python-unversioned-command-3.9.21-1.el9_5.noarch                              
+  python3-3.9.21-1.el9_5.x86_64                                                 
+  python3-dbus-1.2.18-2.el9.0.1.x86_64                                          
+  python3-dnf-4.14.0-17.el9.noarch                                              
+  python3-dnf-plugins-core-4.3.0-16.el9.noarch                                  
+  python3-firewall-1.3.4-7.el9.noarch                                           
+  python3-hawkey-0.69.0-12.el9.x86_64                                           
+  python3-libdnf-0.69.0-12.el9.x86_64                                           
+  python3-libs-3.9.21-1.el9_5.x86_64                                            
+  python3-libselinux-3.6-1.el9.x86_64                                           
+  python3-nftables-1:1.0.9-3.el9.x86_64                                         
+  python3-pip-wheel-21.3.1-1.el9.noarch                                         
+  python3-rpm-4.16.1.3-34.el9.0.1.x86_64                                        
+  python3-setuptools-wheel-53.0.0-13.el9.noarch                                 
+  python3-systemd-234-19.el9.x86_64                                             
+  rocky-gpg-keys-9.5-1.2.el9.noarch                                             
+  rocky-release-9.5-1.2.el9.noarch                                              
+  rocky-repos-9.5-1.2.el9.noarch                                                
+  rpm-4.16.1.3-34.el9.0.1.x86_64                                                
+  rpm-build-libs-4.16.1.3-34.el9.0.1.x86_64                                     
+  rpm-libs-4.16.1.3-34.el9.0.1.x86_64                                           
+  rpm-plugin-audit-4.16.1.3-34.el9.0.1.x86_64                                   
+  rpm-plugin-selinux-4.16.1.3-34.el9.0.1.x86_64                                 
+  rpm-plugin-systemd-inhibit-4.16.1.3-34.el9.0.1.x86_64                         
+  rpm-sign-libs-4.16.1.3-34.el9.0.1.x86_64                                      
+  rsyslog-8.2310.0-4.el9.x86_64                                                 
+  rsyslog-logrotate-8.2310.0-4.el9.x86_64                                       
+  selinux-policy-38.1.45-3.el9_5.noarch                                         
+  selinux-policy-targeted-38.1.45-3.el9_5.noarch                                
+  setup-2.13.7-10.el9.noarch                                                    
+  shadow-utils-2:4.9-10.el9_5.x86_64                                            
+  snappy-1.1.8-8.el9.0.1.x86_64                                                 
+  sqlite-libs-3.34.1-7.el9_3.x86_64                                             
+  squashfs-tools-4.4-10.git1.el9.x86_64                                         
+  sssd-client-2.9.5-4.el9_5.4.x86_64                                            
+  sssd-common-2.9.5-4.el9_5.4.x86_64                                            
+  sssd-kcm-2.9.5-4.el9_5.4.x86_64                                               
+  sudo-1.9.5p2-10.el9_3.x86_64                                                  
+  systemd-252-46.el9_5.2.0.1.x86_64                                             
+  systemd-libs-252-46.el9_5.2.0.1.x86_64                                        
+  systemd-pam-252-46.el9_5.2.0.1.x86_64                                         
+  systemd-rpm-macros-252-46.el9_5.2.0.1.noarch                                  
+  systemd-udev-252-46.el9_5.2.0.1.x86_64                                        
+  tpm2-tss-3.2.3-1.el9.x86_64                                                   
+  tzdata-2024b-2.el9.noarch                                                     
+  util-linux-2.37.4-20.el9.x86_64                                               
+  util-linux-core-2.37.4-20.el9.x86_64                                          
+  vim-minimal-2:8.2.2637-21.el9.x86_64                                          
+  xfsprogs-6.4.0-4.el9.x86_64                                                   
+  yum-4.14.0-17.el9.noarch                                                      
+Installed:
+  attr-2.5.1-3.el9.x86_64                                                       
+  freetype-2.10.4-9.el9.x86_64                                                  
+  graphite2-1.3.14-9.el9.x86_64                                                 
+  grub2-tools-efi-1:2.06-92.el9.x86_64                                          
+  grub2-tools-extra-1:2.06-92.el9.x86_64                                        
+  harfbuzz-2.7.4-10.el9.x86_64                                                  
+  jq-1.6-17.el9.x86_64                                                          
+  kernel-5.14.0-503.19.1.el9_5.x86_64                                           
+  kernel-core-5.14.0-503.19.1.el9_5.x86_64                                      
+  kernel-modules-5.14.0-503.19.1.el9_5.x86_64                                   
+  kernel-modules-core-5.14.0-503.19.1.el9_5.x86_64                              
+  keyutils-1.6.3-1.el9.x86_64                                                   
+  libpng-2:1.6.37-12.el9.x86_64                                                 
+  oniguruma-6.9.6-1.el9.6.x86_64                                                
+
+Complete!
+
