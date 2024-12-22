@@ -23,7 +23,6 @@ function Add-HostKey {
     )
     $hostKey = & ssh-keyscan -t $KeyType $Hostname 2>$null
     if ($hostKey) {
-        # Debug: Print each key being added
         Write-Host "Debug: Adding $KeyType key to known_hosts: $hostKey"
         Add-Content -Path $knownHostsPath -Value $hostKey
     }
