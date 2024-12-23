@@ -1,0 +1,357 @@
+2024-12-23 12:57:43,459 - Main - INFO - Starting main script
+2024-12-23 12:57:43,460 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:57:43,460 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:57:43,785 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:57:44,247 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:57:44,247 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:57:44,685 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:57:44,686 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:57:45,164 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:57:45,408 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:57:45,871 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:57:45,871 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:57:45,871 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:57:46,271 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:57:46,271 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:57:46,330 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:46,332 - modules.ssh_connector - INFO - [928ca661][172.21.238.161] Connected successfully
+2024-12-23 12:57:46,335 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:46,337 - modules.ssh_connector - INFO - [bc3295f5][172.21.238.161] Connected successfully
+2024-12-23 12:57:46,402 - modules.ssh_connector - INFO - [928ca661][172.21.238.161] Connection closed
+2024-12-23 12:57:46,402 - AVAgent - INFO - [928ca661][172.21.238.161] Command output: Hello, world!
+
+2024-12-23 12:57:46,608 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:57:46,619 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 12:57:46,627 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:46,629 - modules.ssh_connector - INFO - [b5740c8c][172.21.232.237] Connected successfully
+2024-12-23 12:57:46,917 - modules.ssh_connector - INFO - [b5740c8c][172.21.232.237] Connection closed
+2024-12-23 12:57:46,917 - AVAgent - INFO - [b5740c8c][172.21.232.237] Command output: Hello, world!
+
+2024-12-23 12:57:46,942 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 12:57:46,942 - modules.ssh_connector - INFO - [bc3295f5][172.21.238.161] Connection closed
+2024-12-23 12:57:46,943 - AVAgent - INFO - [bc3295f5][172.21.238.161] Command output: Last metadata expiration check: 1:40:05 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 12:57:47,146 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:57:47,164 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:47,166 - modules.ssh_connector - INFO - [baa8504b][172.21.232.237] Connected successfully
+2024-12-23 12:57:47,289 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 12:57:50,440 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 12:57:50,441 - modules.ssh_connector - INFO - [baa8504b][172.21.232.237] Connection closed
+2024-12-23 12:57:50,441 - AVAgent - INFO - [baa8504b][172.21.232.237] Command output: Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Fetched 383 kB in 0s (839 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+2024-12-23 12:59:59,443 - Main - INFO - Starting main script
+2024-12-23 12:59:59,443 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:59:59,443 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:59:59,747 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:00:00,211 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:00:00,212 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:00:00,677 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:00:00,678 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:00:01,143 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:00:01,413 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:00:01,918 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:00:01,918 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:00:01,918 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:00:02,317 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:00:02,317 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:00:02,376 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:02,379 - modules.ssh_connector - INFO - [3c2a74b0][172.21.238.161] Connected successfully
+2024-12-23 13:00:02,381 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:02,384 - modules.ssh_connector - INFO - [ebee2732][172.21.238.161] Connected successfully
+2024-12-23 13:00:02,454 - modules.ssh_connector - INFO - [3c2a74b0][172.21.238.161] Connection closed
+2024-12-23 13:00:02,455 - AVAgent - INFO - [3c2a74b0][172.21.238.161] Command output:
+Hello, world!
+
+2024-12-23 13:00:02,650 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:00:02,656 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:00:02,675 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:02,676 - modules.ssh_connector - INFO - [e7668ab1][172.21.232.237] Connected successfully
+2024-12-23 13:00:02,960 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:00:02,960 - modules.ssh_connector - INFO - [ebee2732][172.21.238.161] Connection closed
+2024-12-23 13:00:02,961 - AVAgent - INFO - [ebee2732][172.21.238.161] Command output:
+Last metadata expiration check: 1:42:21 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 13:00:03,166 - modules.ssh_connector - INFO - [e7668ab1][172.21.232.237] Connection closed
+2024-12-23 13:00:03,166 - AVAgent - INFO - [e7668ab1][172.21.232.237] Command output:
+Hello, world!
+
+2024-12-23 13:00:03,170 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:00:03,190 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:03,192 - modules.ssh_connector - INFO - [7828d733][172.21.232.237] Connected successfully
+2024-12-23 13:00:03,323 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:00:09,595 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:00:09,596 - modules.ssh_connector - INFO - [7828d733][172.21.232.237] Connection closed
+2024-12-23 13:00:09,596 - AVAgent - INFO - [7828d733][172.21.232.237] Command output:
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+2024-12-23 13:01:22,636 - Main - INFO - Starting main script
+2024-12-23 13:01:22,636 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:01:22,637 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:01:22,955 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:01:23,423 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:01:23,423 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:01:23,863 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:01:23,864 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:01:24,295 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:01:24,540 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:01:25,011 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:01:25,011 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:01:25,011 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:01:25,417 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:01:25,417 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:01:25,477 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:25,479 - modules.ssh_connector - INFO - [ef299a44][172.21.238.161] Connected successfully
+2024-12-23 13:01:25,481 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:25,484 - modules.ssh_connector - INFO - [4a337e5d][172.21.238.161] Connected successfully
+2024-12-23 13:01:25,557 - modules.ssh_connector - INFO - [ef299a44][172.21.238.161] Connection closed
+2024-12-23 13:01:25,557 - AVAgent - INFO - [ef299a44][172.21.238.161] OUT: 
+ Hello, world!
+
+2024-12-23 13:01:25,755 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:01:25,761 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:01:25,779 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:25,781 - modules.ssh_connector - INFO - [d9f1536e][172.21.232.237] Connected successfully
+2024-12-23 13:01:26,056 - modules.ssh_connector - INFO - [d9f1536e][172.21.232.237] Connection closed
+2024-12-23 13:01:26,056 - AVAgent - INFO - [d9f1536e][172.21.232.237] OUT: 
+ Hello, world!
+
+2024-12-23 13:01:26,067 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:01:26,068 - modules.ssh_connector - INFO - [4a337e5d][172.21.238.161] Connection closed
+2024-12-23 13:01:26,068 - AVAgent - INFO - [4a337e5d][172.21.238.161] OUT: 
+ Last metadata expiration check: 1:43:44 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 13:01:26,270 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:01:26,288 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:26,290 - modules.ssh_connector - INFO - [3f6698fa][172.21.232.237] Connected successfully
+2024-12-23 13:01:26,417 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:01:28,566 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:01:28,567 - modules.ssh_connector - INFO - [3f6698fa][172.21.232.237] Connection closed
+2024-12-23 13:01:28,567 - AVAgent - INFO - [3f6698fa][172.21.232.237] OUT: 
+ Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+2024-12-23 13:03:01,817 - Main - INFO - Starting main script
+2024-12-23 13:03:01,818 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:03:01,818 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:03:02,134 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:02,584 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:02,584 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:03:03,051 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:03:03,052 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:03:03,522 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:03:03,768 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:04,237 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:04,237 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:03:04,238 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:03:04,642 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:04,642 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:04,702 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:04,704 - modules.ssh_connector - INFO - [06541649][172.21.238.161] Connected successfully
+2024-12-23 13:03:04,706 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:04,709 - modules.ssh_connector - INFO - [01114de7][172.21.238.161] Connected successfully
+2024-12-23 13:03:04,775 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:03:04,789 - modules.ssh_connector - INFO - [01114de7][172.21.238.161] Connection closed
+2024-12-23 13:03:04,789 - AVAgent - INFO - [01114de7][172.21.238.161] OUTPUT:
+	Hello, world!
+
+2024-12-23 13:03:04,992 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:05,011 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:05,013 - modules.ssh_connector - INFO - [e44923c6][172.21.232.237] Connected successfully
+2024-12-23 13:03:05,265 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:05,266 - modules.ssh_connector - INFO - [06541649][172.21.238.161] Connection closed
+2024-12-23 13:03:05,266 - AVAgent - INFO - [06541649][172.21.238.161] OUTPUT:
+	Last metadata expiration check: 1:45:23 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 13:03:05,470 - modules.ssh_connector - INFO - [e44923c6][172.21.232.237] Connection closed
+2024-12-23 13:03:05,471 - AVAgent - INFO - [e44923c6][172.21.232.237] OUTPUT:
+	Hello, world!
+
+2024-12-23 13:03:05,474 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:05,494 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:05,496 - modules.ssh_connector - INFO - [a0896304][172.21.232.237] Connected successfully
+2024-12-23 13:03:05,627 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:03:07,666 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:07,667 - modules.ssh_connector - INFO - [a0896304][172.21.232.237] Connection closed
+2024-12-23 13:03:07,667 - AVAgent - INFO - [a0896304][172.21.232.237] OUTPUT:
+	Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+2024-12-23 13:03:23,477 - Main - INFO - Starting main script
+2024-12-23 13:03:23,477 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:03:23,478 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:03:23,741 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:24,205 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:24,205 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:03:24,644 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:03:24,645 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:03:25,092 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:03:25,334 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:25,781 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:25,781 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:03:25,781 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:03:26,182 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:26,183 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:26,244 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:26,246 - modules.ssh_connector - INFO - [533ca7c5][172.21.238.161] Connected successfully
+2024-12-23 13:03:26,248 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:26,251 - modules.ssh_connector - INFO - [b90435b5][172.21.238.161] Connected successfully
+2024-12-23 13:03:26,328 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:03:26,329 - modules.ssh_connector - INFO - [533ca7c5][172.21.238.161] Connection closed
+2024-12-23 13:03:26,329 - AVAgent - INFO - [533ca7c5][172.21.238.161] OUTPUT:
+Hello, world!
+
+2024-12-23 13:03:26,533 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:26,551 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:26,553 - modules.ssh_connector - INFO - [fe4bbf0a][172.21.232.237] Connected successfully
+2024-12-23 13:03:26,691 - modules.ssh_connector - INFO - [fe4bbf0a][172.21.232.237] Connection closed
+2024-12-23 13:03:26,691 - AVAgent - INFO - [fe4bbf0a][172.21.232.237] OUTPUT:
+Hello, world!
+
+2024-12-23 13:03:26,797 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:26,798 - modules.ssh_connector - INFO - [b90435b5][172.21.238.161] Connection closed
+2024-12-23 13:03:26,798 - AVAgent - INFO - [b90435b5][172.21.238.161] OUTPUT:
+Last metadata expiration check: 1:45:45 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 13:03:27,000 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:27,020 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:27,022 - modules.ssh_connector - INFO - [2b5f346c][172.21.232.237] Connected successfully
+2024-12-23 13:03:27,154 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:03:28,949 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:28,950 - modules.ssh_connector - INFO - [2b5f346c][172.21.232.237] Connection closed
+2024-12-23 13:03:28,950 - AVAgent - INFO - [2b5f346c][172.21.232.237] OUTPUT:
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+2024-12-23 13:05:28,270 - Main - INFO - Starting main script
+2024-12-23 13:05:28,271 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:05:28,271 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:05:28,709 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:05:29,209 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:05:29,209 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:05:29,652 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:05:29,653 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:05:30,106 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:05:30,367 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:05:30,819 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:05:30,819 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:05:30,819 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:05:31,225 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:05:31,225 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:05:31,284 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:31,287 - modules.ssh_connector - INFO - [e2377827][172.21.238.161] Connected successfully
+2024-12-23 13:05:31,289 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:31,291 - modules.ssh_connector - INFO - [8cba202c][172.21.238.161] Connected successfully
+2024-12-23 13:05:31,356 - modules.ssh_connector - INFO - [e2377827][172.21.238.161] Connection closed
+2024-12-23 13:05:31,356 - AVAgent - INFO - [e2377827][172.21.238.161] OUTPUT:
+Hello, world!
+
+2024-12-23 13:05:31,558 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:05:31,569 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:05:31,576 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:31,578 - modules.ssh_connector - INFO - [b3138547][172.21.232.237] Connected successfully
+2024-12-23 13:05:31,869 - modules.ssh_connector - INFO - [b3138547][172.21.232.237] Connection closed
+2024-12-23 13:05:31,869 - AVAgent - INFO - [b3138547][172.21.232.237] OUTPUT:
+Hello, world!
+
+2024-12-23 13:05:31,877 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:05:31,878 - modules.ssh_connector - INFO - [8cba202c][172.21.238.161] Connection closed
+2024-12-23 13:05:31,878 - AVAgent - INFO - [8cba202c][172.21.238.161] OUTPUT:
+Last metadata expiration check: 1:47:50 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 13:05:32,081 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:05:32,100 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:32,102 - modules.ssh_connector - INFO - [29689724][172.21.232.237] Connected successfully
+2024-12-23 13:05:32,225 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:05:34,248 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:05:34,249 - modules.ssh_connector - INFO - [29689724][172.21.232.237] Connection closed
+2024-12-23 13:05:34,249 - AVAgent - INFO - [29689724][172.21.232.237] OUTPUT:
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+

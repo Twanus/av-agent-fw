@@ -1,5 +1,6 @@
 from modules.agent import Agent
 from modules.commander import EchoCommand
+from modules.command_update import CommandUpdate
 import logging
 import argparse
 
@@ -30,7 +31,7 @@ def main():
     agent = Agent(skip_logging=True)
 
     # agent.run_ssh_command(EchoCommand("Hello, world!"))
-    # agent.run_ssh_command_async(CommandUpdate())
+    agent.run_ssh_command_async(CommandUpdate())
     # agent.run_ssh_command_async(CommandGetLogs("/var/log/nginx/access.log"))
     agent.run_ssh_command_async(EchoCommand("Hello, world!"))
 
