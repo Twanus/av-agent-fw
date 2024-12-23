@@ -7,21 +7,23 @@ from dotenv import load_dotenv
 from modules.ssh_connector import SSHConnector
 from modules.commander import Command
 from modules.github_client import GitHubClient
+import concurrent.futures
 
 load_dotenv()
 
 
 class Agent:
-    def __init__(self):
-        # Initialize logging
-        logging.basicConfig(
-            level=logging.INFO,
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-            handlers=[
-                logging.FileHandler(Path("data/agent.log")),
-                logging.StreamHandler(),
-            ],
-        )
+    def __init__(self, skip_logging=False):
+        # Initialize logging only if not skipped
+        if not skip_logging:
+            logging.basicConfig(
+                level=logging.INFO,
+                format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+                handlers=[
+                    logging.FileHandler(Path("data/agent.log")),
+                    logging.StreamHandler(),
+                ],
+            )
         self.logger = logging.getLogger("SystemAgent")
 
         # Initialize directories (or create when not exists)
@@ -100,3 +102,31 @@ class Agent:
                 self.logger.info(f"Output from {host}: {output}")
             else:
                 self.logger.error(f"Could not connect to {host}")
+
+    def run_ssh_command_async(self, command: Command):
+        """Run a command on this agent's hosts using SSHConnector async"""
+        hosts = self.ssh_connector.read_hosts()
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = {
+                executor.submit(self._execute_on_host, host, command): host
+                for host in hosts
+            }
+            for future in concurrent.futures.as_completed(futures):
+                host = futures[future]
+                try:
+                    output = future.result()
+                    self.logger.info(f"Output from {host}: {output}")
+                except Exception as e:
+                    self.logger.error(
+                        f"Error executing command on {host}: {e}"
+                    )
+
+    def _execute_on_host(self, host, command: Command):
+        """Helper method to execute a command on a single host."""
+        client = self.ssh_connector.connect_to_host(host)
+        if client:
+            output = self.ssh_connector.execute_command(client, command)
+            self.ssh_connector.close_connection(client)
+            return output
+        else:
+            raise ConnectionError(f"Could not connect to {host}")
