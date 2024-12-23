@@ -561,3 +561,125 @@ Calculating upgrade...
 2024-12-23 12:01:56,468 - modules.ssh_connector - INFO - Connection closed.
 2024-12-23 12:01:56,468 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
 
+2024-12-23 12:07:35,085 - Main - INFO - Starting main script
+2024-12-23 12:07:35,086 - SystemAgent - INFO - No local config file found at config/config.yaml
+2024-12-23 12:07:35,086 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:07:35,358 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:07:35,834 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:07:35,835 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:07:36,356 - SystemAgent - INFO - Successfully fetched configuration from GitHub
+2024-12-23 12:07:36,630 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:07:37,111 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:07:37,111 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:07:37,111 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:07:37,112 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
+2024-12-23 12:07:37,517 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:07:37,520 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:07:37,537 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:07:37,538 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
+2024-12-23 12:07:37,539 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
+2024-12-23 12:07:37,585 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:07:37,587 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-23 12:07:37,587 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-23 12:07:37,664 - modules.ssh_connector - INFO - Connection closed.
+2024-12-23 12:07:37,664 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+
+2024-12-23 12:07:37,822 - modules.ssh_connector - INFO - Connection closed.
+2024-12-23 12:07:37,822 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+
+2024-12-23 12:11:11,527 - Main - INFO - Starting main script
+2024-12-23 12:11:11,527 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:11:11,528 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:11:11,837 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:11:12,316 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:11:12,316 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:11:12,792 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:11:12,793 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:11:13,261 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:11:13,528 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:11:16,044 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:11:16,044 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:11:16,044 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:11:16,045 - modules.ssh_connector - ERROR - Hosts file config/hosts.txt not found.
+2024-12-23 12:13:04,065 - Main - INFO - Starting main script
+2024-12-23 12:13:04,066 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:13:04,066 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:13:04,418 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:13:04,925 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:13:04,926 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:13:05,439 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:13:05,440 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:13:05,931 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:13:06,174 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:13:06,671 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:13:06,672 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:13:06,672 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:13:06,672 - SystemAgent - ERROR - Failed to run SSH command: 'Agent' object has no attribute '_run_ssh_command_thread'
+2024-12-23 12:13:23,242 - Main - INFO - Starting main script
+2024-12-23 12:13:23,242 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:13:23,243 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:13:23,543 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:13:24,014 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:13:24,015 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:13:24,465 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:13:24,466 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:13:24,925 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:13:25,189 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:13:25,700 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:13:25,700 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:13:25,701 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:13:25,701 - SystemAgent - ERROR - Failed to run SSH command: 'Agent' object has no attribute '_run_ssh_command_thread'
+2024-12-23 12:13:57,137 - Main - INFO - Starting main script
+2024-12-23 12:13:57,138 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:13:57,138 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:13:57,392 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:13:57,887 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:13:57,887 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:13:58,359 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:13:58,360 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:13:58,834 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:13:59,108 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:13:59,554 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:13:59,555 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:13:59,555 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:13:59,771 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:13:59,832 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:13:59,834 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-23 12:13:59,834 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-23 12:13:59,909 - modules.ssh_connector - INFO - Connection closed.
+2024-12-23 12:13:59,909 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+
+2024-12-23 12:14:00,120 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:14:00,139 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:14:00,141 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
+2024-12-23 12:14:00,141 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
+2024-12-23 12:14:00,420 - modules.ssh_connector - INFO - Connection closed.
+2024-12-23 12:14:00,421 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+
+2024-12-23 12:15:23,743 - Main - INFO - Starting main script
+2024-12-23 12:15:23,744 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:15:23,744 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:15:24,089 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:15:24,553 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:15:24,553 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:15:25,011 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:15:25,012 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:15:25,447 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:15:25,692 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:15:26,146 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:15:26,147 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:15:26,147 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:15:26,352 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:15:26,413 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:15:26,414 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
+2024-12-23 12:15:26,415 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
+2024-12-23 12:15:26,495 - modules.ssh_connector - INFO - Connection closed.
+2024-12-23 12:15:26,495 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+
+2024-12-23 12:15:26,701 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:15:26,719 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:15:26,721 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
+2024-12-23 12:15:26,721 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
+2024-12-23 12:15:27,000 - modules.ssh_connector - INFO - Connection closed.
+2024-12-23 12:15:27,000 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+

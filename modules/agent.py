@@ -8,6 +8,7 @@ from modules.ssh_connector import SSHConnector
 from modules.commander import Command
 from modules.github_client import GitHubClient
 import concurrent.futures
+import threading
 
 load_dotenv()
 
@@ -49,12 +50,19 @@ class Agent:
         self.logger.info("Agent initialized successfully with SSHConnector")
 
     def _load_config(self):
-        """Load the main config, fetching from GitHub if not found locally."""
+        """Load config & hosts from GitHub if not found locally."""
         config_file = self.config_dir / "config.yaml"
+        hosts_file = self.config_dir / "hosts.txt"
 
-        if not config_file.exists():
+        if not config_file.exists() or not hosts_file.exists():
+            missing_files = []
+            if not config_file.exists():
+                missing_files.append("config.yaml")
+            if not hosts_file.exists():
+                missing_files.append("hosts.txt")
+
             self.logger.info(
-                "No local config file found at config/config.yaml"
+                f"No local file(s) found: {', '.join(missing_files)}"
             )
             self.logger.info(
                 "Attempting to fetch configuration from GitHub repository..."
@@ -67,20 +75,32 @@ class Agent:
                     repository="Twanus/av-agent-fw",  # Default repository
                 )
 
-                # Fetch config from GitHub
-                config_content = self.github_client.get_file_content(
-                    "config/config.yaml"
-                )
-                self.logger.info(
-                    "Successfully fetched configuration from GitHub"
-                )
+                config_data = None
+                if not config_file.exists():
+                    # Fetch config from GitHub
+                    config_content = self.github_client.get_file_content(
+                        "config/config.yaml"
+                    )
+                    self.logger.info(
+                        "Successfully fetched config.yaml from GitHub"
+                    )
+                    config_data = yaml.safe_load(config_content)
 
-                return yaml.safe_load(config_content)
+                if not hosts_file.exists():
+                    # Fetch hosts from GitHub
+                    hosts_content = self.github_client.get_file_content(
+                        "config/hosts.txt"
+                    )
+                    self.logger.info(
+                        "Successfully fetched hosts.txt from GitHub"
+                    )
+                    self.hosts = hosts_content.splitlines()
+
+                if config_data:
+                    return config_data
 
             except Exception as e:
-                self.logger.error(
-                    f"Failed to fetch config from GitHub: {str(e)}"
-                )
+                self.logger.error(f"Failed to fetch from GitHub: {str(e)}")
                 self.logger.info("Using default configuration")
                 return {
                     "github_token": "",
@@ -122,23 +142,32 @@ class Agent:
             else:
                 self.logger.error(f"Could not connect to {host}")
 
-    def run_ssh_command_async(self, command: Command):
-        """Run a command on this agent's hosts using SSHConnector async"""
-        hosts = self.ssh_connector.read_hosts()
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = {
-                executor.submit(self._execute_on_host, host, command): host
-                for host in hosts
-            }
-            for future in concurrent.futures.as_completed(futures):
-                host = futures[future]
-                try:
-                    output = future.result()
-                    self.logger.info(f"Output from {host}: {output}")
-                except Exception as e:
-                    self.logger.error(
-                        f"Error executing command on {host}: {e}"
-                    )
+    def run_ssh_command_async(self, command):
+        """Run SSH command asynchronously using SSHConnector."""
+        try:
+            # Initialize SSHConnector with either hosts list or file path
+            if hasattr(self, "hosts"):  # If we loaded hosts from GitHub
+                ssh_connector = SSHConnector(
+                    private_key_path=self.config.get("private_key_path"),
+                    hosts_list=self.hosts,
+                )
+            else:  # Fall back to hosts file
+                ssh_connector = SSHConnector(
+                    hosts_file=self.config.get("hosts_file"),
+                    private_key_path=self.config.get("private_key_path"),
+                )
+
+            # Create and start the thread
+            thread = threading.Thread(
+                target=self._run_ssh_command_thread,
+                args=(ssh_connector, command),
+            )
+            thread.start()
+            return thread
+
+        except Exception as e:
+            self.logger.error(f"Failed to run SSH command: {e}")
+            return None
 
     def _execute_on_host(self, host, command: Command):
         """Helper method to execute a command on a single host."""
@@ -154,3 +183,24 @@ class Agent:
         """Ensure all required directories exist."""
         for directory in [self.config_dir, self.data_dir, self.modules_dir]:
             directory.mkdir(exist_ok=True)
+
+    def _run_ssh_command_thread(self, ssh_connector, command):
+        """Helper method to run SSH command in a thread."""
+        try:
+            hosts = ssh_connector.read_hosts()
+            self.logger.debug(f"Running command on {len(hosts)} hosts")
+
+            for host in hosts:
+                client = ssh_connector.connect_to_host(host)
+                if client:
+                    self.logger.debug(
+                        f"Connected to {host}, executing command"
+                    )
+                    output = ssh_connector.execute_command(client, command)
+                    ssh_connector.close_connection(client)
+                    self.logger.info(f"Output from {host}: {output}")
+                else:
+                    self.logger.error(f"Could not connect to {host}")
+
+        except Exception as e:
+            self.logger.error(f"Error in SSH command thread: {str(e)}")

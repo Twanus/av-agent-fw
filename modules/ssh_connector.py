@@ -5,14 +5,21 @@ import os
 
 
 class SSHConnector:
-    def __init__(self, hosts_file, private_key_path):
+    def __init__(
+        self, hosts_file=None, private_key_path=None, hosts_list=None
+    ):
         self.logger = logging.getLogger(__name__)
         self.hosts_file = hosts_file
+        self.hosts_list = hosts_list
         self.private_key_path = private_key_path
         self.known_hosts_file = os.path.expanduser("~/.ssh/known_hosts")
 
     def read_hosts(self):
-        """Reads the hosts from the specified hosts file."""
+        """Reads the hosts from either the hosts file or the provided list."""
+        if self.hosts_list is not None:
+            self.logger.debug("Using provided hosts list")
+            return self.hosts_list
+
         try:
             with open(self.hosts_file, "r") as file:
                 hosts = file.read().splitlines()
