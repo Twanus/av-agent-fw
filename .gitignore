@@ -25,5 +25,5 @@
 
 
 # Ignore the config/config.yaml if it's environment-specific
-config/config.yaml
+config/**
 
