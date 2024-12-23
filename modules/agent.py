@@ -24,7 +24,7 @@ class Agent:
                     logging.StreamHandler(),
                 ],
             )
-        self.logger = logging.getLogger("SystemAgent")
+        self.logger = logging.getLogger("AVAgent")
 
         # Initialize directories (or create when not exists)
         self.config_dir = Path("config")
@@ -187,19 +187,25 @@ class Agent:
         """Helper method to run SSH command in a thread."""
         try:
             hosts = ssh_connector.read_hosts()
-            self.logger.debug(f"Running command on {len(hosts)} hosts")
+            self.logger.debug(
+                f"Running command '{command}' on {len(hosts)} hosts"
+            )
 
             for host in hosts:
-                client = ssh_connector.connect_to_host(host)
+                client, session_id = ssh_connector.connect_to_host(host)
                 if client:
-                    self.logger.debug(
-                        f"Connected to {host}, executing command"
+                    output = ssh_connector.execute_command(
+                        client, command, session_id, host
                     )
-                    output = ssh_connector.execute_command(client, command)
-                    ssh_connector.close_connection(client)
-                    self.logger.info(f"Output from {host}: {output}")
+                    ssh_connector.close_connection(client, session_id, host)
+                    if output:
+                        self.logger.info(
+                            f"[{session_id}][{host}] Command output: {output}"
+                        )
                 else:
-                    self.logger.error(f"Could not connect to {host}")
+                    self.logger.error(
+                        f"[{session_id}][{host}] Connection failed"
+                    )
 
         except Exception as e:
             self.logger.error(f"Error in SSH command thread: {str(e)}")
