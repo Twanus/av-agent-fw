@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 from modules.ssh_connector import SSHConnector
 from modules.commander import Command
 from modules.github_client import GitHubClient
-import concurrent.futures
 import threading
 
 load_dotenv()
