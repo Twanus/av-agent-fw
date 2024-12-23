@@ -60,3 +60,18 @@ class GitHubClient:
                 "Error details - Status: %d, Data: %s", e.status, e.data
             )
             raise
+
+    def get_file_content(self, path):
+        """Fetch raw content of a file from GitHub."""
+        logger.info(f"Fetching file content from path: {path}")
+        try:
+            content = self.repo.get_contents(path)
+            if isinstance(content, list):
+                raise ValueError(f"Path {path} is a directory, not a file")
+
+            logger.debug(f"Successfully retrieved file: {path}")
+            return content.decoded_content.decode("utf-8")
+        except GithubException as e:
+            logger.error(f"Failed to get file content from GitHub: {str(e)}")
+            logger.debug(f"Error details - Status: {e.status}, Data: {e.data}")
+            raise

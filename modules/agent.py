@@ -48,29 +48,48 @@ class Agent:
         )
         self.logger.info("Agent initialized successfully with SSHConnector")
 
-    def _create_directories(self):
-        """Ensure all required directories exist."""
-        for directory in [self.config_dir, self.data_dir, self.modules_dir]:
-            directory.mkdir(exist_ok=True)
-
     def _load_config(self):
-        """Load the main configuration file."""
+        """Load the main config, fetching from GitHub if not found locally."""
         config_file = self.config_dir / "config.yaml"
+
         if not config_file.exists():
-            self.logger.warning(
-                "No configuration file found. Creating default config."
+            self.logger.info(
+                "No local config file found at config/config.yaml"
             )
-            default_config = {
-                "github_token": "",
-                "repository": "Twanus/av-agent-fw",
-                "check_interval": 300,
-                "enabled_modules": [],
-                "hosts_file": "config/hosts.txt",
-                "private_key_path": "C:/Users/veree/.ssh/id_jacko",
-            }
-            with open(config_file, "w") as f:
-                yaml.dump(default_config, f)
-            return default_config
+            self.logger.info(
+                "Attempting to fetch configuration from GitHub repository..."
+            )
+
+            try:
+                # Initialize GitHub client with minimal config
+                self.github_client = GitHubClient(
+                    token=os.getenv("AV_AGENT_GITHUB_TOKEN"),
+                    repository="Twanus/av-agent-fw",  # Default repository
+                )
+
+                # Fetch config from GitHub
+                config_content = self.github_client.get_file_content(
+                    "config/config.yaml"
+                )
+                self.logger.info(
+                    "Successfully fetched configuration from GitHub"
+                )
+
+                return yaml.safe_load(config_content)
+
+            except Exception as e:
+                self.logger.error(
+                    f"Failed to fetch config from GitHub: {str(e)}"
+                )
+                self.logger.info("Using default configuration")
+                return {
+                    "github_token": "",
+                    "repository": "Twanus/av-agent-fw",
+                    "check_interval": 300,
+                    "enabled_modules": [],
+                    "hosts_file": "config/hosts.txt",
+                    "private_key_path": "C:/Users/veree/.ssh/id_jacko",
+                }
 
         with open(config_file) as f:
             return yaml.safe_load(f)
@@ -130,3 +149,8 @@ class Agent:
             return output
         else:
             raise ConnectionError(f"Could not connect to {host}")
+
+    def _create_directories(self):
+        """Ensure all required directories exist."""
+        for directory in [self.config_dir, self.data_dir, self.modules_dir]:
+            directory.mkdir(exist_ok=True)
