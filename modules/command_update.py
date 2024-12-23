@@ -4,10 +4,7 @@ import os
 import logging
 
 load_dotenv()
-
 sudo_password = os.getenv("AV_AGENT_SUDO_PASSWORD")
-
-# Create logger at module level
 logger = logging.getLogger("CommandUpdate")
 
 
@@ -25,13 +22,13 @@ class CommandUpdate(Command):
 
         # Determine OS and which update command to use
         if os_id in ["ubuntu", "debian"]:
-            logger.debug("OS found: Ubuntu/Debian")
+            logger.debug("OS found: Ubuntu/Debian - using apt")
             update_command = (
                 f"echo {sudo_password} | sudo -S apt update && "
                 f"echo {sudo_password} | sudo -S apt upgrade -y"
             )
         elif os_id in ["centos", "rhel", "rocky", "fedora"]:
-            logger.debug("OS found: CentOS/RHEL/Rocky/Fedora")
+            logger.debug("OS found: CentOS/RHEL/Rocky/Fedora - using yum")
             update_command = f"echo {sudo_password} | sudo -S yum update -y"
         else:
             logger.error("Unsupported OS ID: %s", os_id)
