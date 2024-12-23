@@ -1,144 +1,107 @@
-2024-12-23 11:39:40,294 - Main - INFO - Starting main script
-2024-12-23 11:39:40,296 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.github.com:443
-2024-12-23 11:39:40,613 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
-2024-12-23 11:39:40,613 - github.Requester - DEBUG - GET https://api.github.com/user {'Authorization': 'token (oauth token removed)', 'User-Agent': 'PyGithub/Python'} None ==> 200 {'date': 'Mon, 23 Dec 2024 10:39:41 GMT', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'private, max-age=60, s-maxage=60', 'vary': 'Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With', 'etag': 'W/"402dc6607f113a7c1bb2a70901d85fb1c5ff8dc3f7adcb8f6ee4728717c2456a"', 'last-modified': 'Fri, 06 Dec 2024 17:58:02 GMT', 'x-oauth-scopes': 'repo', 'x-accepted-oauth-scopes': '', 'github-authentication-token-expiration': '2025-01-20 09:40:40 UTC', 'x-github-media-type': 'github.v3; format=json', 'x-github-api-version-selected': '2022-11-28', 'x-ratelimit-limit': '5000', 'x-ratelimit-remaining': '4961', 'x-ratelimit-reset': '1734952644', 'x-ratelimit-used': '39', 'x-ratelimit-resource': 'core', 'access-control-expose-headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset', 'access-control-allow-origin': '*', 'strict-transport-security': 'max-age=31536000; includeSubdomains; preload', 'x-frame-options': 'deny', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'referrer-policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'content-security-policy': "default-src 'none'", 'content-encoding': 'gzip', 'transfer-encoding': 'chunked', 'server': 'github.com', 'x-github-request-id': '5E1B:2DE650:22F92B1:23F2118:67693DEC'} {"login":"Twanus","id":53971353,"node_id":"MDQ6VXNlcjUzOTcxMzUz","avatar_url":"https://avatars.githubusercontent.com/u/53971353?v=4","gravatar_id":"","url":"https://api.github.com/users/Twanus","html_url":"https://github.com/Twanus","followers_url":"https://api.github.com/users/Twanus/followers","following_url":"https://api.github.com/users/Twanus/following{/other_user}","gists_url":"https://api.github.com/users/Twanus/gists{/gist_id}","starred_url":"https://api.github.com/users/Twanus/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Twanus/subscriptions","organizations_url":"https://api.github.com/users/Twanus/orgs","repos_url":"https://api.github.com/users/Twanus/repos","events_url":"https://api.github.com/users/Twanus/events{/privacy}","received_events_url":"https://api.github.com/users/Twanus/received_events","type":"User","user_view_type":"public","site_admin":false,"name":"4ntoon","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":22,"public_gists":0,"followers":5,"following":28,"created_at":"2019-08-10T12:11:20Z","updated_at":"2024-12-06T17:58:02Z"}
-2024-12-23 11:39:40,614 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:39:40,614 - github.Requester - DEBUG - sleeping 0.24976205825805664s before next GitHub request
-2024-12-23 11:39:41,071 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/Twanus/av-agent-fw HTTP/11" 200 None
-2024-12-23 11:39:41,072 - github.Requester - DEBUG - GET https://api.github.com/repos/Twanus/av-agent-fw {'Authorization': 'token (oauth token removed)', 'User-Agent': 'PyGithub/Python'} None ==> 200 {'date': 'Mon, 23 Dec 2024 10:39:41 GMT', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'private, max-age=60, s-maxage=60', 'vary': 'Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With', 'etag': 'W/"3aeaf8d067dbe8ecde868d52df43dd176e7c1a10c9efe0001d71c8adedeb1937"', 'last-modified': 'Sun, 22 Dec 2024 20:17:11 GMT', 'x-oauth-scopes': 'repo', 'x-accepted-oauth-scopes': 'repo', 'github-authentication-token-expiration': '2025-01-20 09:40:40 UTC', 'x-github-media-type': 'github.v3; format=json', 'x-github-api-version-selected': '2022-11-28', 'x-ratelimit-limit': '5000', 'x-ratelimit-remaining': '4960', 'x-ratelimit-reset': '1734952644', 'x-ratelimit-used': '40', 'x-ratelimit-resource': 'core', 'access-control-expose-headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset', 'access-control-allow-origin': '*', 'strict-transport-security': 'max-age=31536000; includeSubdomains; preload', 'x-frame-options': 'deny', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'referrer-policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'content-security-policy': "default-src 'none'", 'content-encoding': 'gzip', 'transfer-encoding': 'chunked', 'server': 'github.com', 'x-github-request-id': '5E1B:2DE650:22F9420:23F2293:67693DED'} {"id":902458476,"node_id":"R_kgDONcpsbA","name":"av-agent-fw","full_name":"Twanus/av-agent-fw","private":false,"owner":{"login":"Twanus","id":53971353,"node_id":"MDQ6VXNlcjUzOTcxMzUz","avatar_url":"https://avatars.githubusercontent.com/u/53971353?v=4","gravatar_id":"","url":"https://api.github.com/users/Twanus","html_url":"https://github.com/Twanus","followers_url":"https://api.github.com/users/Twanus/followers","following_url":"https://api.github.com/users/Twanus/following{/other_user}","gists_url":"https://api.github.com/users/Twanus/gists{/gist_id}","starred_url":"https://api.github.com/users/Twanus/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Twanus/subscriptions","organizations_url":"https://api.github.com/users/Twanus/orgs","repos_url":"https://api.github.com/users/Twanus/repos","events_url":"https://api.github.com/users/Twanus/events{/privacy}","received_events_url":"https://api.github.com/users/Twanus/received_events","type":"User","user_view_type":"public","site_admin":false},"html_url":"https://github.com/Twanus/av-agent-fw","description":null,"fork":false,"url":"https://api.github.com/repos/Twanus/av-agent-fw","forks_url":"https://api.github.com/repos/Twanus/av-agent-fw/forks","keys_url":"https://api.github.com/repos/Twanus/av-agent-fw/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Twanus/av-agent-fw/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Twanus/av-agent-fw/teams","hooks_url":"https://api.github.com/repos/Twanus/av-agent-fw/hooks","issue_events_url":"https://api.github.com/repos/Twanus/av-agent-fw/issues/events{/number}","events_url":"https://api.github.com/repos/Twanus/av-agent-fw/events","assignees_url":"https://api.github.com/repos/Twanus/av-agent-fw/assignees{/user}","branches_url":"https://api.github.com/repos/Twanus/av-agent-fw/branches{/branch}","tags_url":"https://api.github.com/repos/Twanus/av-agent-fw/tags","blobs_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/refs{/sha}","trees_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Twanus/av-agent-fw/statuses/{sha}","languages_url":"https://api.github.com/repos/Twanus/av-agent-fw/languages","stargazers_url":"https://api.github.com/repos/Twanus/av-agent-fw/stargazers","contributors_url":"https://api.github.com/repos/Twanus/av-agent-fw/contributors","subscribers_url":"https://api.github.com/repos/Twanus/av-agent-fw/subscribers","subscription_url":"https://api.github.com/repos/Twanus/av-agent-fw/subscription","commits_url":"https://api.github.com/repos/Twanus/av-agent-fw/commits{/sha}","git_commits_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/commits{/sha}","comments_url":"https://api.github.com/repos/Twanus/av-agent-fw/comments{/number}","issue_comment_url":"https://api.github.com/repos/Twanus/av-agent-fw/issues/comments{/number}","contents_url":"https://api.github.com/repos/Twanus/av-agent-fw/contents/{+path}","compare_url":"https://api.github.com/repos/Twanus/av-agent-fw/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Twanus/av-agent-fw/merges","archive_url":"https://api.github.com/repos/Twanus/av-agent-fw/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Twanus/av-agent-fw/downloads","issues_url":"https://api.github.com/repos/Twanus/av-agent-fw/issues{/number}","pulls_url":"https://api.github.com/repos/Twanus/av-agent-fw/pulls{/number}","milestones_url":"https://api.github.com/repos/Twanus/av-agent-fw/milestones{/number}","notifications_url":"https://api.github.com/repos/Twanus/av-agent-fw/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Twanus/av-agent-fw/labels{/name}","releases_url":"https://api.github.com/repos/Twanus/av-agent-fw/releases{/id}","deployments_url":"https://api.github.com/repos/Twanus/av-agent-fw/deployments","created_at":"2024-12-12T15:52:46Z","updated_at":"2024-12-22T20:17:11Z","pushed_at":"2024-12-22T20:17:07Z","git_url":"git://github.com/Twanus/av-agent-fw.git","ssh_url":"git@github.com:Twanus/av-agent-fw.git","clone_url":"https://github.com/Twanus/av-agent-fw.git","svn_url":"https://github.com/Twanus/av-agent-fw","homepage":null,"size":1037,"stargazers_count":0,"watchers_count":0,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"enabled"},"secret_scanning_push_protection":{"status":"enabled"},"dependabot_security_updates":{"status":"disabled"},"secret_scanning_non_provider_patterns":{"status":"disabled"},"secret_scanning_validity_checks":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
-2024-12-23 11:39:41,073 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:39:41,073 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:39:41,073 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:39:41,073 - CommandUpdate - DEBUG - CommandUpdate initialized
-2024-12-23 11:39:41,073 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:39:41,478 - paramiko.transport - DEBUG - starting thread (client mode): 0xbed26120
-2024-12-23 11:39:41,479 - paramiko.transport - DEBUG - starting thread (client mode): 0xbece3ed0
-2024-12-23 11:39:41,479 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
-2024-12-23 11:39:41,479 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
-2024-12-23 11:39:41,483 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.11
-2024-12-23 11:39:41,483 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:39:41,484 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-23 11:39:41,484 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
-2024-12-23 11:39:41,484 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519
-2024-12-23 11:39:41,484 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
-2024-12-23 11:39:41,485 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
-2024-12-23 11:39:41,485 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.7
-2024-12-23 11:39:41,485 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
-2024-12-23 11:39:41,485 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:39:41,485 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, kex-strict-s-v00@openssh.com
-2024-12-23 11:39:41,486 - paramiko.transport - DEBUG - kex follows: False
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - client encrypt: aes256-gcm@openssh.com, chacha20-poly1305@openssh.com, aes256-ctr, aes128-gcm@openssh.com, aes128-ctr
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - Strict kex mode: True
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - server encrypt: aes256-gcm@openssh.com, chacha20-poly1305@openssh.com, aes256-ctr, aes128-gcm@openssh.com, aes128-ctr
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
-2024-12-23 11:39:41,487 - paramiko.transport - DEBUG - client mac: hmac-sha2-256-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha2-256, hmac-sha1, umac-128@openssh.com, hmac-sha2-512
-2024-12-23 11:39:41,488 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-23 11:39:41,488 - paramiko.transport - DEBUG - server mac: hmac-sha2-256-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha2-256, hmac-sha1, umac-128@openssh.com, hmac-sha2-512
-2024-12-23 11:39:41,488 - paramiko.transport - DEBUG - Cipher: aes128-ctr
-2024-12-23 11:39:41,488 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
-2024-12-23 11:39:41,488 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
-2024-12-23 11:39:41,488 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
-2024-12-23 11:39:41,489 - paramiko.transport - DEBUG - Compression: none
-2024-12-23 11:39:41,489 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-23 11:39:41,489 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-23 11:39:41,489 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-23 11:39:41,489 - paramiko.transport - DEBUG - kex follows: False
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - Strict kex mode: True
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - Cipher: aes128-ctr
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
-2024-12-23 11:39:41,490 - paramiko.transport - DEBUG - Compression: none
-2024-12-23 11:39:41,491 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-23 11:39:41,494 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:41,495 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:41,495 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
-2024-12-23 11:39:41,495 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
-2024-12-23 11:39:41,495 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-23 11:39:41,495 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-23 11:39:41,496 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:41,496 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:41,496 - paramiko.transport - DEBUG - Trying SSH key b'3e7c102cc7c7405e0b41a42305944e17'
-2024-12-23 11:39:41,496 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
-2024-12-23 11:39:41,497 - paramiko.transport - DEBUG - Trying SSH key b'3e7c102cc7c7405e0b41a42305944e17'
-2024-12-23 11:39:41,497 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com'}
-2024-12-23 11:39:41,497 - paramiko.transport - DEBUG - userauth is OK
-2024-12-23 11:39:41,497 - paramiko.transport - DEBUG - Finalizing pubkey algorithm for key of type 'ssh-rsa'
-2024-12-23 11:39:41,497 - paramiko.transport - DEBUG - Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
-2024-12-23 11:39:41,498 - paramiko.transport - DEBUG - Server-side algorithm list: ['ssh-ed25519', 'sk-ssh-ed25519@openssh.com', 'ssh-rsa', 'rsa-sha2-256', 'rsa-sha2-512', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ecdsa-sha2-nistp256@openssh.com']
-2024-12-23 11:39:41,498 - paramiko.transport - DEBUG - Agreed upon 'rsa-sha2-512' pubkey algorithm
-2024-12-23 11:39:41,510 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:41,512 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:39:41,512 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:39:41,513 - CommandUpdate - DEBUG - Executing command update
-2024-12-23 11:39:41,513 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
-2024-12-23 11:39:41,536 - paramiko.transport - DEBUG - userauth is OK
-2024-12-23 11:39:41,537 - paramiko.transport - DEBUG - Finalizing pubkey algorithm for key of type 'ssh-rsa'
-2024-12-23 11:39:41,537 - paramiko.transport - DEBUG - Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
-2024-12-23 11:39:41,537 - paramiko.transport - DEBUG - Server-side algorithm list: ['ssh-ed25519', 'sk-ssh-ed25519@openssh.com', 'ssh-rsa', 'rsa-sha2-256', 'rsa-sha2-512', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ecdsa-sha2-nistp256@openssh.com', 'webauthn-sk-ecdsa-sha2-nistp256@openssh.com']
-2024-12-23 11:39:41,537 - paramiko.transport - DEBUG - Agreed upon 'rsa-sha2-512' pubkey algorithm
-2024-12-23 11:39:41,552 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:41,555 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:39:41,555 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:39:41,555 - CommandUpdate - DEBUG - Executing command update
-2024-12-23 11:39:41,555 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
-2024-12-23 11:39:41,570 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
-2024-12-23 11:39:41,570 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
-2024-12-23 11:39:41,571 - paramiko.transport - DEBUG - Debug msg: b'/home/jacko/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
-2024-12-23 11:39:41,623 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
-2024-12-23 11:39:41,623 - paramiko.transport - DEBUG - Secsh channel 0 opened.
-2024-12-23 11:39:41,625 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
-2024-12-23 11:39:41,639 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
-2024-12-23 11:39:41,639 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
-2024-12-23 11:39:41,640 - CommandUpdate - INFO - OS detected: rocky
-2024-12-23 11:39:41,640 - CommandUpdate - DEBUG - OS found: CentOS/RHEL/Rocky/Fedora
-2024-12-23 11:39:41,640 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
-2024-12-23 11:39:41,681 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
-2024-12-23 11:39:41,682 - paramiko.transport - DEBUG - Secsh channel 1 opened.
-2024-12-23 11:39:41,683 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
-2024-12-23 11:39:41,683 - CommandUpdate - DEBUG - Command executed, waiting for exit status
-2024-12-23 11:39:41,769 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
-2024-12-23 11:39:41,770 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
-2024-12-23 11:39:41,770 - paramiko.transport - DEBUG - Debug msg: b'/home/jacko/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
-2024-12-23 11:39:41,824 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
-2024-12-23 11:39:41,824 - paramiko.transport - DEBUG - Secsh channel 0 opened.
-2024-12-23 11:39:41,825 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
-2024-12-23 11:39:41,828 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
-2024-12-23 11:39:41,828 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
-2024-12-23 11:39:41,828 - CommandUpdate - INFO - OS detected: ubuntu
-2024-12-23 11:39:41,828 - CommandUpdate - DEBUG - OS found: Ubuntu/Debian
-2024-12-23 11:39:41,829 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
-2024-12-23 11:39:41,829 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
-2024-12-23 11:39:41,829 - paramiko.transport - DEBUG - Secsh channel 1 opened.
-2024-12-23 11:39:41,830 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
-2024-12-23 11:39:41,830 - CommandUpdate - DEBUG - Command executed, waiting for exit status
-2024-12-23 11:39:41,972 - paramiko.transport - DEBUG - [chan 1] EOF received (1)
-2024-12-23 11:39:41,972 - CommandUpdate - DEBUG - Exit status: 0
-2024-12-23 11:39:41,972 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
-2024-12-23 11:39:41,972 - CommandUpdate - INFO - Command executed successfully
-2024-12-23 11:39:41,973 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-23 11:39:41,973 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:41,974 - SystemAgent - INFO - Output from 172.21.238.161: Last metadata expiration check: 0:22:00 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+2024-12-23 12:57:43,459 - Main - INFO - Starting main script
+2024-12-23 12:57:43,460 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:57:43,460 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:57:43,785 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:57:44,247 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:57:44,247 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 12:57:44,685 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 12:57:44,686 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 12:57:45,164 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 12:57:45,408 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 12:57:45,871 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 12:57:45,871 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 12:57:45,871 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 12:57:46,271 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:57:46,271 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 12:57:46,330 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:46,332 - modules.ssh_connector - INFO - [928ca661][172.21.238.161] Connected successfully
+2024-12-23 12:57:46,335 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:46,337 - modules.ssh_connector - INFO - [bc3295f5][172.21.238.161] Connected successfully
+2024-12-23 12:57:46,402 - modules.ssh_connector - INFO - [928ca661][172.21.238.161] Connection closed
+2024-12-23 12:57:46,402 - AVAgent - INFO - [928ca661][172.21.238.161] Command output: Hello, world!
+
+2024-12-23 12:57:46,608 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:57:46,619 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 12:57:46,627 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:46,629 - modules.ssh_connector - INFO - [b5740c8c][172.21.232.237] Connected successfully
+2024-12-23 12:57:46,917 - modules.ssh_connector - INFO - [b5740c8c][172.21.232.237] Connection closed
+2024-12-23 12:57:46,917 - AVAgent - INFO - [b5740c8c][172.21.232.237] Command output: Hello, world!
+
+2024-12-23 12:57:46,942 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 12:57:46,942 - modules.ssh_connector - INFO - [bc3295f5][172.21.238.161] Connection closed
+2024-12-23 12:57:46,943 - AVAgent - INFO - [bc3295f5][172.21.238.161] Command output: Last metadata expiration check: 1:40:05 ago on Mon 23 Dec 2024 11:17:42 AM CET.
 Dependencies resolved.
 Nothing to do.
 Complete!
 
-2024-12-23 11:39:43,695 - CommandUpdate - DEBUG - Exit status: 0
-2024-12-23 11:39:43,695 - paramiko.transport - DEBUG - [chan 1] EOF received (1)
-2024-12-23 11:39:43,696 - CommandUpdate - INFO - Command executed successfully
-2024-12-23 11:39:43,696 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
-2024-12-23 11:39:43,696 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
-2024-12-23 11:39:43,696 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:43,697 - SystemAgent - INFO - Output from 172.21.232.237: Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+2024-12-23 12:57:47,146 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 12:57:47,164 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 12:57:47,166 - modules.ssh_connector - INFO - [baa8504b][172.21.232.237] Connected successfully
+2024-12-23 12:57:47,289 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 12:57:50,440 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 12:57:50,441 - modules.ssh_connector - INFO - [baa8504b][172.21.232.237] Connection closed
+2024-12-23 12:57:50,441 - AVAgent - INFO - [baa8504b][172.21.232.237] Command output: Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Fetched 383 kB in 0s (839 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+2024-12-23 12:59:59,443 - Main - INFO - Starting main script
+2024-12-23 12:59:59,443 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 12:59:59,443 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 12:59:59,747 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:00:00,211 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:00:00,212 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:00:00,677 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:00:00,678 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:00:01,143 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:00:01,413 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:00:01,918 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:00:01,918 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:00:01,918 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:00:02,317 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:00:02,317 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:00:02,376 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:02,379 - modules.ssh_connector - INFO - [3c2a74b0][172.21.238.161] Connected successfully
+2024-12-23 13:00:02,381 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:02,384 - modules.ssh_connector - INFO - [ebee2732][172.21.238.161] Connected successfully
+2024-12-23 13:00:02,454 - modules.ssh_connector - INFO - [3c2a74b0][172.21.238.161] Connection closed
+2024-12-23 13:00:02,455 - AVAgent - INFO - [3c2a74b0][172.21.238.161] Command output:
+Hello, world!
+
+2024-12-23 13:00:02,650 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:00:02,656 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:00:02,675 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:02,676 - modules.ssh_connector - INFO - [e7668ab1][172.21.232.237] Connected successfully
+2024-12-23 13:00:02,960 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:00:02,960 - modules.ssh_connector - INFO - [ebee2732][172.21.238.161] Connection closed
+2024-12-23 13:00:02,961 - AVAgent - INFO - [ebee2732][172.21.238.161] Command output:
+Last metadata expiration check: 1:42:21 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+2024-12-23 13:00:03,166 - modules.ssh_connector - INFO - [e7668ab1][172.21.232.237] Connection closed
+2024-12-23 13:00:03,166 - AVAgent - INFO - [e7668ab1][172.21.232.237] Command output:
+Hello, world!
+
+2024-12-23 13:00:03,170 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:00:03,190 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:00:03,192 - modules.ssh_connector - INFO - [7828d733][172.21.232.237] Connected successfully
+2024-12-23 13:00:03,323 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:00:09,595 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:00:09,596 - modules.ssh_connector - INFO - [7828d733][172.21.232.237] Connection closed
+2024-12-23 13:00:09,596 - AVAgent - INFO - [7828d733][172.21.232.237] Command output:
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
 Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
 Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
 Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
@@ -152,135 +115,53 @@ Reading state information...
 Calculating upgrade...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
-2024-12-23 11:39:43,698 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:39:44,096 - paramiko.transport - DEBUG - starting thread (client mode): 0xbece25d0
-2024-12-23 11:39:44,096 - paramiko.transport - DEBUG - starting thread (client mode): 0xbece2fd0
-2024-12-23 11:39:44,096 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
-2024-12-23 11:39:44,097 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
-2024-12-23 11:39:44,101 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.11
-2024-12-23 11:39:44,101 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:39:44,102 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-23 11:39:44,102 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.7
-2024-12-23 11:39:44,103 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
-2024-12-23 11:39:44,103 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:39:44,103 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519
-2024-12-23 11:39:44,103 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, kex-strict-s-v00@openssh.com
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
-2024-12-23 11:39:44,104 - paramiko.transport - DEBUG - client encrypt: aes256-gcm@openssh.com, chacha20-poly1305@openssh.com, aes256-ctr, aes128-gcm@openssh.com, aes128-ctr
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - server encrypt: aes256-gcm@openssh.com, chacha20-poly1305@openssh.com, aes256-ctr, aes128-gcm@openssh.com, aes128-ctr
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - client mac: hmac-sha2-256-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha2-256, hmac-sha1, umac-128@openssh.com, hmac-sha2-512
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - server mac: hmac-sha2-256-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha2-256, hmac-sha1, umac-128@openssh.com, hmac-sha2-512
-2024-12-23 11:39:44,105 - paramiko.transport - DEBUG - kex follows: False
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - Strict kex mode: True
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-23 11:39:44,106 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-23 11:39:44,107 - paramiko.transport - DEBUG - kex follows: False
-2024-12-23 11:39:44,107 - paramiko.transport - DEBUG - Cipher: aes128-ctr
-2024-12-23 11:39:44,107 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-23 11:39:44,107 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
-2024-12-23 11:39:44,107 - paramiko.transport - DEBUG - Strict kex mode: True
-2024-12-23 11:39:44,107 - paramiko.transport - DEBUG - Compression: none
-2024-12-23 11:39:44,108 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
-2024-12-23 11:39:44,108 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-23 11:39:44,108 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
-2024-12-23 11:39:44,108 - paramiko.transport - DEBUG - Cipher: aes128-ctr
-2024-12-23 11:39:44,108 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
-2024-12-23 11:39:44,109 - paramiko.transport - DEBUG - Compression: none
-2024-12-23 11:39:44,109 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-23 11:39:44,112 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:44,113 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
-2024-12-23 11:39:44,113 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-23 11:39:44,113 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:44,113 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:44,114 - paramiko.transport - DEBUG - Trying SSH key b'3e7c102cc7c7405e0b41a42305944e17'
-2024-12-23 11:39:44,114 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
-2024-12-23 11:39:44,114 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com'}
-2024-12-23 11:39:44,114 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-23 11:39:44,115 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:39:44,115 - paramiko.transport - DEBUG - Trying SSH key b'3e7c102cc7c7405e0b41a42305944e17'
-2024-12-23 11:39:44,115 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
-2024-12-23 11:39:44,115 - paramiko.transport - DEBUG - userauth is OK
-2024-12-23 11:39:44,116 - paramiko.transport - DEBUG - Finalizing pubkey algorithm for key of type 'ssh-rsa'
-2024-12-23 11:39:44,116 - paramiko.transport - DEBUG - Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
-2024-12-23 11:39:44,116 - paramiko.transport - DEBUG - Server-side algorithm list: ['ssh-ed25519', 'sk-ssh-ed25519@openssh.com', 'ssh-rsa', 'rsa-sha2-256', 'rsa-sha2-512', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ecdsa-sha2-nistp256@openssh.com']
-2024-12-23 11:39:44,116 - paramiko.transport - DEBUG - Agreed upon 'rsa-sha2-512' pubkey algorithm
-2024-12-23 11:39:44,128 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:44,130 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:39:44,130 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:39:44,130 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
-2024-12-23 11:39:44,153 - paramiko.transport - DEBUG - userauth is OK
-2024-12-23 11:39:44,154 - paramiko.transport - DEBUG - Finalizing pubkey algorithm for key of type 'ssh-rsa'
-2024-12-23 11:39:44,154 - paramiko.transport - DEBUG - Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
-2024-12-23 11:39:44,154 - paramiko.transport - DEBUG - Server-side algorithm list: ['ssh-ed25519', 'sk-ssh-ed25519@openssh.com', 'ssh-rsa', 'rsa-sha2-256', 'rsa-sha2-512', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ecdsa-sha2-nistp256@openssh.com', 'webauthn-sk-ecdsa-sha2-nistp256@openssh.com']
-2024-12-23 11:39:44,154 - paramiko.transport - DEBUG - Agreed upon 'rsa-sha2-512' pubkey algorithm
-2024-12-23 11:39:44,169 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:44,171 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:39:44,172 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:39:44,172 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
-2024-12-23 11:39:44,183 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
-2024-12-23 11:39:44,183 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
-2024-12-23 11:39:44,183 - paramiko.transport - DEBUG - Debug msg: b'/home/jacko/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
-2024-12-23 11:39:44,217 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
-2024-12-23 11:39:44,218 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
-2024-12-23 11:39:44,218 - paramiko.transport - DEBUG - Debug msg: b'/home/jacko/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
-2024-12-23 11:39:44,225 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
-2024-12-23 11:39:44,225 - paramiko.transport - DEBUG - Secsh channel 0 opened.
-2024-12-23 11:39:44,226 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
-2024-12-23 11:39:44,239 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
-2024-12-23 11:39:44,239 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
-2024-12-23 11:39:44,240 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-23 11:39:44,240 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:44,240 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:01:22,636 - Main - INFO - Starting main script
+2024-12-23 13:01:22,636 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:01:22,637 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:01:22,955 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:01:23,423 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:01:23,423 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:01:23,863 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:01:23,864 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:01:24,295 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:01:24,540 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:01:25,011 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:01:25,011 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:01:25,011 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:01:25,417 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:01:25,417 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:01:25,477 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:25,479 - modules.ssh_connector - INFO - [ef299a44][172.21.238.161] Connected successfully
+2024-12-23 13:01:25,481 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:25,484 - modules.ssh_connector - INFO - [4a337e5d][172.21.238.161] Connected successfully
+2024-12-23 13:01:25,557 - modules.ssh_connector - INFO - [ef299a44][172.21.238.161] Connection closed
+2024-12-23 13:01:25,557 - AVAgent - INFO - [ef299a44][172.21.238.161] OUT: 
+ Hello, world!
 
-2024-12-23 11:39:44,270 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
-2024-12-23 11:39:44,270 - paramiko.transport - DEBUG - Secsh channel 0 opened.
-2024-12-23 11:39:44,271 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
-2024-12-23 11:39:44,273 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
-2024-12-23 11:39:44,273 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
-2024-12-23 11:39:44,273 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-23 11:39:44,273 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:44,274 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+2024-12-23 13:01:25,755 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:01:25,761 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:01:25,779 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:25,781 - modules.ssh_connector - INFO - [d9f1536e][172.21.232.237] Connected successfully
+2024-12-23 13:01:26,056 - modules.ssh_connector - INFO - [d9f1536e][172.21.232.237] Connection closed
+2024-12-23 13:01:26,056 - AVAgent - INFO - [d9f1536e][172.21.232.237] OUT: 
+ Hello, world!
 
-2024-12-23 11:39:48,945 - Main - INFO - Starting main script
-2024-12-23 11:39:49,248 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:39:49,722 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:39:49,722 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:39:49,722 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:39:49,723 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:39:50,123 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:39:50,124 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:39:50,143 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:50,144 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:39:50,144 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:39:50,186 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:50,188 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:39:50,189 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:39:50,256 - CommandUpdate - INFO - OS detected: rocky
-2024-12-23 11:39:50,291 - CommandUpdate - INFO - OS detected: ubuntu
-2024-12-23 11:39:50,578 - CommandUpdate - INFO - Command executed successfully
-2024-12-23 11:39:50,579 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:50,580 - SystemAgent - INFO - Output from 172.21.238.161: Last metadata expiration check: 0:22:08 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+2024-12-23 13:01:26,067 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:01:26,068 - modules.ssh_connector - INFO - [4a337e5d][172.21.238.161] Connection closed
+2024-12-23 13:01:26,068 - AVAgent - INFO - [4a337e5d][172.21.238.161] OUT: 
+ Last metadata expiration check: 1:43:44 ago on Mon 23 Dec 2024 11:17:42 AM CET.
 Dependencies resolved.
 Nothing to do.
 Complete!
 
-2024-12-23 11:39:52,131 - CommandUpdate - INFO - Command executed successfully
-2024-12-23 11:39:52,132 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:52,132 - SystemAgent - INFO - Output from 172.21.232.237: Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+2024-12-23 13:01:26,270 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:01:26,288 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:01:26,290 - modules.ssh_connector - INFO - [3f6698fa][172.21.232.237] Connected successfully
+2024-12-23 13:01:26,417 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:01:28,566 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:01:28,567 - modules.ssh_connector - INFO - [3f6698fa][172.21.232.237] Connection closed
+2024-12-23 13:01:28,567 - AVAgent - INFO - [3f6698fa][172.21.232.237] OUT: 
+ Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
 Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
 Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
 Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
@@ -294,511 +175,183 @@ Reading state information...
 Calculating upgrade...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
-2024-12-23 11:39:52,133 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:39:52,534 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:39:52,536 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:39:52,554 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:52,556 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:39:52,556 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:39:52,597 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:39:52,600 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:39:52,600 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:39:52,668 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:52,669 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:03:01,817 - Main - INFO - Starting main script
+2024-12-23 13:03:01,818 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:03:01,818 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:03:02,134 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:02,584 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:02,584 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:03:03,051 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:03:03,052 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:03:03,522 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:03:03,768 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:04,237 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:04,237 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:03:04,238 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:03:04,642 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:04,642 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:04,702 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:04,704 - modules.ssh_connector - INFO - [06541649][172.21.238.161] Connected successfully
+2024-12-23 13:03:04,706 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:04,709 - modules.ssh_connector - INFO - [01114de7][172.21.238.161] Connected successfully
+2024-12-23 13:03:04,775 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:03:04,789 - modules.ssh_connector - INFO - [01114de7][172.21.238.161] Connection closed
+2024-12-23 13:03:04,789 - AVAgent - INFO - [01114de7][172.21.238.161] OUTPUT:
+	Hello, world!
 
-2024-12-23 11:39:52,702 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:39:52,703 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+2024-12-23 13:03:04,992 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:05,011 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:05,013 - modules.ssh_connector - INFO - [e44923c6][172.21.232.237] Connected successfully
+2024-12-23 13:03:05,265 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:05,266 - modules.ssh_connector - INFO - [06541649][172.21.238.161] Connection closed
+2024-12-23 13:03:05,266 - AVAgent - INFO - [06541649][172.21.238.161] OUTPUT:
+	Last metadata expiration check: 1:45:23 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
 
-2024-12-23 11:44:38,437 - Main - INFO - Starting main script
-2024-12-23 11:44:38,798 - modules.github_client - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:44:39,286 - modules.github_client - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:44:39,286 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:44:39,286 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:44:39,287 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:44:39,701 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:44:39,702 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:44:39,720 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:44:39,722 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:44:39,722 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:44:39,763 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:44:39,765 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:44:39,766 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:44:39,833 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:44:39,833 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:03:05,470 - modules.ssh_connector - INFO - [e44923c6][172.21.232.237] Connection closed
+2024-12-23 13:03:05,471 - AVAgent - INFO - [e44923c6][172.21.232.237] OUTPUT:
+	Hello, world!
 
-2024-12-23 11:44:40,008 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:44:40,008 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+2024-12-23 13:03:05,474 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:05,494 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:05,496 - modules.ssh_connector - INFO - [a0896304][172.21.232.237] Connected successfully
+2024-12-23 13:03:05,627 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:03:07,666 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:07,667 - modules.ssh_connector - INFO - [a0896304][172.21.232.237] Connection closed
+2024-12-23 13:03:07,667 - AVAgent - INFO - [a0896304][172.21.232.237] OUTPUT:
+	Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
-2024-12-23 11:46:42,603 - Main - INFO - Starting main script
-2024-12-23 11:46:42,605 - GitHubClient - DEBUG - Initializing GitHubClient for repository: Twanus/av-agent-fw
-2024-12-23 11:46:42,605 - GitHubClient - DEBUG - Attempting to authenticate with GitHub
-2024-12-23 11:46:42,606 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.github.com:443
-2024-12-23 11:46:42,933 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
-2024-12-23 11:46:42,933 - github.Requester - DEBUG - GET https://api.github.com/user {'Authorization': 'token (oauth token removed)', 'User-Agent': 'PyGithub/Python'} None ==> 200 {'date': 'Mon, 23 Dec 2024 10:46:43 GMT', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'private, max-age=60, s-maxage=60', 'vary': 'Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With', 'etag': 'W/"402dc6607f113a7c1bb2a70901d85fb1c5ff8dc3f7adcb8f6ee4728717c2456a"', 'last-modified': 'Fri, 06 Dec 2024 17:58:02 GMT', 'x-oauth-scopes': 'repo', 'x-accepted-oauth-scopes': '', 'github-authentication-token-expiration': '2025-01-20 09:40:40 UTC', 'x-github-media-type': 'github.v3; format=json', 'x-github-api-version-selected': '2022-11-28', 'x-ratelimit-limit': '5000', 'x-ratelimit-remaining': '4954', 'x-ratelimit-reset': '1734952644', 'x-ratelimit-used': '46', 'x-ratelimit-resource': 'core', 'access-control-expose-headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset', 'access-control-allow-origin': '*', 'strict-transport-security': 'max-age=31536000; includeSubdomains; preload', 'x-frame-options': 'deny', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'referrer-policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'content-security-policy': "default-src 'none'", 'content-encoding': 'gzip', 'transfer-encoding': 'chunked', 'server': 'github.com', 'x-github-request-id': '5EA5:249CE2:57B4DBA:5A1B991:67693F93'} {"login":"Twanus","id":53971353,"node_id":"MDQ6VXNlcjUzOTcxMzUz","avatar_url":"https://avatars.githubusercontent.com/u/53971353?v=4","gravatar_id":"","url":"https://api.github.com/users/Twanus","html_url":"https://github.com/Twanus","followers_url":"https://api.github.com/users/Twanus/followers","following_url":"https://api.github.com/users/Twanus/following{/other_user}","gists_url":"https://api.github.com/users/Twanus/gists{/gist_id}","starred_url":"https://api.github.com/users/Twanus/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Twanus/subscriptions","organizations_url":"https://api.github.com/users/Twanus/orgs","repos_url":"https://api.github.com/users/Twanus/repos","events_url":"https://api.github.com/users/Twanus/events{/privacy}","received_events_url":"https://api.github.com/users/Twanus/received_events","type":"User","user_view_type":"public","site_admin":false,"name":"4ntoon","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":22,"public_gists":0,"followers":5,"following":28,"created_at":"2019-08-10T12:11:20Z","updated_at":"2024-12-06T17:58:02Z"}
-2024-12-23 11:46:42,934 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:46:42,934 - GitHubClient - DEBUG - Attempting to connect to repository
-2024-12-23 11:46:42,934 - github.Requester - DEBUG - sleeping 0.24962091445922852s before next GitHub request
-2024-12-23 11:46:43,378 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/Twanus/av-agent-fw HTTP/11" 200 None
-2024-12-23 11:46:43,379 - github.Requester - DEBUG - GET https://api.github.com/repos/Twanus/av-agent-fw {'Authorization': 'token (oauth token removed)', 'User-Agent': 'PyGithub/Python'} None ==> 200 {'date': 'Mon, 23 Dec 2024 10:46:43 GMT', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'private, max-age=60, s-maxage=60', 'vary': 'Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With', 'etag': 'W/"87769e8803d3ea340cf9c5e0770b266e4c78fbb9a773531946ac27a0c17ac5ef"', 'last-modified': 'Mon, 23 Dec 2024 10:41:50 GMT', 'x-oauth-scopes': 'repo', 'x-accepted-oauth-scopes': 'repo', 'github-authentication-token-expiration': '2025-01-20 09:40:40 UTC', 'x-github-media-type': 'github.v3; format=json', 'x-github-api-version-selected': '2022-11-28', 'x-ratelimit-limit': '5000', 'x-ratelimit-remaining': '4953', 'x-ratelimit-reset': '1734952644', 'x-ratelimit-used': '47', 'x-ratelimit-resource': 'core', 'access-control-expose-headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset', 'access-control-allow-origin': '*', 'strict-transport-security': 'max-age=31536000; includeSubdomains; preload', 'x-frame-options': 'deny', 'x-content-type-options': 'nosniff', 'x-xss-protection': '0', 'referrer-policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'content-security-policy': "default-src 'none'", 'content-encoding': 'gzip', 'transfer-encoding': 'chunked', 'server': 'github.com', 'x-github-request-id': '5EA5:249CE2:57B4F63:5A1BB30:67693F93'} {"id":902458476,"node_id":"R_kgDONcpsbA","name":"av-agent-fw","full_name":"Twanus/av-agent-fw","private":false,"owner":{"login":"Twanus","id":53971353,"node_id":"MDQ6VXNlcjUzOTcxMzUz","avatar_url":"https://avatars.githubusercontent.com/u/53971353?v=4","gravatar_id":"","url":"https://api.github.com/users/Twanus","html_url":"https://github.com/Twanus","followers_url":"https://api.github.com/users/Twanus/followers","following_url":"https://api.github.com/users/Twanus/following{/other_user}","gists_url":"https://api.github.com/users/Twanus/gists{/gist_id}","starred_url":"https://api.github.com/users/Twanus/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Twanus/subscriptions","organizations_url":"https://api.github.com/users/Twanus/orgs","repos_url":"https://api.github.com/users/Twanus/repos","events_url":"https://api.github.com/users/Twanus/events{/privacy}","received_events_url":"https://api.github.com/users/Twanus/received_events","type":"User","user_view_type":"public","site_admin":false},"html_url":"https://github.com/Twanus/av-agent-fw","description":null,"fork":false,"url":"https://api.github.com/repos/Twanus/av-agent-fw","forks_url":"https://api.github.com/repos/Twanus/av-agent-fw/forks","keys_url":"https://api.github.com/repos/Twanus/av-agent-fw/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Twanus/av-agent-fw/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Twanus/av-agent-fw/teams","hooks_url":"https://api.github.com/repos/Twanus/av-agent-fw/hooks","issue_events_url":"https://api.github.com/repos/Twanus/av-agent-fw/issues/events{/number}","events_url":"https://api.github.com/repos/Twanus/av-agent-fw/events","assignees_url":"https://api.github.com/repos/Twanus/av-agent-fw/assignees{/user}","branches_url":"https://api.github.com/repos/Twanus/av-agent-fw/branches{/branch}","tags_url":"https://api.github.com/repos/Twanus/av-agent-fw/tags","blobs_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/refs{/sha}","trees_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Twanus/av-agent-fw/statuses/{sha}","languages_url":"https://api.github.com/repos/Twanus/av-agent-fw/languages","stargazers_url":"https://api.github.com/repos/Twanus/av-agent-fw/stargazers","contributors_url":"https://api.github.com/repos/Twanus/av-agent-fw/contributors","subscribers_url":"https://api.github.com/repos/Twanus/av-agent-fw/subscribers","subscription_url":"https://api.github.com/repos/Twanus/av-agent-fw/subscription","commits_url":"https://api.github.com/repos/Twanus/av-agent-fw/commits{/sha}","git_commits_url":"https://api.github.com/repos/Twanus/av-agent-fw/git/commits{/sha}","comments_url":"https://api.github.com/repos/Twanus/av-agent-fw/comments{/number}","issue_comment_url":"https://api.github.com/repos/Twanus/av-agent-fw/issues/comments{/number}","contents_url":"https://api.github.com/repos/Twanus/av-agent-fw/contents/{+path}","compare_url":"https://api.github.com/repos/Twanus/av-agent-fw/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Twanus/av-agent-fw/merges","archive_url":"https://api.github.com/repos/Twanus/av-agent-fw/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Twanus/av-agent-fw/downloads","issues_url":"https://api.github.com/repos/Twanus/av-agent-fw/issues{/number}","pulls_url":"https://api.github.com/repos/Twanus/av-agent-fw/pulls{/number}","milestones_url":"https://api.github.com/repos/Twanus/av-agent-fw/milestones{/number}","notifications_url":"https://api.github.com/repos/Twanus/av-agent-fw/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Twanus/av-agent-fw/labels{/name}","releases_url":"https://api.github.com/repos/Twanus/av-agent-fw/releases{/id}","deployments_url":"https://api.github.com/repos/Twanus/av-agent-fw/deployments","created_at":"2024-12-12T15:52:46Z","updated_at":"2024-12-23T10:41:50Z","pushed_at":"2024-12-23T10:41:47Z","git_url":"git://github.com/Twanus/av-agent-fw.git","ssh_url":"git@github.com:Twanus/av-agent-fw.git","clone_url":"https://github.com/Twanus/av-agent-fw.git","svn_url":"https://github.com/Twanus/av-agent-fw","homepage":null,"size":1037,"stargazers_count":0,"watchers_count":0,"language":"Python","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"enabled"},"secret_scanning_push_protection":{"status":"enabled"},"dependabot_security_updates":{"status":"disabled"},"secret_scanning_non_provider_patterns":{"status":"disabled"},"secret_scanning_validity_checks":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
-2024-12-23 11:46:43,380 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:46:43,380 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:46:43,380 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:46:43,380 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:46:43,780 - paramiko.transport - DEBUG - starting thread (client mode): 0xfb362270
-2024-12-23 11:46:43,780 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
-2024-12-23 11:46:43,781 - paramiko.transport - DEBUG - starting thread (client mode): 0xfb323250
-2024-12-23 11:46:43,781 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
-2024-12-23 11:46:43,786 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.11
-2024-12-23 11:46:43,786 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:46:43,786 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.7
-2024-12-23 11:46:43,786 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:46:43,787 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-23 11:46:43,787 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
-2024-12-23 11:46:43,787 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519
-2024-12-23 11:46:43,787 - paramiko.transport - DEBUG - === Key exchange possibilities ===
-2024-12-23 11:46:43,787 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
-2024-12-23 11:46:43,788 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, kex-strict-s-v00@openssh.com
-2024-12-23 11:46:43,788 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
-2024-12-23 11:46:43,788 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
-2024-12-23 11:46:43,788 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
-2024-12-23 11:46:43,788 - paramiko.transport - DEBUG - client encrypt: aes256-gcm@openssh.com, chacha20-poly1305@openssh.com, aes256-ctr, aes128-gcm@openssh.com, aes128-ctr
-2024-12-23 11:46:43,788 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
-2024-12-23 11:46:43,789 - paramiko.transport - DEBUG - server encrypt: aes256-gcm@openssh.com, chacha20-poly1305@openssh.com, aes256-ctr, aes128-gcm@openssh.com, aes128-ctr
-2024-12-23 11:46:43,789 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
-2024-12-23 11:46:43,789 - paramiko.transport - DEBUG - client mac: hmac-sha2-256-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha2-256, hmac-sha1, umac-128@openssh.com, hmac-sha2-512
-2024-12-23 11:46:43,789 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
-2024-12-23 11:46:43,789 - paramiko.transport - DEBUG - server mac: hmac-sha2-256-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha2-256, hmac-sha1, umac-128@openssh.com, hmac-sha2-512
-2024-12-23 11:46:43,789 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - kex follows: False
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - client lang: <none>
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-23 11:46:43,790 - paramiko.transport - DEBUG - server lang: <none>
-2024-12-23 11:46:43,791 - paramiko.transport - DEBUG - Strict kex mode: True
-2024-12-23 11:46:43,791 - paramiko.transport - DEBUG - kex follows: False
-2024-12-23 11:46:43,791 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
-2024-12-23 11:46:43,791 - paramiko.transport - DEBUG - === Key exchange agreements ===
-2024-12-23 11:46:43,791 - paramiko.transport - DEBUG - HostKey: ssh-rsa
-2024-12-23 11:46:43,791 - paramiko.transport - DEBUG - Strict kex mode: True
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - Cipher: aes128-ctr
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - Compression: none
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - Cipher: aes128-ctr
-2024-12-23 11:46:43,792 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-23 11:46:43,793 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
-2024-12-23 11:46:43,793 - paramiko.transport - DEBUG - Compression: none
-2024-12-23 11:46:43,793 - paramiko.transport - DEBUG - === End of kex handshake ===
-2024-12-23 11:46:43,797 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:46:43,797 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
-2024-12-23 11:46:43,798 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-23 11:46:43,799 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:46:43,799 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:46:43,799 - paramiko.transport - DEBUG - Trying SSH key b'3e7c102cc7c7405e0b41a42305944e17'
-2024-12-23 11:46:43,800 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
-2024-12-23 11:46:43,800 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com'}
-2024-12-23 11:46:43,800 - paramiko.transport - DEBUG - Switch to new keys ...
-2024-12-23 11:46:43,800 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
-2024-12-23 11:46:43,800 - paramiko.transport - DEBUG - Trying SSH key b'3e7c102cc7c7405e0b41a42305944e17'
-2024-12-23 11:46:43,801 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
-2024-12-23 11:46:43,801 - paramiko.transport - DEBUG - userauth is OK
-2024-12-23 11:46:43,801 - paramiko.transport - DEBUG - Finalizing pubkey algorithm for key of type 'ssh-rsa'
-2024-12-23 11:46:43,801 - paramiko.transport - DEBUG - Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
-2024-12-23 11:46:43,801 - paramiko.transport - DEBUG - Server-side algorithm list: ['ssh-ed25519', 'sk-ssh-ed25519@openssh.com', 'ssh-rsa', 'rsa-sha2-256', 'rsa-sha2-512', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ecdsa-sha2-nistp256@openssh.com']
-2024-12-23 11:46:43,802 - paramiko.transport - DEBUG - Agreed upon 'rsa-sha2-512' pubkey algorithm
-2024-12-23 11:46:43,813 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:46:43,815 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:46:43,816 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:46:43,816 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
-2024-12-23 11:46:43,839 - paramiko.transport - DEBUG - userauth is OK
-2024-12-23 11:46:43,839 - paramiko.transport - DEBUG - Finalizing pubkey algorithm for key of type 'ssh-rsa'
-2024-12-23 11:46:43,839 - paramiko.transport - DEBUG - Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
-2024-12-23 11:46:43,839 - paramiko.transport - DEBUG - Server-side algorithm list: ['ssh-ed25519', 'sk-ssh-ed25519@openssh.com', 'ssh-rsa', 'rsa-sha2-256', 'rsa-sha2-512', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ecdsa-sha2-nistp256@openssh.com', 'webauthn-sk-ecdsa-sha2-nistp256@openssh.com']
-2024-12-23 11:46:43,840 - paramiko.transport - DEBUG - Agreed upon 'rsa-sha2-512' pubkey algorithm
-2024-12-23 11:46:43,854 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:46:43,857 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:46:43,857 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:46:43,857 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
-2024-12-23 11:46:43,869 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
-2024-12-23 11:46:43,869 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
-2024-12-23 11:46:43,869 - paramiko.transport - DEBUG - Debug msg: b'/home/jacko/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
-2024-12-23 11:46:43,915 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
-2024-12-23 11:46:43,916 - paramiko.transport - DEBUG - Secsh channel 0 opened.
-2024-12-23 11:46:43,919 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
-2024-12-23 11:46:43,931 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
-2024-12-23 11:46:43,932 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
-2024-12-23 11:46:43,932 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-23 11:46:43,932 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:46:43,933 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:03:23,477 - Main - INFO - Starting main script
+2024-12-23 13:03:23,477 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:03:23,478 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:03:23,741 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:24,205 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:24,205 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:03:24,644 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:03:24,645 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:03:25,092 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:03:25,334 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:03:25,781 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:03:25,781 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:03:25,781 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:03:26,182 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:26,183 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:03:26,244 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:26,246 - modules.ssh_connector - INFO - [533ca7c5][172.21.238.161] Connected successfully
+2024-12-23 13:03:26,248 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:26,251 - modules.ssh_connector - INFO - [b90435b5][172.21.238.161] Connected successfully
+2024-12-23 13:03:26,328 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:03:26,329 - modules.ssh_connector - INFO - [533ca7c5][172.21.238.161] Connection closed
+2024-12-23 13:03:26,329 - AVAgent - INFO - [533ca7c5][172.21.238.161] OUTPUT:
+Hello, world!
 
-2024-12-23 11:46:44,059 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
-2024-12-23 11:46:44,059 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
-2024-12-23 11:46:44,059 - paramiko.transport - DEBUG - Debug msg: b'/home/jacko/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding'
-2024-12-23 11:46:44,100 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
-2024-12-23 11:46:44,101 - paramiko.transport - DEBUG - Secsh channel 0 opened.
-2024-12-23 11:46:44,102 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
-2024-12-23 11:46:44,103 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
-2024-12-23 11:46:44,103 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
-2024-12-23 11:46:44,104 - paramiko.transport - DEBUG - EOF in transport thread
-2024-12-23 11:46:44,104 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:46:44,104 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+2024-12-23 13:03:26,533 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:26,551 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:26,553 - modules.ssh_connector - INFO - [fe4bbf0a][172.21.232.237] Connected successfully
+2024-12-23 13:03:26,691 - modules.ssh_connector - INFO - [fe4bbf0a][172.21.232.237] Connection closed
+2024-12-23 13:03:26,691 - AVAgent - INFO - [fe4bbf0a][172.21.232.237] OUTPUT:
+Hello, world!
 
-2024-12-23 11:56:40,597 - Main - INFO - Starting main script
-2024-12-23 11:56:40,950 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:56:41,422 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:56:41,422 - SystemAgent - ERROR - Failed to fetch config from GitHub: 'GitHubClient' object has no attribute 'get_file_content'
-2024-12-23 11:56:41,678 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:56:42,158 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:56:42,158 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:56:42,158 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:56:42,159 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:56:42,566 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:56:42,568 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:56:42,586 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:56:42,588 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:56:42,588 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:56:42,629 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:56:42,632 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:56:42,632 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:56:42,705 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:56:42,706 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:03:26,797 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:26,798 - modules.ssh_connector - INFO - [b90435b5][172.21.238.161] Connection closed
+2024-12-23 13:03:26,798 - AVAgent - INFO - [b90435b5][172.21.238.161] OUTPUT:
+Last metadata expiration check: 1:45:45 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
 
-2024-12-23 11:56:42,879 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:56:42,879 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+2024-12-23 13:03:27,000 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:03:27,020 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:03:27,022 - modules.ssh_connector - INFO - [2b5f346c][172.21.232.237] Connected successfully
+2024-12-23 13:03:27,154 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:03:28,949 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:03:28,950 - modules.ssh_connector - INFO - [2b5f346c][172.21.232.237] Connection closed
+2024-12-23 13:03:28,950 - AVAgent - INFO - [2b5f346c][172.21.232.237] OUTPUT:
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
-2024-12-23 11:57:00,676 - Main - INFO - Starting main script
-2024-12-23 11:57:01,016 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:57:01,484 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:57:01,485 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:57:01,485 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:57:01,485 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:57:01,899 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:57:01,900 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:57:01,918 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:57:01,920 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:57:01,920 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:57:01,961 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:57:01,964 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:57:01,964 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:57:02,033 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:57:02,033 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:05:28,270 - Main - INFO - Starting main script
+2024-12-23 13:05:28,271 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
+2024-12-23 13:05:28,271 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
+2024-12-23 13:05:28,709 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:05:29,209 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:05:29,209 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
+2024-12-23 13:05:29,652 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
+2024-12-23 13:05:29,653 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
+2024-12-23 13:05:30,106 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
+2024-12-23 13:05:30,367 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
+2024-12-23 13:05:30,819 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
+2024-12-23 13:05:30,819 - AVAgent - INFO - Agent initialized successfully with GitHubClient
+2024-12-23 13:05:30,819 - AVAgent - INFO - Agent initialized successfully with SSHConnector
+2024-12-23 13:05:31,225 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:05:31,225 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
+2024-12-23 13:05:31,284 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:31,287 - modules.ssh_connector - INFO - [e2377827][172.21.238.161] Connected successfully
+2024-12-23 13:05:31,289 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:31,291 - modules.ssh_connector - INFO - [8cba202c][172.21.238.161] Connected successfully
+2024-12-23 13:05:31,356 - modules.ssh_connector - INFO - [e2377827][172.21.238.161] Connection closed
+2024-12-23 13:05:31,356 - AVAgent - INFO - [e2377827][172.21.238.161] OUTPUT:
+Hello, world!
 
-2024-12-23 11:57:02,069 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:57:02,069 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
+2024-12-23 13:05:31,558 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:05:31,569 - CommandUpdate - INFO - OS detected: rocky
+2024-12-23 13:05:31,576 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:31,578 - modules.ssh_connector - INFO - [b3138547][172.21.232.237] Connected successfully
+2024-12-23 13:05:31,869 - modules.ssh_connector - INFO - [b3138547][172.21.232.237] Connection closed
+2024-12-23 13:05:31,869 - AVAgent - INFO - [b3138547][172.21.232.237] OUTPUT:
+Hello, world!
 
-2024-12-23 11:57:30,040 - Main - INFO - Starting main script
-2024-12-23 11:57:30,315 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:57:30,793 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:57:30,793 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:57:30,793 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:57:30,794 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:57:31,212 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:57:31,214 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:57:31,232 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:57:31,234 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:57:31,234 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:57:31,275 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:57:31,278 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:57:31,278 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:57:31,356 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:57:31,356 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
+2024-12-23 13:05:31,877 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:05:31,878 - modules.ssh_connector - INFO - [8cba202c][172.21.238.161] Connection closed
+2024-12-23 13:05:31,878 - AVAgent - INFO - [8cba202c][172.21.238.161] OUTPUT:
+Last metadata expiration check: 1:47:50 ago on Mon 23 Dec 2024 11:17:42 AM CET.
+Dependencies resolved.
+Nothing to do.
+Complete!
 
-2024-12-23 11:57:31,376 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:57:31,376 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 11:59:53,389 - Main - INFO - Starting main script
-2024-12-23 11:59:53,390 - SystemAgent - INFO - No local config file found at config/config.yaml
-2024-12-23 11:59:53,390 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 11:59:53,694 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:59:54,155 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:59:54,156 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 11:59:54,626 - SystemAgent - INFO - Successfully fetched configuration from GitHub
-2024-12-23 11:59:54,859 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 11:59:55,297 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 11:59:55,297 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 11:59:55,297 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 11:59:55,298 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 11:59:55,701 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 11:59:55,703 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 11:59:55,721 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:59:55,723 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 11:59:55,723 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 11:59:55,770 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 11:59:55,773 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 11:59:55,773 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 11:59:55,846 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:59:55,846 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
-
-2024-12-23 11:59:55,986 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 11:59:55,987 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 12:01:53,736 - Main - INFO - Starting main script
-2024-12-23 12:01:53,737 - SystemAgent - INFO - No local config file found at config/config.yaml
-2024-12-23 12:01:53,737 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:01:54,042 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:01:54,504 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:01:54,504 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:01:54,964 - SystemAgent - INFO - Successfully fetched configuration from GitHub
-2024-12-23 12:01:55,285 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:01:55,760 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:01:55,760 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:01:55,761 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:01:55,761 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 12:01:56,162 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:01:56,164 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:01:56,182 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:01:56,184 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 12:01:56,184 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 12:01:56,224 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:01:56,227 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 12:01:56,227 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 12:01:56,296 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:01:56,296 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
-
-2024-12-23 12:01:56,468 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:01:56,468 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 12:07:35,085 - Main - INFO - Starting main script
-2024-12-23 12:07:35,086 - SystemAgent - INFO - No local config file found at config/config.yaml
-2024-12-23 12:07:35,086 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:07:35,358 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:07:35,834 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:07:35,835 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:07:36,356 - SystemAgent - INFO - Successfully fetched configuration from GitHub
-2024-12-23 12:07:36,630 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:07:37,111 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:07:37,111 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:07:37,111 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:07:37,112 - modules.ssh_connector - INFO - Loaded hosts from config/hosts.txt
-2024-12-23 12:07:37,517 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:07:37,520 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:07:37,537 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:07:37,538 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 12:07:37,539 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 12:07:37,585 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:07:37,587 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 12:07:37,587 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 12:07:37,664 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:07:37,664 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
-
-2024-12-23 12:07:37,822 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:07:37,822 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 12:11:11,527 - Main - INFO - Starting main script
-2024-12-23 12:11:11,527 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:11:11,528 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:11:11,837 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:11:12,316 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:11:12,316 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:11:12,792 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:11:12,793 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:11:13,261 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:11:13,528 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:11:16,044 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:11:16,044 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:11:16,044 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:11:16,045 - modules.ssh_connector - ERROR - Hosts file config/hosts.txt not found.
-2024-12-23 12:13:04,065 - Main - INFO - Starting main script
-2024-12-23 12:13:04,066 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:13:04,066 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:13:04,418 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:13:04,925 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:13:04,926 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:13:05,439 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:13:05,440 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:13:05,931 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:13:06,174 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:13:06,671 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:13:06,672 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:13:06,672 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:13:06,672 - SystemAgent - ERROR - Failed to run SSH command: 'Agent' object has no attribute '_run_ssh_command_thread'
-2024-12-23 12:13:23,242 - Main - INFO - Starting main script
-2024-12-23 12:13:23,242 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:13:23,243 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:13:23,543 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:13:24,014 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:13:24,015 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:13:24,465 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:13:24,466 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:13:24,925 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:13:25,189 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:13:25,700 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:13:25,700 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:13:25,701 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:13:25,701 - SystemAgent - ERROR - Failed to run SSH command: 'Agent' object has no attribute '_run_ssh_command_thread'
-2024-12-23 12:13:57,137 - Main - INFO - Starting main script
-2024-12-23 12:13:57,138 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:13:57,138 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:13:57,392 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:13:57,887 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:13:57,887 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:13:58,359 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:13:58,360 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:13:58,834 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:13:59,108 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:13:59,554 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:13:59,555 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:13:59,555 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:13:59,771 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:13:59,832 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:13:59,834 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 12:13:59,834 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 12:13:59,909 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:13:59,909 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
-
-2024-12-23 12:14:00,120 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:14:00,139 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:14:00,141 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 12:14:00,141 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 12:14:00,420 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:14:00,421 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 12:15:23,743 - Main - INFO - Starting main script
-2024-12-23 12:15:23,744 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:15:23,744 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:15:24,089 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:15:24,553 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:15:24,553 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:15:25,011 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:15:25,012 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:15:25,447 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:15:25,692 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:15:26,146 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:15:26,147 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:15:26,147 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:15:26,352 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:15:26,413 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:15:26,414 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 12:15:26,415 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 12:15:26,495 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:15:26,495 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
-
-2024-12-23 12:15:26,701 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:15:26,719 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:15:26,721 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 12:15:26,721 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 12:15:27,000 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:15:27,000 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 12:42:20,408 - Main - INFO - Starting main script
-2024-12-23 12:42:20,409 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:42:20,409 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:42:20,792 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:42:21,264 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:42:21,264 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:42:21,733 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:42:21,734 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:42:22,248 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:42:22,628 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:42:23,117 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:42:23,118 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:42:23,118 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:42:23,328 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:42:23,388 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:42:23,390 - modules.ssh_connector - INFO - Host key for 172.21.238.161 added to known_hosts.
-2024-12-23 12:42:23,390 - modules.ssh_connector - INFO - Connected to 172.21.238.161.
-2024-12-23 12:42:23,467 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:42:23,467 - SystemAgent - INFO - Output from 172.21.238.161: Hello, world!
-
-2024-12-23 12:42:23,670 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:42:23,689 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:42:23,691 - modules.ssh_connector - INFO - Host key for 172.21.232.237 added to known_hosts.
-2024-12-23 12:42:23,691 - modules.ssh_connector - INFO - Connected to 172.21.232.237.
-2024-12-23 12:42:23,968 - modules.ssh_connector - INFO - Connection closed.
-2024-12-23 12:42:23,968 - SystemAgent - INFO - Output from 172.21.232.237: Hello, world!
-
-2024-12-23 12:43:43,938 - Main - INFO - Starting main script
-2024-12-23 12:43:43,939 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:43:43,939 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:43:44,476 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:43:44,940 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:43:44,941 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:43:45,447 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:43:45,448 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:43:45,922 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:43:46,306 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:43:46,825 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:43:46,826 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:43:46,826 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:43:47,032 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:43:47,092 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:43:47,094 - modules.ssh_connector - INFO - [8ff8f0ee][172.21.238.161] Connected successfully
-2024-12-23 12:43:47,094 - SystemAgent - ERROR - Error in SSH command thread: SSHConnector.execute_command() missing 2 required positional arguments: 'session_id' and 'host'
-2024-12-23 12:44:24,839 - Main - INFO - Starting main script
-2024-12-23 12:44:24,840 - SystemAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:44:24,840 - SystemAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:44:25,325 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:44:25,832 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:44:25,832 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:44:26,343 - SystemAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:44:26,344 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:44:26,807 - SystemAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:44:27,220 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:44:27,736 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:44:27,737 - SystemAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:44:27,737 - SystemAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:44:27,941 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:44:28,001 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:44:28,003 - modules.ssh_connector - INFO - [352b7a4b][172.21.238.161] Connected successfully
-2024-12-23 12:44:28,070 - modules.ssh_connector - INFO - [352b7a4b][172.21.238.161] Connection closed
-2024-12-23 12:44:28,071 - SystemAgent - INFO - [352b7a4b][172.21.238.161] Command output: Hello, world!
-
-2024-12-23 12:44:28,274 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:44:28,293 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:44:28,294 - modules.ssh_connector - INFO - [da4374ee][172.21.232.237] Connected successfully
-2024-12-23 12:44:28,581 - modules.ssh_connector - INFO - [da4374ee][172.21.232.237] Connection closed
-2024-12-23 12:44:28,581 - SystemAgent - INFO - [da4374ee][172.21.232.237] Command output: Hello, world!
-
-2024-12-23 12:46:43,111 - Main - INFO - Starting main script
-2024-12-23 12:46:43,112 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:46:43,112 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:46:43,449 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:46:43,920 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:46:43,921 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:46:44,359 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:46:44,360 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:46:44,805 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:46:45,132 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:46:45,585 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:46:45,585 - AVAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:46:45,585 - AVAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:46:45,795 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:46:45,856 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:46:45,857 - modules.ssh_connector - INFO - [eb3cf6fc][172.21.238.161] Connected successfully
-2024-12-23 12:46:45,938 - modules.ssh_connector - INFO - [eb3cf6fc][172.21.238.161] Connection closed
-2024-12-23 12:46:45,939 - AVAgent - INFO - [eb3cf6fc][172.21.238.161] Command output: Hello, world!
-
-2024-12-23 12:46:46,144 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:46:46,163 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:46:46,165 - modules.ssh_connector - INFO - [9dfa3c0d][172.21.232.237] Connected successfully
-2024-12-23 12:46:46,436 - modules.ssh_connector - INFO - [9dfa3c0d][172.21.232.237] Connection closed
-2024-12-23 12:46:46,436 - AVAgent - INFO - [9dfa3c0d][172.21.232.237] Command output: Hello, world!
-
-2024-12-23 12:47:05,445 - Main - INFO - Starting main script
-2024-12-23 12:47:05,446 - AVAgent - INFO - No local file(s) found: config.yaml, hosts.txt
-2024-12-23 12:47:05,447 - AVAgent - INFO - Attempting to fetch configuration from GitHub repository...
-2024-12-23 12:47:05,690 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:47:06,146 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:47:06,147 - GitHubClient - INFO - Fetching file content from path: config/config.yaml
-2024-12-23 12:47:06,598 - AVAgent - INFO - Successfully fetched config.yaml from GitHub
-2024-12-23 12:47:06,599 - GitHubClient - INFO - Fetching file content from path: config/hosts.txt
-2024-12-23 12:47:07,055 - AVAgent - INFO - Successfully fetched hosts.txt from GitHub
-2024-12-23 12:47:07,329 - GitHubClient - INFO - Authenticated as GitHub user: Twanus
-2024-12-23 12:47:07,801 - GitHubClient - INFO - Successfully connected to repository: Twanus/av-agent-fw
-2024-12-23 12:47:07,802 - AVAgent - INFO - Agent initialized successfully with GitHubClient
-2024-12-23 12:47:07,802 - AVAgent - INFO - Agent initialized successfully with SSHConnector
-2024-12-23 12:47:08,011 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.7)
-2024-12-23 12:47:08,070 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:47:08,072 - modules.ssh_connector - INFO - [f5441c1d][172.21.238.161] Connected successfully
-2024-12-23 12:47:08,145 - modules.ssh_connector - INFO - [f5441c1d][172.21.238.161] Connection closed
-2024-12-23 12:47:08,145 - AVAgent - INFO - [f5441c1d][172.21.238.161] Command output: Hello, world!
-
-2024-12-23 12:47:08,348 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-12-23 12:47:08,366 - paramiko.transport - INFO - Authentication (publickey) successful!
-2024-12-23 12:47:08,368 - modules.ssh_connector - INFO - [7f8c1683][172.21.232.237] Connected successfully
-2024-12-23 12:47:08,494 - modules.ssh_connector - INFO - [7f8c1683][172.21.232.237] Connection closed
-2024-12-23 12:47:08,495 - AVAgent - INFO - [7f8c1683][172.21.232.237] Command output: Hello, world!
+2024-12-23 13:05:32,081 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-12-23 13:05:32,100 - paramiko.transport - INFO - Authentication (publickey) successful!
+2024-12-23 13:05:32,102 - modules.ssh_connector - INFO - [29689724][172.21.232.237] Connected successfully
+2024-12-23 13:05:32,225 - CommandUpdate - INFO - OS detected: ubuntu
+2024-12-23 13:05:34,248 - CommandUpdate - INFO - Command executed successfully
+2024-12-23 13:05:34,249 - modules.ssh_connector - INFO - [29689724][172.21.232.237] Connection closed
+2024-12-23 13:05:34,249 - AVAgent - INFO - [29689724][172.21.232.237] OUTPUT:
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://be.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://be.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://be.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 

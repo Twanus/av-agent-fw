@@ -18,7 +18,7 @@ class CommandUpdate(Command):
         # Detect the OS
         os_command = DetectOSCommand()
         os_id = os_command.execute(client).strip().strip('"')
-        logger.info("OS detected: %s", os_id)
+        logger.debug("OS detected: %s", os_id)
 
         # Determine OS and which update command to use
         if os_id in ["ubuntu", "debian"]:
@@ -48,16 +48,13 @@ class CommandUpdate(Command):
             error_output = stderr.read().decode()
 
             if exit_status == 0:
-                logger.info("Command executed successfully")
-                print(f"Output: {output}")
+                logger.debug("Command executed successfully")
             else:
                 logger.error(
                     "Command execution failed with error: %s", error_output
                 )
-                print(f"Error: {error_output}")
 
             return output if exit_status == 0 else None
-        except Exception as e:
+        except Exception:
             logger.exception("Command execution failed")
-            print(f"Command execution failed: {e}")
             return None

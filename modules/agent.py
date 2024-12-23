@@ -200,7 +200,7 @@ class Agent:
                     ssh_connector.close_connection(client, session_id, host)
                     if output:
                         self.logger.info(
-                            f"[{session_id}][{host}] Command output: {output}"
+                            f"[{session_id}][{host}] OUTPUT:\n{output}"
                         )
                 else:
                     self.logger.error(
